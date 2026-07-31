@@ -270,6 +270,52 @@ main { padding: 3rem 0 5rem; }
   .interest-list { grid-template-columns: 1fr; }
 }
 
+.stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.8rem;
+}
+
+/* ---------- Selected Projects ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+}
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  background: var(--bg-alt);
+}
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.15rem;
+}
+.project-title { font-weight: 700; font-size: 1rem; }
+.project-metric {
+  flex: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  white-space: nowrap;
+}
+.project-meta { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 0.5rem; }
+.project-desc { font-size: 0.93rem; margin-bottom: 0.7rem; }
+.project-card .entry-tags { margin-top: 0; }
+
+@media (max-width: 700px) {
+  .project-grid { grid-template-columns: 1fr; }
+  .project-head { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+}
+
 /* ---------- Sidebar ---------- */
 .sidebar {
   position: sticky;
