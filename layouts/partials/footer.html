@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="container">
+    <div>© {{ now.Format "2006" }} {{ .Site.Params.name }}. Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>, hosted on GitHub Pages.</div>
+    <div class="footer-social">
+      {{ with .Site.Params.email }}<a href="mailto:{{ . }}" aria-label="Email">{{ partial "icon.html" "email" }}</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end }}
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon.html" "github" }}</a>{{ end }}
+      {{ with .Site.Params.scholar }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Google Scholar">{{ partial "icon.html" "scholar" }}</a>{{ end }}
+      {{ with .Site.Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="ORCID">{{ partial "icon.html" "orcid" }}</a>{{ end }}
+    </div>
+  </div>
+</footer>
+<script src="{{ "js/main.js" | relURL }}"></script>

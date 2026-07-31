@@ -1,0 +1,46 @@
+baseURL = "https://alihashemi-ai.github.io/"
+languageCode = "en-us"
+title = "Ali Hashemi, Ph.D."
+enableRobotsTXT = true
+summarylength = 30
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  name = "Ali Hashemi"
+  role = "Principal LLM Researcher"
+  affiliation = "Multiverse Computing"
+  location = "Berlin, Germany"
+  email = "alihashemi.ee@gmail.com"
+  description = "Ali Hashemi, Ph.D. — Principal LLM Researcher at Multiverse Computing. Research on foundation models, LLM efficiency, distillation, and generative AI."
+  keywords = "Ali Hashemi, Machine Learning, LLM, Foundation Models, Distillation, PEFT, Diffusion Models, NeurIPS, TU Berlin, BIFOLD, Multiverse Computing"
+  cvFile = "/files/Ali_Hashemi_CV.pdf"
+  github = "https://github.com/alihashemi-ai"
+  linkedin = "https://www.linkedin.com/in/alihashemi-ai/"
+  scholar = "https://scholar.google.com/citations?user=rCcFTFgAAAAJ&hl=en&oi=ao"
+  orcid = "https://orcid.org/0000-0003-4957-4630"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 2
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

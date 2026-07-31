@@ -1,0 +1,17 @@
+- degree: "Ph.D. in Computer Science and Machine Learning"
+  org: "Technische Universität Berlin"
+  location: "Berlin, Germany"
+  start: "2016"
+  end: "2022"
+  details:
+    - "Thesis: \"Advances in Hierarchical Bayesian Learning with Applications to Neuroimaging\""
+    - "Supervisors: Prof. Dr. Klaus-Robert Müller and Prof. Dr. Stefan Haufe"
+    - "Grade: Summa cum laude (Highest Distinction)"
+
+- degree: "M.Sc. in Electrical & Computer Engineering"
+  org: "Sharif University of Technology"
+  location: "Tehran, Iran"
+  start: ""
+  end: ""
+  details:
+    - "GPA: 4.0 / 4.0 (best possible grade)"

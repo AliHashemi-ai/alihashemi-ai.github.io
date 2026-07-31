@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+<h1 class="page-title">Curriculum Vitae</h1>
+<p class="page-lede">Full experience, education, and publication record. For a printable copy, download the PDF below.</p>
+
+<div class="cv-actions">
+  {{ with .Site.Params.cvFile }}<a class="btn" href="{{ . | relURL }}" target="_blank">{{ partial "icon.html" "download" }} Download CV (PDF)</a>{{ end }}
+</div>
+
+<h2>Experience</h2>
+{{ range .Site.Data.experience }}
+<div class="entry">
+  <div class="entry-head">
+    <div>
+      <div class="entry-title">{{ .role }}{{ if .current }}<span class="entry-current">Current</span>{{ end }}</div>
+      <div class="entry-org">{{ .org }}</div>
+    </div>
+    <div class="entry-meta">{{ .start }} – {{ .end }} · {{ .location }}</div>
+  </div>
+  <ul>
+    {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  <div class="entry-tags">
+    {{ range .tags }}<span class="chip">{{ . }}</span>{{ end }}
+  </div>
+</div>
+{{ end }}
+
+<h2>Education</h2>
+{{ range .Site.Data.education }}
+<div class="entry">
+  <div class="entry-head">
+    <div>
+      <div class="entry-title">{{ .degree }}</div>
+      <div class="entry-org">{{ .org }}</div>
+    </div>
+    <div class="entry-meta">{{ if .start }}{{ .start }} – {{ .end }} · {{ end }}{{ .location }}</div>
+  </div>
+  <ul>
+    {{ range .details }}<li>{{ . }}</li>{{ end }}
+  </ul>
+</div>
+{{ end }}
+
+<h2>Honors &amp; Awards</h2>
+<ul class="award-list">
+  {{ range .Site.Data.awards }}
+  <li><span class="award-year">{{ .year }}</span><span>{{ .text }}</span></li>
+  {{ end }}
+</ul>
+
+<h2>Selected Talks</h2>
+<ul class="talk-list">
+  {{ range .Site.Data.talks }}
+  <li>
+    <span class="talk-date">{{ .date }}</span>
+    <span>
+      <div>{{ .title }}</div>
+      <div class="talk-venue">{{ .venue }} · {{ .location }}</div>
+    </span>
+  </li>
+  {{ end }}
+</ul>
+
+<h2>Skills</h2>
+<div class="skills-grid">
+  {{ range .Site.Data.skills }}
+  <div>
+    <h4>{{ .category }}</h4>
+    <div class="entry-tags">
+      {{ range .items }}<span class="chip">{{ . }}</span>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

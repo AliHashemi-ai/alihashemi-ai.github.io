@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="avatar" aria-hidden="true">AH</div>
+  <div class="hero-body">
+    <h1>{{ .Site.Params.name }}</h1>
+    <div class="hero-role">{{ .Site.Params.role }} · {{ .Site.Params.affiliation }}</div>
+    <div class="hero-sub">Ph.D., Technische Universität Berlin · Foundation Models &amp; LLM Efficiency · {{ .Site.Params.location }}</div>
+
+    <div class="social-row">
+      {{ with .Site.Params.email }}<a class="social-btn" href="mailto:{{ . }}">{{ partial "icon.html" "email" }} Email</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a class="social-btn" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "linkedin" }} LinkedIn</a>{{ end }}
+      {{ with .Site.Params.github }}<a class="social-btn" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }} GitHub</a>{{ end }}
+      {{ with .Site.Params.scholar }}<a class="social-btn" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "scholar" }} Google Scholar</a>{{ end }}
+      {{ with .Site.Params.orcid }}<a class="social-btn" href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "orcid" }} ORCID</a>{{ end }}
+      {{ with .Site.Params.cvFile }}<a class="social-btn" href="{{ . | relURL }}" target="_blank">{{ partial "icon.html" "download" }} CV</a>{{ end }}
+    </div>
+  </div>
+</section>
+
+<p class="bio">
+  Ali is a Principal LLM Researcher at <strong>Multiverse Computing</strong>, where he works on making large
+  language models smaller, faster, and cheaper to run without sacrificing accuracy. He holds a Ph.D.
+  <em>summa cum laude</em> in Computer Science and Machine Learning from Technische Universität Berlin, and
+  spent three years as a Machine Learning Research Scientist at <strong>BIFOLD</strong> and Postdoctoral
+  Research Fellow at TU Berlin, building foundation models, diffusion models, and efficient inference
+  pipelines for biomedical and vision-language applications. His research spans representation learning
+  (distillation, sparse autoencoders), parameter-efficient fine-tuning, sparsity, and Bayesian optimization,
+  resulting in 10+ publications at venues including NeurIPS and IEEE&nbsp;TMI. He has supervised 5+ M.Sc.
+  and Ph.D. students and taught courses to 200+ participants.
+</p>
+
+<div class="focus-tags">
+  {{ range (slice "Foundation Models" "LLM Efficiency" "Distillation & PEFT" "Diffusion Models" "Generative AI" "Bayesian Optimization") }}
+  <span class="chip">{{ . }}</span>
+  {{ end }}
+</div>
+
+<div class="section-head">
+  <h2>News</h2>
+</div>
+<ul class="timeline">
+  {{ range .Site.Data.news }}
+  <li>
+    <span class="tl-date">{{ .date }}</span>
+    {{ .text | markdownify }}
+  </li>
+  {{ end }}
+</ul>
+
+<div class="section-head">
+  <h2>Selected Publications</h2>
+  <a class="see-all" href="{{ "/publications/" | relURL }}">All publications →</a>
+</div>
+{{ $published := where .Site.Data.publications "type" "ne" "preprint" }}
+{{ $highlighted := where $published "highlight" true }}
+{{ $rest := sort (where $published "highlight" "ne" true) "year" "desc" }}
+{{ range $highlighted }}
+{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
+{{ end }}
+{{ range first (sub 4 (len $highlighted)) $rest }}
+{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,12 @@
+- category: "Programming"
+  items: ["Python", "C/C++", "Rust", "R", "MATLAB", "SQL", "LaTeX"]
+- category: "Libraries & Frameworks"
+  items: ["PyTorch (Lightning)", "TensorFlow", "JAX", "Hugging Face (Transformers, Adapters, Diffusers)", "NumPy", "Pandas", "SciPy", "Scikit-learn", "OpenCV", "NLTK", "SLURM", "Hydra", "W&B", "Weaviate"]
+- category: "LLM & GenAI Tooling"
+  items: ["LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT"]
+- category: "MLOps & Cloud"
+  items: ["Linux", "Bash", "Git", "CI/CD", "Docker", "Kubernetes", "MLflow", "AWS (EC2, S3, SageMaker, Lambda, Bedrock)", "GCP (Vertex AI)", "Azure"]
+- category: "Soft Skills"
+  items: ["Project Management", "Technical Writing", "Public Speaking", "Training & Mentoring", "Event Organization"]
+- category: "Languages"
+  items: ["English (Fluent)", "German (Advanced, B2)", "Persian (Native)", "Arabic (Basic, A1)", "Turkish (Basic, A1)"]
