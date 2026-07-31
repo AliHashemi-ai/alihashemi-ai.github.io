@@ -1,0 +1,32 @@
+<aside class="sidebar">
+  <div class="sidebar-avatar" aria-hidden="true">AH</div>
+  <h1 class="sidebar-name">{{ .Site.Params.name }}</h1>
+  <div class="sidebar-role">{{ .Site.Params.role }}</div>
+  <div class="sidebar-org">{{ .Site.Params.affiliation }}</div>
+  <div class="sidebar-location">{{ partial "icon.html" "location" }} {{ .Site.Params.location }}</div>
+
+  <div class="sidebar-social">
+    {{ with .Site.Params.email }}<a href="mailto:{{ . }}" aria-label="Email" title="Email">{{ partial "icon.html" "email" }}</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end }}
+    {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{{ partial "icon.html" "github" }}</a>{{ end }}
+    {{ with .Site.Params.scholar }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{{ partial "icon.html" "scholar" }}</a>{{ end }}
+    {{ with .Site.Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">{{ partial "icon.html" "orcid" }}</a>{{ end }}
+  </div>
+
+  {{ with .Site.Params.cvFile }}<a class="btn sidebar-cv" href="{{ . | relURL }}" target="_blank">{{ partial "icon.html" "download" }} Download CV</a>{{ end }}
+
+  <div class="sidebar-stats">
+    <div class="stat">
+      <div class="stat-num">{{ len .Site.Data.publications }}</div>
+      <div class="stat-label">Publications</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">{{ len .Site.Data.talks }}</div>
+      <div class="stat-label">Talks</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">Ph.D.</div>
+      <div class="stat-label">TU Berlin</div>
+    </div>
+  </div>
+</aside>
