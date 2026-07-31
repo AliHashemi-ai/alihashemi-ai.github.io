@@ -2,26 +2,30 @@
 
 <p class="eyebrow">About</p>
 <p class="bio">
-  Ali is a Principal LLM Researcher at <strong>Multiverse Computing</strong>, where he works on making large
-  language models smaller, faster, and cheaper to run without sacrificing accuracy. He holds a Ph.D.
-  <em>summa cum laude</em> in Computer Science and Machine Learning from Technische Universität Berlin, and
-  spent three years as a Machine Learning Research Scientist at <strong>BIFOLD</strong> and Postdoctoral
-  Research Fellow at TU Berlin, building foundation models, diffusion models, and efficient inference
-  pipelines for biomedical and vision-language applications. His research spans representation learning
-  (distillation, sparse autoencoders), parameter-efficient fine-tuning, sparsity, and Bayesian optimization,
-  resulting in 10+ publications at venues including NeurIPS and IEEE&nbsp;TMI. He has supervised 5+ M.Sc.
-  and Ph.D. students and taught courses to 200+ participants.
+  Ali builds and ships efficient large language models — from research prototypes to production systems.
+  As Principal LLM Researcher at <strong>Multiverse Computing</strong>, he works on compressing and optimizing
+  LLMs to cut inference cost without sacrificing accuracy. Previously at <strong>BIFOLD</strong> and TU Berlin,
+  he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and
+  vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine
+  Learning. His work spans distillation, PEFT, sparsity, and generative modeling, backed by 10+ publications
+  at venues including NeurIPS and IEEE&nbsp;TMI.
 </p>
 
-<p class="eyebrow">Research Interests</p>
-<ul class="interest-list">
-  <li><span class="interest-dot"></span>Foundation Models &amp; LLM Efficiency</li>
-  <li><span class="interest-dot"></span>Distillation, PEFT &amp; Sparsity</li>
-  <li><span class="interest-dot"></span>Diffusion &amp; Generative Models</li>
-  <li><span class="interest-dot"></span>Bayesian Optimization</li>
-  <li><span class="interest-dot"></span>Representation Learning</li>
-  <li><span class="interest-dot"></span>Multimodal &amp; Vision-Language AI</li>
-</ul>
+<p class="eyebrow">Core Stack</p>
+<div class="interest-list stack-list">
+  {{ range (slice "Python" "PyTorch" "vLLM / TensorRT" "Hugging Face" "LangChain" "Docker & Kubernetes" "AWS / GCP" "CI/CD") }}
+  <span class="chip">{{ . }}</span>
+  {{ end }}
+</div>
+
+<div class="section-head">
+  <h2>Selected Projects</h2>
+</div>
+<div class="project-grid">
+  {{ range .Site.Data.projects }}
+  {{ partial "project-card.html" . }}
+  {{ end }}
+</div>
 
 <div class="section-head">
   <h2>News</h2>
