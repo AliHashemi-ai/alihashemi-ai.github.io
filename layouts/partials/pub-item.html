@@ -1,8 +1,9 @@
 {{- $withYear := .withYear | default false -}}
 <div class="pub-item type-{{ .pub.type }}" data-type="{{ .pub.type }}">
+  {{ with .num }}<div class="pub-num">{{ . }}</div>{{ end }}
   <div class="pub-badge">{{ .pub.venueShort }}{{ if $withYear }}<br>{{ .pub.year }}{{ end }}</div>
   <div>
-    <div class="pub-title">{{ .pub.title }}</div>
+    <div class="pub-title">{{ if .pub.highlight }}<span class="pub-star" title="Selected publication">★</span> {{ end }}{{ .pub.title }}</div>
     <div class="pub-authors">{{ .pub.authors | safeHTML }}</div>
     <div class="pub-venue">{{ .pub.venue }}{{ with .pub.details }}, {{ . }}{{ end }}</div>
   </div>

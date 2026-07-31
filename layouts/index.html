@@ -26,14 +26,16 @@
 <div class="section-head">
   <h2>News</h2>
 </div>
-<ul class="timeline">
+<table class="news-table">
+  <tbody>
   {{ range .Site.Data.news }}
-  <li>
-    <span class="tl-date">{{ .date }}</span>
-    {{ .text | markdownify }}
-  </li>
+  <tr>
+    <td class="news-date">{{ .date }}</td>
+    <td>{{ .text | markdownify }}</td>
+  </tr>
   {{ end }}
-</ul>
+  </tbody>
+</table>
 
 <div class="section-head">
   <h2>Selected Publications</h2>

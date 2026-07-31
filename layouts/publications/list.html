@@ -15,12 +15,15 @@
 
 {{ $pubs := sort .Site.Data.publications "year" "desc" }}
 {{ $currentYear := "" }}
+{{ $total := len $pubs }}
+{{ $i := 0 }}
 {{ range $pubs }}
   {{ if ne (printf "%v" .year) $currentYear }}
     {{ $currentYear = printf "%v" .year }}
     <div class="pub-year">{{ .year }}</div>
   {{ end }}
-  {{ partial "pub-item.html" (dict "pub" . "withYear" false) }}
+  {{ partial "pub-item.html" (dict "pub" . "withYear" false "num" (sub $total $i)) }}
+  {{ $i = add $i 1 }}
 {{ end }}
 
 {{ end }}
