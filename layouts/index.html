@@ -19,15 +19,6 @@
 </div>
 
 <div class="section-head">
-  <h2>Selected Projects</h2>
-</div>
-<div class="project-grid">
-  {{ range .Site.Data.projects }}
-  {{ partial "project-card.html" . }}
-  {{ end }}
-</div>
-
-<div class="section-head">
   <h2>News</h2>
 </div>
 <table class="news-table">
@@ -40,6 +31,16 @@
   {{ end }}
   </tbody>
 </table>
+
+<div class="section-head">
+  <h2>Selected Projects</h2>
+  <a class="see-all" href="{{ "/projects/" | relURL }}">All projects →</a>
+</div>
+<div class="project-grid">
+  {{ range first 4 .Site.Data.projects }}
+  {{ partial "project-card.html" . }}
+  {{ end }}
+</div>
 
 <div class="section-head">
   <h2>Selected Publications</h2>
