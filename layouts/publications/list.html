@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<h1 class="page-title">{{ .Title }}</h1>
+<p class="page-lede">10+ publications in venues including NeurIPS, IEEE Transactions on Medical Imaging, and NeuroImage, spanning Bayesian machine learning, neuroimaging, and generative AI.</p>
+
+<div class="pub-filters">
+  <button class="pub-filter active" data-type="all">All</button>
+  <button class="pub-filter" data-type="journal">Journal</button>
+  <button class="pub-filter" data-type="conference">Conference</button>
+  <button class="pub-filter" data-type="workshop">Workshop</button>
+  <button class="pub-filter" data-type="preprint">Preprints</button>
+  <button class="pub-filter" data-type="thesis">Thesis</button>
+  <button class="pub-filter" data-type="book">Book</button>
+</div>
+
+{{ $pubs := sort .Site.Data.publications "year" "desc" }}
+{{ $currentYear := "" }}
+{{ range $pubs }}
+  {{ if ne (printf "%v" .year) $currentYear }}
+    {{ $currentYear = printf "%v" .year }}
+    <div class="pub-year">{{ .year }}</div>
+  {{ end }}
+  {{ partial "pub-item.html" (dict "pub" . "withYear" false) }}
+{{ end }}
+
+{{ end }}

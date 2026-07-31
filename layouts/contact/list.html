@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<h1 class="page-title">Contact</h1>
+<p class="page-lede">Feel free to reach out about research collaborations, speaking engagements, or opportunities.</p>
+
+<ul class="contact-list">
+  {{ with .Site.Params.email }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "email" }}</span>
+    <div><span class="label">Email</span><br><a class="value" href="mailto:{{ . }}">{{ . }}</a></div>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.location }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "location" }}</span>
+    <div><span class="label">Location</span><br><span class="value">{{ . }}</span></div>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.linkedin }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "linkedin" }}</span>
+    <div><span class="label">LinkedIn</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.github }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "github" }}</span>
+    <div><span class="label">GitHub</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.scholar }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "scholar" }}</span>
+    <div><span class="label">Google Scholar</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">Profile →</a></div>
+  </li>
+  {{ end }}
+  {{ with .Site.Params.orcid }}
+  <li>
+    <span class="icon">{{ partial "icon.html" "orcid" }}</span>
+    <div><span class="label">ORCID</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
+  </li>
+  {{ end }}
+</ul>
+
+{{ .Content }}
+
+{{ end }}

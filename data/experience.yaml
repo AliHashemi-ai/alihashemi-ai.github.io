@@ -1,0 +1,74 @@
+- role: "Principal LLM Researcher"
+  org: "Multiverse Computing"
+  location: "Berlin, Germany"
+  start: "Nov 2025"
+  end: "Present"
+  current: true
+  bullets:
+    - "Leading research on efficient compression and optimization of large language models, applying tensor-network and distillation-based techniques to reduce model size and inference cost while preserving accuracy."
+    - "Driving applied R&D at the intersection of quantum-inspired algorithms and generative AI, translating research advances into production-ready, efficient LLM solutions for enterprise clients."
+    - "Collaborating with cross-functional research and engineering teams to scale foundation-model compression methods from prototype to deployment."
+  tags: ["LLM Compression", "Tensor Networks", "Foundation Models", "Efficient Inference"]
+
+- role: "Machine Learning Research Scientist"
+  org: "BIFOLD (Berlin Institute for the Foundations of Learning and Data)"
+  location: "Berlin, Germany"
+  start: "Oct 2022"
+  end: "Nov 2025"
+  bullets:
+    - "Developed an interpretable subspace-based distillation method to build compressed foundation models from scratch, using 600M+ parameter teacher models, achieving 80% size reduction with only 1% accuracy loss."
+    - "Built and optimized histopathology foundation models using the developed distillation approach on 100M image patches from gigapixel-scale slides, achieving ≁60% speed, ↓40% memory, with minimal (1–2%) accuracy loss."
+    - "Built a multimodal RAG system for clinical reporting using contrastive learning on histopathology images and reports, integrating CLIP, Hugging Face Transformers, PEFT adapters, and domain-specific models (e.g., BioGPT), served at low latency with vLLM/TensorRT/ONNX — improving reporting efficiency by 15%."
+  tags: ["Foundation Models", "Efficient Inference", "Distributed Training", "SAE", "Distillation", "PEFT", "Sparsity", "Transformers"]
+
+- role: "Post-Doctoral Research Fellow"
+  org: "Machine Learning Group, Technische Universität Berlin"
+  location: "Berlin, Germany"
+  start: "Oct 2022"
+  end: "Nov 2025"
+  bullets:
+    - "Designed conditional diffusion models for biomedical inverse problems and accelerated inference with distilled consistency models, enabling near single-step sampling without quality degradation."
+    - "Developed a hybrid physics-informed neural network that learns structured spatiotemporal representations from brain signals, improving 3D localization accuracy by 12% across 500K+ time-series samples."
+    - "Organized and taught courses with 200+ participants over two years. Supervised 5+ M.Sc. and Ph.D. students."
+  tags: ["Diffusion Models", "Consistency Models", "Physics-Informed ML", "Teaching"]
+
+- role: "Applied Scientist"
+  org: "Quality in Artificial Intelligence (QAI) Labs"
+  location: "Berlin, Germany"
+  start: "Jun 2021"
+  end: "Sep 2022"
+  bullets:
+    - "Developed a Riemannian geometry-based optimization algorithm, improving neuroimaging localization accuracy by 9% compared to benchmarks; presented at NeurIPS and published in IEEE TMI (Impact Factor > 10)."
+    - "Directed development of an open-source brain inverse solutions software package — GitHub Actions CI/CD pipelines, Dockerization, unit testing, and collaborative Git workflows — widely adopted as a benchmark in the neuroimaging community."
+    - "Led interdisciplinary, cross-functional projects with PIs from UCSF and Inria, delivering results on time across international teams."
+  tags: ["Optimization", "Open Source", "CI/CD", "Neuroimaging"]
+
+- role: "Applied Scientist"
+  org: "Brain and Data Science Lab, Charité"
+  location: "Berlin, Germany"
+  start: "Feb 2019"
+  end: "May 2021"
+  bullets:
+    - "Built hierarchical Bayesian models with sparse priors for latent representation learning, enhancing robustness to noise by 20% in clinical brain signal data."
+    - "Reduced pipeline training time by 30% by engineering reproducible, distributed training workflows using PyTorch, SLURM, Hydra-Zen, and Submitit, with W&B monitoring for performance tracking in clinical studies."
+  tags: ["Bayesian Modeling", "PyTorch", "Distributed Training"]
+
+- role: "Doctoral Research Fellow"
+  org: "Machine Learning Group, Technische Universität Berlin"
+  location: "Berlin, Germany"
+  start: "Feb 2016"
+  end: "Sep 2022"
+  bullets:
+    - "Developed large-scale optimization algorithms for high-dimensional settings using sparse Bayesian statistics and machine learning."
+    - "Published 10+ papers in prestigious journals and conferences, and presented research at international conferences and workshops including NeurIPS and Med-NeurIPS."
+  tags: ["Bayesian Statistics", "Optimization", "Research"]
+
+- role: "Applied Scientist"
+  org: "Singapore University of Technology and Design"
+  location: "Singapore"
+  start: "Mar 2015"
+  end: "Jan 2016"
+  bullets:
+    - "Designed SOTA thermal field monitoring techniques by integrating PDEs into a compressed sensing algorithm, achieving a 10 dB improvement in reconstruction accuracy with 90% less computational complexity."
+    - "Developed a dictionary learning approach for brain classification, achieving 80% compression with no loss in accuracy."
+  tags: ["Compressed Sensing", "Signal Processing", "Dictionary Learning"]
