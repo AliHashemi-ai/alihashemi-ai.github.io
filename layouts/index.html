@@ -1,59 +1,150 @@
-{{ define "main" }}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ .Site.Params.name }}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+<meta property="og:title" content="{{ .Site.Params.name }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<script>
+try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-<p class="eyebrow">About</p>
-<p class="bio">
-  Ali builds and ships efficient large language models — from research prototypes to production systems.
-  As Principal LLM Researcher at <strong>Multiverse Computing</strong>, he works on compressing and optimizing
-  LLMs to cut inference cost without sacrificing accuracy. Previously at <strong>BIFOLD</strong> and TU Berlin,
-  he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and
-  vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine
-  Learning. His work spans distillation, PEFT, sparsity, and generative modeling, backed by 10+ publications
-  at venues including NeurIPS and IEEE&nbsp;TMI.
-</p>
+{{ $months := slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec" }}
 
-<p class="eyebrow">Core Stack</p>
-<div class="interest-list stack-list">
-  {{ range (slice "Python" "PyTorch" "vLLM / TensorRT" "Hugging Face" "LangChain" "Docker & Kubernetes" "AWS / GCP" "CI/CD") }}
-  <span class="chip">{{ . }}</span>
-  {{ end }}
-</div>
+<!-- HERO -->
+<header class="hero"><div class="hero-in">
+  <div class="topline">
+    <div class="eyebrow">{{ .Site.Params.role }} · {{ .Site.Params.field }}</div>
+    <button class="toggle" id="theme" type="button">Switch theme</button>
+  </div>
+  <h1>{{ .Site.Params.name }}<span class="stop">.</span></h1>
+  <p class="lede"><b>Ali builds and ships efficient large language models</b> — from research prototypes to production systems. This page covers his research, selected projects, and publications in LLM compression, efficient inference, and generative AI.</p>
+  <div class="links">
+    {{ with .Site.Params.cvFile }}<a class="chip" href="{{ . | relURL }}" target="_blank">CV</a>{{ end }}
+    {{ with .Site.Params.scholar }}<a class="chip" href="{{ . }}" target="_blank" rel="noopener">Scholar</a>{{ end }}
+    {{ with .Site.Params.github }}<a class="chip" href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+    {{ with .Site.Params.linkedin }}<a class="chip" href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+    {{ with .Site.Params.orcid }}<a class="chip" href="{{ . }}" target="_blank" rel="noopener">ORCID</a>{{ end }}
+    {{ with .Site.Params.email }}<a class="chip" href="mailto:{{ . }}">Email</a>{{ end }}
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="v">{{ len .Site.Data.publications }}</div><div class="k">publications in NeurIPS, IEEE TMI &amp; NeuroImage, as of 2026</div></div>
+    <div class="tile"><div class="v">80%</div><div class="k">smaller foundation models shipped at BIFOLD, with 1% accuracy loss</div></div>
+    <div class="tile"><div class="v">10+</div><div class="k">years building ML systems, from compressed sensing to LLMs, since 2015</div></div>
+  </div>
+</div></header>
 
-<div class="section-head">
-  <h2>News</h2>
-</div>
-<table class="news-table">
-  <tbody>
-  {{ range .Site.Data.news }}
-  <tr>
-    <td class="news-date">{{ .date }}</td>
-    <td>{{ .text | markdownify }}</td>
-  </tr>
-  {{ end }}
-  </tbody>
-</table>
+<!-- RAIL -->
+<div class="rail"><nav aria-label="Sections">
+  <a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav></div>
 
-<div class="section-head">
-  <h2>Selected Projects</h2>
-  <a class="see-all" href="{{ "/projects/" | relURL }}">All projects →</a>
-</div>
-<div class="project-grid">
-  {{ range first 4 .Site.Data.projects }}
-  {{ partial "project-card.html" . }}
-  {{ end }}
-</div>
+<main id="main" class="col">
+  <h2 id="about">About</h2>
+  <p>Ali is a Principal LLM Researcher at <strong>Multiverse Computing</strong>, where he works on compressing and optimizing large language models to cut inference cost without sacrificing accuracy.</p>
+  <p>Previously at <strong>BIFOLD</strong> and Technische Universität Berlin, he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine Learning.</p>
+  <p>He works primarily in Python and PyTorch, with vLLM, TensorRT, Hugging Face, LangChain, Docker, Kubernetes, and AWS/GCP for production deployment.</p>
 
-<div class="section-head">
-  <h2>Selected Publications</h2>
-  <a class="see-all" href="{{ "/publications/" | relURL }}">All publications →</a>
-</div>
-{{ $published := where .Site.Data.publications "type" "ne" "preprint" }}
-{{ $highlighted := where $published "highlight" true }}
-{{ $rest := sort (where $published "highlight" "ne" true) "year" "desc" }}
-{{ range $highlighted }}
-{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
-{{ end }}
-{{ range first (sub 4 (len $highlighted)) $rest }}
-{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
-{{ end }}
+  <h2 id="news">News</h2>
+  <ul class="dated">
+    {{ range .Site.Data.news }}
+    {{ $parts := split .date "-" }}
+    {{ $year := index $parts 0 }}
+    {{ $monthStr := strings.TrimPrefix "0" (index $parts 1) }}
+    {{ $monthName := index $months (sub (int $monthStr) 1) }}
+    <li><time datetime="{{ .date }}-01">{{ $monthName }} {{ $year }}</time><div>{{ .text | markdownify }}</div></li>
+    {{ end }}
+  </ul>
 
-{{ end }}
+  <h2 id="research">Research</h2>
+  <div class="cards">
+    <div class="card"><div class="tag">Efficiency</div><h3>How small can an LLM get without losing accuracy?</h3><p>Compression, distillation, and sparsity methods that cut model size and inference cost while preserving task performance.</p></div>
+    <div class="card a2"><div class="tag">Generative Modeling</div><h3>Diffusion &amp; consistency models for scientific data</h3><p>Conditional diffusion models for biomedical inverse problems, accelerated with distilled consistency models for near single-step sampling.</p></div>
+    <div class="card a3"><div class="tag">Representation Learning</div><h3>Interpretable compression via distillation</h3><p>Subspace-based distillation and sparse autoencoders for building compact, interpretable foundation models from large teacher models.</p></div>
+    <div class="card a4"><div class="tag">Optimization</div><h3>Bayesian &amp; nonconvex optimization at scale</h3><p>Large-scale optimization algorithms combining sparse Bayesian statistics and machine learning for high-dimensional inverse problems.</p></div>
+  </div>
+
+  <h2 id="publications">Publications</h2>
+  <ul class="pubs">
+    {{ $pubs := sort .Site.Data.publications "year" "desc" }}
+    {{ range $pubs }}
+    <li><span class="pill">{{ .venueShort }} {{ .year }}</span><h3>{{ if .highlight }}★ {{ end }}{{ .title }}</h3><div class="by">{{ .authors | safeHTML }}</div>
+      <p class="muted">{{ .venue }}{{ with .details }}, {{ . }}{{ end }}</p></li>
+    {{ end }}
+  </ul>
+
+  <h2 id="projects">Projects</h2>
+  <div class="cards">
+    {{ range $i, $p := .Site.Data.projects }}
+    {{ $accent := "" }}
+    {{ if eq (mod $i 4) 1 }}{{ $accent = "a2" }}{{ else if eq (mod $i 4) 2 }}{{ $accent = "a3" }}{{ else if eq (mod $i 4) 3 }}{{ $accent = "a4" }}{{ end }}
+    <div class="card{{ with $accent }} {{ . }}{{ end }}"><div class="tag">{{ $p.org }}</div><h3>{{ $p.title }}</h3><p>{{ $p.metric }}. {{ $p.description }}</p></div>
+    {{ end }}
+  </div>
+
+  <h2 id="experience">Experience</h2>
+  <ul class="dated">
+    {{ range .Site.Data.experience }}
+    <li><time>{{ .start }}–{{ .end }}</time><div><b>{{ .role }}</b>, {{ .org }}<br><span class="muted">{{ index .bullets 0 }}</span></div></li>
+    {{ end }}
+  </ul>
+
+  <h2 id="education">Education</h2>
+  <ul class="dated">
+    {{ range .Site.Data.education }}
+    <li><time>{{ .start }}{{ if .end }}–{{ .end }}{{ end }}</time><div><b>{{ .degree }}</b>, {{ .org }}<br><span class="muted">{{ index .details 0 }}</span></div></li>
+    {{ end }}
+  </ul>
+  <p class="muted">Also recognized with a 4-year scholarship from the ML Group at TU Berlin (2018), a 3-year BIMoS fellowship (2016), a 1-year research scholarship from the Singapore University of Technology and Design (2015), and a 1st-place ranking among 200+ electrical and computer engineering undergraduates (2011).</p>
+
+  <h2 id="contact">Contact</h2>
+  <p>Based in {{ .Site.Params.location }}. Reach out at <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> or connect on <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+  <footer>{{ .Site.Params.name }} · <a href="https://github.com/AliHashemi-ai/alihashemi-ai.github.io" target="_blank" rel="noopener">source on GitHub</a> · Last updated {{ now.Format "January 2006" }}</footer>
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement, b = document.getElementById("theme");
+  if (!b) return;
+  b.addEventListener("click", function () {
+    var now = root.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    var next = now === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+})();
+(function () {
+  var rail = document.querySelector(".rail"); if (!rail) return;
+  var links = [].slice.call(rail.querySelectorAll("a")), current = -2, ticking = false;
+  var heads = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); });
+  function update() {
+    var line = rail.getBoundingClientRect().bottom + 24, idx = -1;
+    heads.forEach(function (h, i) { if (h && h.getBoundingClientRect().top <= line) idx = i; });
+    if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = links.length - 1;
+    if (idx === current) return;
+    current = idx;
+    links.forEach(function (a, i) { a.classList.toggle("active", i === idx); if (i === idx) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+    if (idx >= 0) { var nav = links[idx].parentNode; nav.scrollLeft = links[idx].offsetLeft - nav.clientWidth / 2 + links[idx].offsetWidth / 2; }
+  }
+  addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; update(); }); } }, { passive: true });
+  addEventListener("resize", update);
+  update();
+})();
+</script>
+</body>
+</html>

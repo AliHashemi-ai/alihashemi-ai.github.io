@@ -12,14 +12,16 @@ Visit `http://localhost:1313/`.
 
 ## Structure
 
-- `content/` — page front matter (Home, Publications, CV, Contact)
+- A single scrolling page (`layouts/index.html`), built from the design in
+  `site-template.html` (kept at the repo root as the design reference — see the
+  comment at its top for the rules).
 - `data/` — structured content: `experience.yaml`, `education.yaml`, `awards.yaml`,
-  `skills.yaml`, `talks.yaml`, `news.yaml`, `publications.yaml`. Edit these to update
-  the site — no template changes needed for routine content updates.
-- `layouts/` — custom minimal theme (no external theme dependency)
-- `static/files/Ali_Hashemi_CV.pdf` — downloadable CV, linked from the CV page
-- `static/images/` — replace the placeholder monogram avatar by adding a photo here
-  and updating `layouts/index.html` to use an `<img>` instead of the `.avatar` initials
+  `news.yaml`, `publications.yaml`, `projects.yaml`, `talks.yaml`, `skills.yaml`.
+  Edit these to update the site — no template changes needed for routine content
+  updates.
+- `static/css/site.css` — the template's stylesheet, copied in unchanged; only the
+  two color-token blocks at the top should ever change.
+- `static/files/Ali_Hashemi_CV.pdf` — downloadable CV, linked from the hero.
 
 ## Deployment
 
