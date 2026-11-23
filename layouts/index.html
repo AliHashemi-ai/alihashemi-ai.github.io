@@ -1,18 +1,20 @@
 {{ define "main" }}
 
-<p class="eyebrow">About</p>
-<p class="bio">
-  Ali builds and ships efficient large language models — from research prototypes to production systems.
-  As Principal LLM Researcher at <strong>Multiverse Computing</strong>, he works on compressing and optimizing
-  LLMs to cut inference cost without sacrificing accuracy. Previously at <strong>BIFOLD</strong> and TU Berlin,
-  he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and
-  vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine
-  Learning. His work spans distillation, PEFT, sparsity, and generative modeling, backed by 10+ publications
-  at venues including NeurIPS and IEEE&nbsp;TMI.
-</p>
+<div data-sc-in>
+  <p class="eyebrow">About</p>
+  <p class="bio">
+    Ali builds and ships efficient large language models — from research prototypes to production systems.
+    As Principal LLM Researcher at <strong>Multiverse Computing</strong>, he works on compressing and optimizing
+    LLMs to cut inference cost without sacrificing accuracy. Previously at <strong>BIFOLD</strong> and TU Berlin,
+    he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and
+    vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine
+    Learning. His work spans distillation, PEFT, sparsity, and generative modeling, backed by 10+ publications
+    at venues including NeurIPS and IEEE&nbsp;TMI.
+  </p>
+</div>
 
 <p class="eyebrow">Core Stack</p>
-<div class="interest-list stack-list">
+<div class="interest-list stack-list" data-sc-in data-sc-stagger="35">
   {{ range (slice "Python" "PyTorch" "vLLM / TensorRT" "Hugging Face" "LangChain" "Docker & Kubernetes" "AWS / GCP" "CI/CD") }}
   <span class="chip">{{ . }}</span>
   {{ end }}

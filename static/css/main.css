@@ -14,15 +14,20 @@
   --accent: #1d4e6b;
   --accent-strong: #143a51;
   --accent-soft: #e7eff3;
+  --accent2: #b85c2e;
+  --accent2-strong: #96491f;
+  --accent2-soft: #f7e8dc;
   --chip-bg: #eef1f3;
   --chip-text: #3a3f46;
   --shadow: 0 1px 2px rgba(20, 24, 30, 0.04), 0 4px 16px rgba(20, 24, 30, 0.04);
   --max-width: 860px;
   --max-width-wide: 1160px;
   --sidebar-width: 264px;
-  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", P052, serif;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: "Fraunces", Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio", P052, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --sc-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --avatar-opacity: 0.2;
+  --dot-opacity: 7%;
 }
 
 [data-theme="dark"] {
@@ -34,9 +39,14 @@
   --accent: #7fb8da;
   --accent-strong: #a9d3ec;
   --accent-soft: #1a2b34;
+  --accent2: #e3996b;
+  --accent2-strong: #f0b790;
+  --accent2-soft: #352720;
   --chip-bg: #1c2027;
   --chip-text: #c4c9d1;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+  --avatar-opacity: 0.32;
+  --dot-opacity: 9%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,9 +59,14 @@
     --accent: #7fb8da;
     --accent-strong: #a9d3ec;
     --accent-soft: #1a2b34;
+    --accent2: #e3996b;
+    --accent2-strong: #f0b790;
+    --accent2-soft: #352720;
     --chip-bg: #1c2027;
     --chip-text: #c4c9d1;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+    --avatar-opacity: 0.32;
+    --dot-opacity: 9%;
   }
 }
 
@@ -61,7 +76,15 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(900px 480px at 6% -10%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+    radial-gradient(800px 440px at 102% -4%, color-mix(in srgb, var(--accent2) 9%, transparent), transparent 62%),
+    radial-gradient(circle, color-mix(in srgb, var(--text) var(--dot-opacity), transparent) 1px, transparent 1.6px);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: 100% 640px, 100% 640px, 24px 24px;
+  background-position: 0 0, 0 0, 0 0;
+  background-attachment: fixed, fixed, fixed;
   color: var(--text);
   font-family: var(--sans);
   font-size: 17px;
@@ -81,8 +104,10 @@ a:hover { border-bottom-color: currentColor; }
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
+  font-optical-sizing: auto;
   font-weight: 600;
-  line-height: 1.25;
+  letter-spacing: -0.012em;
+  line-height: 1.22;
   color: var(--text);
   margin: 0 0 0.5em;
 }
@@ -302,8 +327,8 @@ main { padding: 3rem 0 5rem; }
   flex: none;
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--accent);
-  background: var(--accent-soft);
+  color: var(--accent2-strong);
+  background: var(--accent2-soft);
   border-radius: 999px;
   padding: 0.15rem 0.55rem;
   white-space: nowrap;
@@ -322,13 +347,49 @@ main { padding: 3rem 0 5rem; }
   position: sticky;
   top: 88px;
   text-align: center;
+  isolation: isolate;
+}
+
+.sidebar::before {
+  content: "";
+  position: absolute;
+  inset: -1.4rem -1.1rem;
+  border-radius: 20px;
+  background: radial-gradient(
+    220px 220px at calc(var(--sc-mx, 0.5) * 100%) calc(var(--sc-my, 0.25) * 100%),
+    color-mix(in srgb, var(--accent) 16%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+.sidebar:hover::before { opacity: 1; }
+
+.avatar-frame {
+  position: relative;
+  width: 176px;
+  margin: 0 auto 1.2rem;
+  perspective: 700px;
+}
+.avatar-backdrop {
+  position: absolute;
+  inset: -12px -18px -18px -12px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+  opacity: var(--avatar-opacity);
+  transform: rotate(-7deg);
+  z-index: 0;
 }
 
 .sidebar-avatar {
-  width: 168px;
-  height: 168px;
-  margin: 0 auto 1.1rem;
-  border-radius: 14px;
+  position: relative;
+  z-index: 1;
+  width: 176px;
+  height: 176px;
+  margin: 0;
+  border-radius: 16px;
   display: block;
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -336,7 +397,9 @@ main { padding: 3rem 0 5rem; }
 }
 
 .sidebar-name {
-  font-size: 1.55rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.015em;
   margin-bottom: 0.2em;
 }
 .sidebar-role {
@@ -401,6 +464,7 @@ main { padding: 3rem 0 5rem; }
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--text);
+  font-variant-numeric: tabular-nums;
 }
 .stat-label {
   font-size: 0.72rem;
@@ -508,7 +572,7 @@ main { padding: 3rem 0 5rem; }
 }
 .pub-item.type-preprint .pub-badge { color: var(--text-muted); background: var(--chip-bg); }
 .pub-title { font-weight: 600; margin-bottom: 0.2rem; }
-.pub-star { color: var(--accent); font-size: 0.85em; }
+.pub-star { color: var(--accent2); font-size: 0.85em; }
 .pub-authors { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0.15rem; }
 .pub-authors strong { color: var(--text); }
 .pub-venue { color: var(--text-muted); font-size: 0.88rem; font-style: italic; }
@@ -554,8 +618,8 @@ main { padding: 3rem 0 5rem; }
 .entry-org { color: var(--accent); font-weight: 600; font-size: 0.95rem; }
 .entry-meta { color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
 .entry-current {
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: var(--accent2-soft);
+  color: var(--accent2-strong);
   font-size: 0.7rem;
   font-weight: 700;
   padding: 0.12rem 0.5rem;
@@ -625,16 +689,16 @@ main { padding: 3rem 0 5rem; }
 
 /* ---------- ScrollCraft: minimal scroll-reveal + depth ----------
    Only the handful of rules the engine needs for the data-sc-in,
-   data-sc-stagger, data-sc-parallax and data-sc-tilt attributes we
-   use on this page. See static/js/scrollcraft.js for the runtime. */
+   data-sc-stagger, data-sc-tilt, data-sc-spotlight and data-sc-count
+   attributes we use on this page (all of which run standalone, outside
+   the engine's pinned-act/cue system). See static/js/scrollcraft.js. */
 [data-sc-in], [data-sc-stagger] > * {
   opacity: 0;
   transform: translate3d(0, 14px, 0);
   transition: opacity 620ms var(--sc-ease-out), transform 620ms var(--sc-ease-out);
 }
 [data-sc-in].sc-in, [data-sc-stagger] > .sc-in { opacity: 1; transform: none; }
-[data-sc-parallax] { will-change: transform; }
-[data-sc-tilt] { transform-style: preserve-3d; will-change: transform; }
+[data-sc-tilt] { transform-style: preserve-3d; will-change: transform; transition: transform 0.2s var(--sc-ease-out); }
 @media (prefers-reduced-motion: reduce) {
   [data-sc-in], [data-sc-stagger] > * { transform: none; }
 }
