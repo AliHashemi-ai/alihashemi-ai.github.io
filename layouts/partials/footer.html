@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="container">
+    <div>© {{ now.Format "2006" }} {{ .Site.Params.name }}</div>
+  </div>
+</footer>
+<script src="{{ "js/main.js" | relURL }}"></script>
+<script src="{{ "js/scrollcraft.js" | relURL }}"></script>
+<script>if (window.ScrollCraft) { ScrollCraft.mount(document.body); }</script>

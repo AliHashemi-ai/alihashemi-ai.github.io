@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h2 class="page-title">{{ .Title }}</h2>
+<p class="page-lede">Applied and production work spanning LLM compression, efficient inference, and generative AI systems — from research prototype to shipped system.</p>
+
+<div class="project-grid">
+  {{ range .Site.Data.projects }}
+  {{ partial "project-card.html" . }}
+  {{ end }}
+</div>
+
+{{ end }}

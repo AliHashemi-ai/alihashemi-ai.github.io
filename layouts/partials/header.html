@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <a class="site-brand" href="{{ "/" | relURL }}">{{ .Site.Params.name }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">{{ partial "icon.html" "menu" }}</button>
+    <nav class="site-nav">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relURL }}"{{ if eq $.RelPermalink (.URL | relURL) }} class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">{{ partial "icon.html" "sun" }}</span>
+        <span class="icon-moon">{{ partial "icon.html" "moon" }}</span>
+      </button>
+    </nav>
+  </div>
+</header>
