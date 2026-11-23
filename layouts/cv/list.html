@@ -1,7 +1,9 @@
 {{ define "main" }}
 
-<h2 class="page-title">Curriculum Vitae</h2>
-<p class="page-lede">Full experience, education, and publication record. For a printable copy, download the PDF below.</p>
+<div data-sc-in>
+  <h2 class="page-title">Curriculum Vitae</h2>
+  <p class="page-lede">Full experience, education, and publication record. For a printable copy, download the PDF below.</p>
+</div>
 
 <div class="cv-actions">
   {{ with .Site.Params.cvFile }}<a class="btn" href="{{ . | relURL }}" target="_blank">{{ partial "icon.html" "download" }} Download CV (PDF)</a>{{ end }}
@@ -45,14 +47,14 @@
 <h2>Honors &amp; Awards</h2>
 <ul class="award-list">
   {{ range .Site.Data.awards }}
-  <li><span class="award-year">{{ .year }}</span><span>{{ .text }}</span></li>
+  <li data-sc-in><span class="award-year">{{ .year }}</span><span>{{ .text }}</span></li>
   {{ end }}
 </ul>
 
 <h2>Selected Talks</h2>
 <ul class="talk-list">
   {{ range .Site.Data.talks }}
-  <li>
+  <li data-sc-in>
     <span class="talk-date">{{ .date }}</span>
     <span>
       <div>{{ .title }}</div>

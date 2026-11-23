@@ -1,9 +1,15 @@
-<aside class="sidebar">
-  <img class="sidebar-avatar" src="{{ "images/profile.jpg" | relURL }}" alt="Portrait of {{ .Site.Params.name }}" width="168" height="168" data-sc-in data-sc-parallax="-0.08">
-  <h1 class="sidebar-name">{{ .Site.Params.name }}</h1>
-  <div class="sidebar-role">{{ .Site.Params.role }}</div>
-  <div class="sidebar-org">{{ .Site.Params.affiliation }}</div>
-  <div class="sidebar-location">{{ partial "icon.html" "location" }} {{ .Site.Params.location }}</div>
+<aside class="sidebar" data-sc-spotlight>
+  <div class="avatar-frame" data-sc-in>
+    <span class="avatar-backdrop" aria-hidden="true"></span>
+    <img class="sidebar-avatar" src="{{ "images/profile.jpg" | relURL }}" alt="Portrait of {{ .Site.Params.name }}" width="176" height="176" data-sc-tilt="6">
+  </div>
+
+  <div class="sidebar-id" data-sc-in data-sc-stagger="90">
+    <h1 class="sidebar-name">{{ .Site.Params.name }}</h1>
+    <div class="sidebar-role">{{ .Site.Params.role }}</div>
+    <div class="sidebar-org">{{ .Site.Params.affiliation }}</div>
+    <div class="sidebar-location">{{ partial "icon.html" "location" }} {{ .Site.Params.location }}</div>
+  </div>
 
   <div class="sidebar-social">
     {{ with .Site.Params.email }}<a href="mailto:{{ . }}" aria-label="Email" title="Email">{{ partial "icon.html" "email" }}</a>{{ end }}
@@ -15,13 +21,13 @@
 
   {{ with .Site.Params.cvFile }}<a class="btn sidebar-cv" href="{{ . | relURL }}" target="_blank">{{ partial "icon.html" "download" }} Download CV</a>{{ end }}
 
-  <div class="sidebar-stats">
+  <div class="sidebar-stats" data-sc-in>
     <div class="stat">
-      <div class="stat-num">{{ len .Site.Data.publications }}</div>
+      <div class="stat-num" data-sc-count="0 {{ len .Site.Data.publications }}">{{ len .Site.Data.publications }}</div>
       <div class="stat-label">Publications</div>
     </div>
     <div class="stat">
-      <div class="stat-num">{{ len .Site.Data.talks }}</div>
+      <div class="stat-num" data-sc-count="0 {{ len .Site.Data.talks }}">{{ len .Site.Data.talks }}</div>
       <div class="stat-label">Talks</div>
     </div>
     <div class="stat">
