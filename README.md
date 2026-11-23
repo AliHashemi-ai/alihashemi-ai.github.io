@@ -12,16 +12,19 @@ Visit `http://localhost:1313/`.
 
 ## Structure
 
-- A single scrolling page (`layouts/index.html`), built from the design in
-  `site-template.html` (kept at the repo root as the design reference — see the
-  comment at its top for the rules).
+- `content/` — page front matter (Home, Publications, CV, Contact, Projects)
 - `data/` — structured content: `experience.yaml`, `education.yaml`, `awards.yaml`,
-  `news.yaml`, `publications.yaml`, `projects.yaml`, `talks.yaml`, `skills.yaml`.
+  `skills.yaml`, `talks.yaml`, `news.yaml`, `publications.yaml`, `projects.yaml`.
   Edit these to update the site — no template changes needed for routine content
   updates.
-- `static/css/site.css` — the template's stylesheet, copied in unchanged; only the
-  two color-token blocks at the top should ever change.
-- `static/files/Ali_Hashemi_CV.pdf` — downloadable CV, linked from the hero.
+- `layouts/` — custom sidebar-profile theme (no external theme dependency)
+- `static/files/Ali_Hashemi_CV.pdf` — downloadable CV, linked from the sidebar
+- `static/images/profile.jpg` — the sidebar portrait
+- `static/js/scrollcraft.js` — a small vanilla-JS scroll engine (MIT, from
+  [nateherkai/scroll-craft](https://github.com/nateherkai/scroll-craft)), used only
+  for its `data-sc-in` (fade-up on scroll entry) and `data-sc-tilt` (pointer tilt
+  on project cards) attributes. See the comment block at the top of the file for
+  the full attribute reference if you want to use more of it.
 
 ## Deployment
 
