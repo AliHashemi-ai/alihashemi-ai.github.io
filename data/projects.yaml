@@ -2,15 +2,15 @@
   org: "Multiverse Computing"
   period: "2025 – Present"
   metric: "Trustworthy scores for release decisions"
-  description: "Lead a cross-department programme that puts LLM evaluation on one shared platform, so release decisions rest on trustworthy scores: independent benchmark reproduction, catching scoring errors, and automatic checkpoint scoring for the training team."
+  description: "Lead a cross-department programme that puts LLM evaluation on one shared platform, so release decisions rest on the same evidence: benchmark design, regression testing, release gating and automatic checkpoint scoring for the training team."
   tags: ["LLM Evaluation", "lm-eval", "Reproducibility"]
   image: "images/projects/llm-eval-platform.webp"
 
 - title: "LLM Compression & Distillation"
   org: "Multiverse Computing"
   period: "2025 – Present"
-  metric: "Block removal, distillation, 4-bit healing"
-  description: "Post-training methods that recover quality after compression — knowledge distillation, including SubDistill and top-K logit distillation, and quantization-aware healing — described in three 2026 preprints."
+  metric: "Smaller models, recovered accuracy"
+  description: "Post training methods that recover quality after compression, combining knowledge distillation and quantization-aware healing to ship smaller production LLMs."
   tags: ["LLM Compression", "Distillation", "Megatron"]
   image: "images/projects/llm-compression.webp"
   links:
@@ -21,7 +21,7 @@
   org: "BIFOLD"
   period: "2022 – 2025"
   metric: "80% smaller · 1% accuracy loss"
-  description: "Designed and shipped an interpretable subspace-based distillation method that compresses 600M+ parameter foundation models from scratch, taking it from research prototype to a reproducible production pipeline."
+  description: "Designed and shipped an interpretable distillation method that takes large foundation models from research prototype to a reproducible production pipeline, cutting size by 80% with only 1% accuracy loss."
   tags: ["PyTorch", "Distillation", "Sparse Autoencoders"]
   image: "images/projects/foundation-distill.webp"
   links:
@@ -34,7 +34,7 @@
   org: "BIFOLD"
   period: "2023 – 2025"
   metric: "60% faster · 40% less memory"
-  description: "Applied the distillation approach to gigapixel-scale histopathology models across 100M image patches, cutting inference latency and memory use with minimal accuracy impact."
+  description: "Applied the same distillation approach to gigapixel-scale histopathology models, cutting inference latency and memory use with minimal accuracy impact."
   tags: ["Computer Vision", "Efficient Inference", "Distributed Training"]
   image: "images/projects/histopathology.webp"
 
@@ -42,7 +42,7 @@
   org: "BIFOLD"
   period: "2024 – 2025"
   metric: "+15% reporting efficiency"
-  description: "Built and shipped a production retrieval-augmented generation pipeline for clinical reporting — CLIP, BioGPT, and PEFT adapters served at low latency with vLLM, TensorRT, and ONNX."
+  description: "Built and shipped a production retrieval-augmented generation pipeline for clinical reporting, serving multimodal models at low latency and improving reporting efficiency by 15%."
   tags: ["RAG", "vLLM", "TensorRT", "PEFT"]
   image: "images/projects/clinical-rag.webp"
 
@@ -50,7 +50,7 @@
   org: "QAI Labs"
   period: "2021 – 2022"
   metric: "Community benchmark"
-  description: "Directed development of an open-source brain-imaging software package — GitHub Actions CI/CD, Docker, and full test coverage — now widely adopted as a benchmark in the neuroimaging community."
+  description: "Directed development of an open-source brain-imaging software package with a full CI/CD pipeline, now widely adopted as a benchmark in the neuroimaging community."
   tags: ["Open Source", "CI/CD", "Docker"]
   image: "images/projects/neuroimaging-toolkit.webp"
   links:
