@@ -1,0 +1,1728 @@
+[
+  {
+    "id": "person:ali-hashemi",
+    "type": "Person",
+    "name": "Ali Hashemi",
+    "properties": {
+      "role_title": "Senior LLM Researcher · Tech Lead, Model Evaluation",
+      "affiliation": "LLM Research Staff, Multiverse Computing",
+      "location": "Berlin, Germany",
+      "email": "alihashemi.ee@gmail.com",
+      "links": {
+        "website": "https://alihashemi-ai.github.io/",
+        "github": "https://github.com/alihashemi-ai",
+        "linkedin": "https://www.linkedin.com/in/alihashemi-ai/",
+        "x": "https://x.com/alihashemi_ai",
+        "scholar": "https://scholar.google.com/citations?user=rCcFTFgAAAAJ",
+        "orcid": "https://orcid.org/0000-0003-4957-4630",
+        "huggingface": "https://huggingface.co/ali-hashemi"
+      }
+    },
+    "source": "hugo.toml, content/_index.md"
+  },
+  {
+    "id": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "type": "Role",
+    "name": "Senior LLM Researcher · Tech Lead, Model Evaluation",
+    "properties": {
+      "org": "Multiverse Computing (LLM Research Staff)",
+      "location": "Berlin, Germany",
+      "start": "Nov 2025",
+      "end": "Present",
+      "current": true
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:multiverse-computing-llm-research-staff",
+    "type": "Organization",
+    "name": "Multiverse Computing (LLM Research Staff)",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-0",
+    "type": "Achievement",
+    "name": "Lead LLM evaluation across Research, Product, Services and MLOps, putting the co…",
+    "properties": {
+      "full_text": "Lead LLM evaluation across Research, Product, Services and MLOps, putting the company on one shared platform so release decisions rest on the same evidence; independently reproduced a published 30B benchmark and caught scoring errors that had been treated as real model regressions."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-1",
+    "type": "Achievement",
+    "name": "Built AI tooling the training team uses: automatic checkpoint scoring, a reprodu…",
+    "properties": {
+      "full_text": "Built AI tooling the training team uses: automatic checkpoint scoring, a reproducible evaluation platform, and an audited multi-agent coding workflow in which one model plans, others implement and review, and an independent model audits before changes are applied."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-2",
+    "type": "Achievement",
+    "name": "Developed LLM post-training methods that recover quality after compression, incl…",
+    "properties": {
+      "full_text": "Developed LLM post-training methods that recover quality after compression, including knowledge distillation (SubDistill and top-K logit distillation) and quantization-aware healing of compressed Transformer, Mamba and mixture-of-experts models (three 2026 preprints)."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:llm-evaluation",
+    "type": "Skill",
+    "name": "LLM Evaluation",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:ai-tooling",
+    "type": "Skill",
+    "name": "AI Tooling",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:post-training",
+    "type": "Skill",
+    "name": "Post-training",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:distillation",
+    "type": "Skill",
+    "name": "Distillation",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "type": "Role",
+    "name": "Machine Learning Research Scientist",
+    "properties": {
+      "org": "BIFOLD (Berlin Institute for the Foundations of Learning and Data)",
+      "location": "Berlin, Germany",
+      "start": "Oct 2022",
+      "end": "Nov 2025",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:bifold-berlin-institute-for-the-foundations-of-learning-and-data",
+    "type": "Organization",
+    "name": "BIFOLD (Berlin Institute for the Foundations of Learning and Data)",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-0",
+    "type": "Achievement",
+    "name": "Developed an interpretable subspace-based distillation method to build compresse…",
+    "properties": {
+      "full_text": "Developed an interpretable subspace-based distillation method to build compressed foundation models from scratch, using 600M+ parameter teacher models, achieving 80% size reduction with only 1% accuracy loss."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-1",
+    "type": "Achievement",
+    "name": "Built and optimized histopathology foundation models using the developed distill…",
+    "properties": {
+      "full_text": "Built and optimized histopathology foundation models using the developed distillation approach on 100M image patches from gigapixel-scale slides, achieving ≁60% speed, ↓40% memory, with minimal (1–2%) accuracy loss."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-2",
+    "type": "Achievement",
+    "name": "Built a multimodal RAG system for clinical reporting using contrastive learning …",
+    "properties": {
+      "full_text": "Built a multimodal RAG system for clinical reporting using contrastive learning on histopathology images and reports, integrating CLIP, Hugging Face Transformers, PEFT adapters, and domain-specific models (e.g., BioGPT), served at low latency with vLLM/TensorRT/ONNX — improving reporting efficiency by 15%."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:foundation-models",
+    "type": "Skill",
+    "name": "Foundation Models",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:efficient-inference",
+    "type": "Skill",
+    "name": "Efficient Inference",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:distributed-training",
+    "type": "Skill",
+    "name": "Distributed Training",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:sae",
+    "type": "Skill",
+    "name": "SAE",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:peft",
+    "type": "Skill",
+    "name": "PEFT",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:sparsity",
+    "type": "Skill",
+    "name": "Sparsity",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:transformers",
+    "type": "Skill",
+    "name": "Transformers",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "type": "Role",
+    "name": "Post-Doctoral Research Fellow",
+    "properties": {
+      "org": "Machine Learning Group, Technische Universität Berlin",
+      "location": "Berlin, Germany",
+      "start": "Oct 2022",
+      "end": "Nov 2025",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:machine-learning-group-technische-universit-t-berlin",
+    "type": "Organization",
+    "name": "Machine Learning Group, Technische Universität Berlin",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-0",
+    "type": "Achievement",
+    "name": "Designed conditional diffusion models for biomedical inverse problems and accele…",
+    "properties": {
+      "full_text": "Designed conditional diffusion models for biomedical inverse problems and accelerated inference with distilled consistency models, enabling near single-step sampling without quality degradation."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-1",
+    "type": "Achievement",
+    "name": "Developed a hybrid physics-informed neural network that learns structured spatio…",
+    "properties": {
+      "full_text": "Developed a hybrid physics-informed neural network that learns structured spatiotemporal representations from brain signals, improving 3D localization accuracy by 12% across 500K+ time-series samples."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-2",
+    "type": "Achievement",
+    "name": "Organized and taught courses with 200+ participants over two years. Supervised 5…",
+    "properties": {
+      "full_text": "Organized and taught courses with 200+ participants over two years. Supervised 5+ M.Sc. and Ph.D. students."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:diffusion-models",
+    "type": "Skill",
+    "name": "Diffusion Models",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:consistency-models",
+    "type": "Skill",
+    "name": "Consistency Models",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:physics-informed-ml",
+    "type": "Skill",
+    "name": "Physics-Informed ML",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:teaching",
+    "type": "Skill",
+    "name": "Teaching",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "type": "Role",
+    "name": "Applied Scientist",
+    "properties": {
+      "org": "Quality in Artificial Intelligence (QAI) Labs",
+      "location": "Berlin, Germany",
+      "start": "Jun 2021",
+      "end": "Sep 2022",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:quality-in-artificial-intelligence-qai-labs",
+    "type": "Organization",
+    "name": "Quality in Artificial Intelligence (QAI) Labs",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-0",
+    "type": "Achievement",
+    "name": "Developed a Riemannian geometry-based optimization algorithm, improving neuroima…",
+    "properties": {
+      "full_text": "Developed a Riemannian geometry-based optimization algorithm, improving neuroimaging localization accuracy by 9% compared to benchmarks; presented at NeurIPS and published in IEEE TMI (Impact Factor > 10)."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-1",
+    "type": "Achievement",
+    "name": "Directed development of an open-source brain inverse solutions software package …",
+    "properties": {
+      "full_text": "Directed development of an open-source brain inverse solutions software package — GitHub Actions CI/CD pipelines, Dockerization, unit testing, and collaborative Git workflows — widely adopted as a benchmark in the neuroimaging community."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-2",
+    "type": "Achievement",
+    "name": "Led interdisciplinary, cross-functional projects with PIs from UCSF and Inria, d…",
+    "properties": {
+      "full_text": "Led interdisciplinary, cross-functional projects with PIs from UCSF and Inria, delivering results on time across international teams."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:optimization",
+    "type": "Skill",
+    "name": "Optimization",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:open-source",
+    "type": "Skill",
+    "name": "Open Source",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:ci-cd",
+    "type": "Skill",
+    "name": "CI/CD",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:neuroimaging",
+    "type": "Skill",
+    "name": "Neuroimaging",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "type": "Role",
+    "name": "Applied Scientist",
+    "properties": {
+      "org": "Brain and Data Science Lab, Charité",
+      "location": "Berlin, Germany",
+      "start": "Feb 2019",
+      "end": "May 2021",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:brain-and-data-science-lab-charit",
+    "type": "Organization",
+    "name": "Brain and Data Science Lab, Charité",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:brain-and-data-science-lab-charit-applied-scientist-0",
+    "type": "Achievement",
+    "name": "Built hierarchical Bayesian models with sparse priors for latent representation …",
+    "properties": {
+      "full_text": "Built hierarchical Bayesian models with sparse priors for latent representation learning, enhancing robustness to noise by 20% in clinical brain signal data."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:brain-and-data-science-lab-charit-applied-scientist-1",
+    "type": "Achievement",
+    "name": "Reduced pipeline training time by 30% by engineering reproducible, distributed t…",
+    "properties": {
+      "full_text": "Reduced pipeline training time by 30% by engineering reproducible, distributed training workflows using PyTorch, SLURM, Hydra-Zen, and Submitit, with W&B monitoring for performance tracking in clinical studies."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:bayesian-modeling",
+    "type": "Skill",
+    "name": "Bayesian Modeling",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:pytorch",
+    "type": "Skill",
+    "name": "PyTorch",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "type": "Role",
+    "name": "Doctoral Research Fellow",
+    "properties": {
+      "org": "Machine Learning Group, Technische Universität Berlin",
+      "location": "Berlin, Germany",
+      "start": "Feb 2016",
+      "end": "Sep 2022",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow-0",
+    "type": "Achievement",
+    "name": "Developed large-scale optimization algorithms for high-dimensional settings usin…",
+    "properties": {
+      "full_text": "Developed large-scale optimization algorithms for high-dimensional settings using sparse Bayesian statistics and machine learning."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow-1",
+    "type": "Achievement",
+    "name": "Published 10+ papers in prestigious journals and conferences, and presented rese…",
+    "properties": {
+      "full_text": "Published 10+ papers in prestigious journals and conferences, and presented research at international conferences and workshops including NeurIPS and Med-NeurIPS."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:bayesian-statistics",
+    "type": "Skill",
+    "name": "Bayesian Statistics",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:research",
+    "type": "Skill",
+    "name": "Research",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "type": "Role",
+    "name": "Applied Scientist",
+    "properties": {
+      "org": "Singapore University of Technology and Design",
+      "location": "Singapore",
+      "start": "Mar 2015",
+      "end": "Jan 2016",
+      "current": false
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "org:singapore-university-of-technology-and-design",
+    "type": "Organization",
+    "name": "Singapore University of Technology and Design",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:singapore-university-of-technology-and-design-applied-scientist-0",
+    "type": "Achievement",
+    "name": "Designed SOTA thermal field monitoring techniques by integrating PDEs into a com…",
+    "properties": {
+      "full_text": "Designed SOTA thermal field monitoring techniques by integrating PDEs into a compressed sensing algorithm, achieving a 10 dB improvement in reconstruction accuracy with 90% less computational complexity."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "achievement:singapore-university-of-technology-and-design-applied-scientist-1",
+    "type": "Achievement",
+    "name": "Developed a dictionary learning approach for brain classification, achieving 80%…",
+    "properties": {
+      "full_text": "Developed a dictionary learning approach for brain classification, achieving 80% compression with no loss in accuracy."
+    },
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:compressed-sensing",
+    "type": "Skill",
+    "name": "Compressed Sensing",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:signal-processing",
+    "type": "Skill",
+    "name": "Signal Processing",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "skill:dictionary-learning",
+    "type": "Skill",
+    "name": "Dictionary Learning",
+    "properties": {},
+    "source": "data/experience.yaml, data/skills.yaml"
+  },
+  {
+    "id": "education:technische-universit-t-berlin-ph-d-in-computer-science-and-machine-learning",
+    "type": "Education",
+    "name": "Ph.D. in Computer Science and Machine Learning",
+    "properties": {
+      "org": "Technische Universität Berlin",
+      "location": "Berlin, Germany",
+      "start": "2016",
+      "end": "2022",
+      "details": [
+        "Thesis: \"Advances in Hierarchical Bayesian Learning with Applications to Neuroimaging\"",
+        "Supervisors: Prof. Dr. Klaus-Robert Müller and Prof. Dr. Stefan Haufe",
+        "Grade: (Distinction)"
+      ]
+    },
+    "source": "data/education.yaml"
+  },
+  {
+    "id": "org:technische-universit-t-berlin",
+    "type": "Organization",
+    "name": "Technische Universität Berlin",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "education:sharif-university-of-technology-m-sc-in-electrical-computer-engineering",
+    "type": "Education",
+    "name": "M.Sc. in Electrical & Computer Engineering",
+    "properties": {
+      "org": "Sharif University of Technology",
+      "location": "Tehran, Iran",
+      "start": "",
+      "end": "",
+      "details": [
+        "GPA: 4.0 / 4.0 (best possible grade)"
+      ]
+    },
+    "source": "data/education.yaml"
+  },
+  {
+    "id": "org:sharif-university-of-technology",
+    "type": "Organization",
+    "name": "Sharif University of Technology",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "award:2018-0",
+    "type": "Award",
+    "name": "Awarded a 4-year scholarship, Machine Learning Group, Technische Universität Berlin, Germany.",
+    "properties": {
+      "year": "2018"
+    },
+    "source": "data/awards.yaml"
+  },
+  {
+    "id": "award:2016-1",
+    "type": "Award",
+    "name": "Awarded a 3-year full fellowship, Berlin International Graduate School in Model and Simulation-based Research (BIMoS), Technische Universität Berlin, Germany.",
+    "properties": {
+      "year": "2016"
+    },
+    "source": "data/awards.yaml"
+  },
+  {
+    "id": "award:2015-2",
+    "type": "Award",
+    "name": "Awarded a 1-year research scholarship, Singapore University of Technology and Design, Singapore.",
+    "properties": {
+      "year": "2015"
+    },
+    "source": "data/awards.yaml"
+  },
+  {
+    "id": "award:2011-3",
+    "type": "Award",
+    "name": "Ranked 1st among 200+ electrical and computer engineering undergraduate students.",
+    "properties": {
+      "year": "2011"
+    },
+    "source": "data/awards.yaml"
+  },
+  {
+    "id": "award:2010-4",
+    "type": "Award",
+    "name": "Ranked 10th out of 30,000, National Electrical Engineering Olympiad for Undergraduate Students.",
+    "properties": {
+      "year": "2010"
+    },
+    "source": "data/awards.yaml"
+  },
+  {
+    "id": "talk:aug-2022-0",
+    "type": "Talk",
+    "name": "Hierarchical Bayesian Learning for Noise Estimation in Electromagnetic Brain Source Imaging",
+    "properties": {
+      "date": "Aug 2022",
+      "venue": "22nd International Conference on Biomagnetism (BIOMAG), invited talk",
+      "location": "University of Birmingham, UK"
+    },
+    "source": "data/talks.yaml"
+  },
+  {
+    "id": "talk:jul-2022-1",
+    "type": "Talk",
+    "name": "Brain Source Imaging: A Benchmarking Approach of Sparse Inverse Problems",
+    "properties": {
+      "date": "Jul 2022",
+      "venue": "AI for Signal and Image Processing (AI4SIP), invited talk",
+      "location": "Paris Saclay University, France"
+    },
+    "source": "data/talks.yaml"
+  },
+  {
+    "id": "talk:dec-2021-2",
+    "type": "Talk",
+    "name": "Efficient Hierarchical Bayesian Inference for Spatio-temporal Regression Models in Neuroimaging",
+    "properties": {
+      "date": "Dec 2021",
+      "venue": "35th Conference on Neural Information Processing Systems (NeurIPS 2021)",
+      "location": "Virtual"
+    },
+    "source": "data/talks.yaml"
+  },
+  {
+    "id": "talk:dec-2021-3",
+    "type": "Talk",
+    "name": "Numerical Optimization for Machine Learning",
+    "properties": {
+      "date": "Dec 2021",
+      "venue": "Metrology for AI in Medicine Lecture Series, invited talk",
+      "location": "PTB, Germany"
+    },
+    "source": "data/talks.yaml"
+  },
+  {
+    "id": "talk:dec-2020-4",
+    "type": "Talk",
+    "name": "Joint Hierarchical Bayesian Learning of Full-structure Noise for Brain Source Imaging",
+    "properties": {
+      "date": "Dec 2020",
+      "venue": "34th Conference on Neural Information Processing Systems (NeurIPS 2020)",
+      "location": "Virtual"
+    },
+    "source": "data/talks.yaml"
+  },
+  {
+    "id": "project:llm-evaluation-platform",
+    "type": "Project",
+    "name": "LLM Evaluation Platform",
+    "properties": {
+      "org": "Multiverse Computing",
+      "period": "2025 – Present",
+      "metric": "Trustworthy scores for release decisions",
+      "description": "Lead a cross-department programme that puts LLM evaluation on one shared platform, so release decisions rest on trustworthy scores: independent benchmark reproduction, catching scoring errors, and automatic checkpoint scoring for the training team.",
+      "image": "images/projects/llm-eval-platform.webp",
+      "links": []
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "org:multiverse-computing",
+    "type": "Organization",
+    "name": "Multiverse Computing",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:lm-eval",
+    "type": "Skill",
+    "name": "lm-eval",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:reproducibility",
+    "type": "Skill",
+    "name": "Reproducibility",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "project:llm-compression-distillation",
+    "type": "Project",
+    "name": "LLM Compression & Distillation",
+    "properties": {
+      "org": "Multiverse Computing",
+      "period": "2025 – Present",
+      "metric": "Block removal, distillation, 4-bit healing",
+      "description": "Post-training methods that recover quality after compression — knowledge distillation, including SubDistill and top-K logit distillation, and quantization-aware healing — described in three 2026 preprints.",
+      "image": "images/projects/llm-compression.webp",
+      "links": [
+        {
+          "label": "Related publications",
+          "url": "/publications/"
+        }
+      ]
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:llm-compression",
+    "type": "Skill",
+    "name": "LLM Compression",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:megatron",
+    "type": "Skill",
+    "name": "Megatron",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "project:foundation-model-distillation",
+    "type": "Project",
+    "name": "Foundation Model Distillation",
+    "properties": {
+      "org": "BIFOLD",
+      "period": "2022 – 2025",
+      "metric": "80% smaller · 1% accuracy loss",
+      "description": "Designed and shipped an interpretable subspace-based distillation method that compresses 600M+ parameter foundation models from scratch, taking it from research prototype to a reproducible production pipeline.",
+      "image": "images/projects/foundation-distill.webp",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2601.05913"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2601.05913"
+        }
+      ]
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "org:bifold",
+    "type": "Organization",
+    "name": "BIFOLD",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:sparse-autoencoders",
+    "type": "Skill",
+    "name": "Sparse Autoencoders",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "project:histopathology-foundation-models",
+    "type": "Project",
+    "name": "Histopathology Foundation Models",
+    "properties": {
+      "org": "BIFOLD",
+      "period": "2023 – 2025",
+      "metric": "60% faster · 40% less memory",
+      "description": "Applied the distillation approach to gigapixel-scale histopathology models across 100M image patches, cutting inference latency and memory use with minimal accuracy impact.",
+      "image": "images/projects/histopathology.webp",
+      "links": []
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:computer-vision",
+    "type": "Skill",
+    "name": "Computer Vision",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "project:multimodal-clinical-rag-system",
+    "type": "Project",
+    "name": "Multimodal Clinical RAG System",
+    "properties": {
+      "org": "BIFOLD",
+      "period": "2024 – 2025",
+      "metric": "+15% reporting efficiency",
+      "description": "Built and shipped a production retrieval-augmented generation pipeline for clinical reporting — CLIP, BioGPT, and PEFT adapters served at low latency with vLLM, TensorRT, and ONNX.",
+      "image": "images/projects/clinical-rag.webp",
+      "links": []
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:rag",
+    "type": "Skill",
+    "name": "RAG",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:vllm",
+    "type": "Skill",
+    "name": "vLLM",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "skill:tensorrt",
+    "type": "Skill",
+    "name": "TensorRT",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "project:open-source-neuroimaging-toolkit",
+    "type": "Project",
+    "name": "Open-Source Neuroimaging Toolkit",
+    "properties": {
+      "org": "QAI Labs",
+      "period": "2021 – 2022",
+      "metric": "Community benchmark",
+      "description": "Directed development of an open-source brain-imaging software package — GitHub Actions CI/CD, Docker, and full test coverage — now widely adopted as a benchmark in the neuroimaging community.",
+      "image": "images/projects/neuroimaging-toolkit.webp",
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/braindatalab/BSI-Zoo"
+        }
+      ]
+    },
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "org:qai-labs",
+    "type": "Organization",
+    "name": "QAI Labs",
+    "properties": {},
+    "source": "data/experience.yaml"
+  },
+  {
+    "id": "skill:docker",
+    "type": "Skill",
+    "name": "Docker",
+    "properties": {},
+    "source": "data/projects.yaml"
+  },
+  {
+    "id": "paper:quantization-aware-healing-a-practical-recipe-for-recovering",
+    "type": "Paper",
+    "name": "Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs",
+    "properties": {
+      "authors": "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús",
+      "venue": "arXiv preprint",
+      "venueShort": "arXiv",
+      "details": "arXiv:2608.20953",
+      "year": 2026,
+      "type": "preprint",
+      "highlight": true,
+      "url": "https://arxiv.org/abs/2608.20953",
+      "image": "images/papers/2608.20953.webp",
+      "takeaway": "A practical recipe for recovering accuracy in 4-bit compressed LLMs.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2608.20953"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2608.20953"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:efficient-knowledge-distillation-for-llms-offline-top-k-logi",
+    "type": "Paper",
+    "name": "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss",
+    "properties": {
+      "authors": "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús",
+      "venue": "arXiv preprint",
+      "venueShort": "arXiv",
+      "details": "arXiv:2608.03796",
+      "year": 2026,
+      "type": "preprint",
+      "highlight": true,
+      "url": "https://arxiv.org/abs/2608.03796",
+      "image": "images/papers/2608.03796.webp",
+      "takeaway": "Speeds up LLM distillation with offline top-K logits and a fused, chunked KL-divergence loss.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2608.03796"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2608.03796"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:llm-compression-by-block-removal-with-constrained-binary-opt",
+    "type": "Paper",
+    "name": "LLM Compression by Block Removal with Constrained Binary Optimization",
+    "properties": {
+      "authors": "D. Jansen, R. Rausch, <strong>A. Hashemi</strong>, D. Montero, R. Orús",
+      "venue": "arXiv preprint",
+      "venueShort": "arXiv",
+      "details": "arXiv:2602.00161",
+      "year": 2026,
+      "type": "preprint",
+      "highlight": false,
+      "url": "https://arxiv.org/abs/2602.00161",
+      "image": "images/papers/2602.00161.webp",
+      "takeaway": "Compresses LLMs by removing redundant blocks, framed as constrained binary optimization.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2602.00161"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2602.00161"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:distilling-lightweight-domain-experts-from-large-ml-models-b",
+    "type": "Paper",
+    "name": "Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces",
+    "properties": {
+      "authors": "P. Chormai, <strong>A. Hashemi</strong>, K.-R. Müller, G. Montavon",
+      "venue": "arXiv preprint",
+      "venueShort": "arXiv",
+      "details": "arXiv:2601.05913",
+      "year": 2026,
+      "type": "preprint",
+      "highlight": true,
+      "url": "https://arxiv.org/abs/2601.05913",
+      "image": "images/papers/2601.05913.webp",
+      "takeaway": "Distills lightweight domain experts from large models by identifying the subspace that matters.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2601.05913"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2601.05913"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:how-forgiving-are-m-eeg-inverse-solutions-to-noise-level-mis",
+    "type": "Paper",
+    "name": "How forgiving are M/EEG inverse solutions to noise level misspecification? An excursion into the BSI-Zoo",
+    "properties": {
+      "authors": "A. Negi, S. Haufe, A. Gramfort, <strong>A. Hashemi</strong>",
+      "venue": "IEEE Transactions on Biomedical Engineering",
+      "venueShort": "IEEE TBME",
+      "details": "",
+      "year": 2026,
+      "type": "journal",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/tbme2026.webp",
+      "takeaway": "Stress-tests M/EEG source-imaging algorithms when the noise level is misestimated.",
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/braindatalab/BSI-Zoo"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:continual-learning-that-resists-overfitting-and-spurious-cor",
+    "type": "Paper",
+    "name": "Continual learning that resists overfitting and spurious correlations through low-rank and sparse adaptation",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon",
+      "venue": "Preparing to submit to ICML",
+      "venueShort": "Preprint · ICML",
+      "details": "",
+      "year": 2026,
+      "type": "preprint",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/icml_inprep.webp",
+      "takeaway": "Combines low-rank and sparse adaptation so continual learning resists overfitting and shortcut learning.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:enhancing-brain-source-reconstruction-by-initializing-3d-neu",
+    "type": "Paper",
+    "name": "Enhancing brain source reconstruction by initializing 3D neural networks with physical inverse solutions",
+    "properties": {
+      "authors": "M. Morik, <strong>A. Hashemi</strong>, K.-R. Müller, S. Haufe, S. Nakajima",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "venueShort": "IEEE TMI",
+      "details": "",
+      "year": 2025,
+      "type": "journal",
+      "highlight": false,
+      "url": "https://arxiv.org/abs/2411.00143",
+      "image": "images/papers/2411.00143.webp",
+      "takeaway": "Initializes 3D neural networks with physics-based solutions to localize brain activity more accurately.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2411.00143"
+        },
+        {
+          "label": "PDF",
+          "url": "https://arxiv.org/pdf/2411.00143"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:structured-noise-champagne-an-empirical-bayesian-algorithm-f",
+    "type": "Paper",
+    "name": "Structured noise champagne: an empirical Bayesian algorithm for electromagnetic brain imaging with structured noise",
+    "properties": {
+      "authors": "S. Ghosh, C. Cai, <strong>A. Hashemi</strong>, Y. Gao, S. Haufe, K. Sekihara, A. Raj, S. S. Nagarajan",
+      "venue": "Frontiers in Human Neuroscience",
+      "venueShort": "Front. Hum. Neurosci.",
+      "details": "Vol. 19, 1386275",
+      "year": 2025,
+      "type": "journal",
+      "highlight": false,
+      "url": "https://doi.org/10.3389/fnhum.2025.1386275",
+      "image": "images/papers/frontiers2025.webp",
+      "takeaway": "An empirical Bayesian algorithm for brain imaging that models structured, not just white, sensor noise.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://doi.org/10.3389/fnhum.2025.1386275"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:joint-learning-of-full-structure-noise-in-hierarchical-bayes",
+    "type": "Paper",
+    "name": "Joint learning of full-structure noise in hierarchical Bayesian regression models",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, C. Cai, Y. Gao, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "venueShort": "IEEE TMI",
+      "details": "Vol. 43(2), pp. 610–624",
+      "year": 2024,
+      "type": "journal",
+      "highlight": false,
+      "url": "https://doi.org/10.1109/TMI.2022.3224085",
+      "image": "images/papers/tmi2024.webp",
+      "takeaway": "Jointly learns the full sensor-noise structure inside a hierarchical Bayesian brain-imaging model.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://doi.org/10.1109/TMI.2022.3224085"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:bayesian-adaptive-beamformer-for-robust-electromagnetic-brai",
+    "type": "Paper",
+    "name": "Bayesian adaptive beamformer for robust electromagnetic brain imaging of correlated sources in high spatial resolution",
+    "properties": {
+      "authors": "C. Cai, Y. Long, S. Ghosh, <strong>A. Hashemi</strong>, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "venueShort": "IEEE TMI",
+      "details": "Vol. 42, pp. 2502–2512",
+      "year": 2023,
+      "type": "journal",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/tmi2023a.webp",
+      "takeaway": "A Bayesian adaptive beamformer for correlated brain sources at high spatial resolution.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:bayesian-algorithms-for-joint-estimation-of-brain-activity-a",
+    "type": "Paper",
+    "name": "Bayesian algorithms for joint estimation of brain activity and noise in electromagnetic imaging",
+    "properties": {
+      "authors": "C. Cai, H. Kang, <strong>A. Hashemi</strong>, D. Chen, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan",
+      "venue": "IEEE Transactions on Medical Imaging",
+      "venueShort": "IEEE TMI",
+      "details": "Vol. 42(3), pp. 762–773",
+      "year": 2023,
+      "type": "journal",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/tmi2023b.webp",
+      "takeaway": "Jointly estimates brain activity and sensor noise for electromagnetic brain imaging.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:empirical-bayesian-localization-of-event-related-time-freque",
+    "type": "Paper",
+    "name": "Empirical Bayesian localization of event-related time-frequency neural activity dynamics",
+    "properties": {
+      "authors": "C. Cai, L. Hinkley, Y. Gao, <strong>A. Hashemi</strong>, S. Haufe, K. Sekihara, S. S. Nagarajan",
+      "venue": "NeuroImage",
+      "venueShort": "NeuroImage",
+      "details": "Vol. 258, 119369",
+      "year": 2022,
+      "type": "journal",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/ni2022.webp",
+      "takeaway": "Empirical Bayes localization of event-related time-frequency brain activity.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:advances-in-hierarchical-bayesian-learning-with-applications",
+    "type": "Paper",
+    "name": "Advances in hierarchical Bayesian learning with applications to neuroimaging",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>",
+      "venue": "Ph.D. Thesis, Technische Universität Berlin",
+      "venueShort": "Ph.D. Thesis",
+      "details": "",
+      "year": 2022,
+      "type": "thesis",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/thesis2022.webp",
+      "takeaway": "Hierarchical Bayesian learning methods for neuroimaging source localization — the dissertation behind the thesis, completed with Distinction.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:efficient-hierarchical-bayesian-inference-for-spatio-tempora",
+    "type": "Paper",
+    "name": "Efficient hierarchical Bayesian inference for spatio-temporal regression models in neuroimaging",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, Y. Gao, C. Cai, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe",
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+      "venueShort": "NeurIPS",
+      "details": "Vol. 34, pp. 24855–24870",
+      "year": 2021,
+      "type": "conference",
+      "highlight": true,
+      "url": "https://nips.cc/virtual/2021/poster/26345",
+      "image": "images/papers/neurips2021.webp",
+      "takeaway": "A fast hierarchical Bayesian inference algorithm for spatio-temporal regression in neuroimaging.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://nips.cc/virtual/2021/poster/26345"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:unification-of-sparse-bayesian-learning-algorithms-for-elect",
+    "type": "Paper",
+    "name": "Unification of sparse Bayesian learning algorithms for electromagnetic brain imaging with the majorization minimization framework",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, C. Cai, G. Kutyniok, K.-R. Müller, S. S. Nagarajan, S. Haufe",
+      "venue": "NeuroImage",
+      "venueShort": "NeuroImage",
+      "details": "Vol. 239, 118309",
+      "year": 2021,
+      "type": "journal",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/ni2021a.webp",
+      "takeaway": "Unifies sparse Bayesian learning algorithms for brain imaging under one majorization-minimization framework.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:robust-estimation-of-noise-for-electromagnetic-brain-imaging",
+    "type": "Paper",
+    "name": "Robust estimation of noise for electromagnetic brain imaging with the Champagne algorithm",
+    "properties": {
+      "authors": "C. Cai, <strong>A. Hashemi</strong>, M. Diwakar, S. Haufe, K. Sekihara, S. S. Nagarajan",
+      "venue": "NeuroImage",
+      "venueShort": "NeuroImage",
+      "details": "Vol. 225, 117411",
+      "year": 2021,
+      "type": "journal",
+      "highlight": false,
+      "url": "https://doi.org/10.1016/j.neuroimage.2020.117411",
+      "image": "images/papers/ni2021b.webp",
+      "takeaway": "Improves noise-covariance estimation in the Champagne brain-imaging algorithm.",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://doi.org/10.1016/j.neuroimage.2020.117411"
+        }
+      ]
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:joint-hierarchical-bayesian-learning-of-full-structure-noise",
+    "type": "Paper",
+    "name": "Joint hierarchical Bayesian learning of full-structure noise for brain source imaging",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, C. Cai, K.-R. Müller, S. S. Nagarajan, S. Haufe",
+      "venue": "Medical Imaging meets NeurIPS (Med-NeurIPS) Workshop, NeurIPS",
+      "venueShort": "Med-NeurIPS",
+      "details": "",
+      "year": 2020,
+      "type": "workshop",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/medneurips2020.webp",
+      "takeaway": "Joint learning of full-structure sensor noise for brain source imaging.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "paper:compressed-sensing-from-theory-to-praxis",
+    "type": "Paper",
+    "name": "Compressed sensing: From theory to praxis",
+    "properties": {
+      "authors": "<strong>A. Hashemi</strong>, A. Flinth, G. Kutyniok",
+      "venue": "In C. Chen (Ed.), Compressive Sensing of Earth Observations, CRC Press",
+      "venueShort": "Book Chapter",
+      "details": "pp. 1–32",
+      "year": 2017,
+      "type": "book",
+      "highlight": false,
+      "url": null,
+      "image": "images/papers/book2017.webp",
+      "takeaway": "A tutorial chapter on compressed sensing, from theory to practice, for Earth observation.",
+      "links": []
+    },
+    "source": "data/publications.yaml"
+  },
+  {
+    "id": "skillcategory:programming",
+    "type": "SkillCategory",
+    "name": "Programming",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:python",
+    "type": "Skill",
+    "name": "Python",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:c-c",
+    "type": "Skill",
+    "name": "C/C++",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:rust",
+    "type": "Skill",
+    "name": "Rust",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:r",
+    "type": "Skill",
+    "name": "R",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:matlab",
+    "type": "Skill",
+    "name": "MATLAB",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:sql",
+    "type": "Skill",
+    "name": "SQL",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:latex",
+    "type": "Skill",
+    "name": "LaTeX",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skillcategory:libraries-frameworks",
+    "type": "SkillCategory",
+    "name": "Libraries & Frameworks",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:pytorch-lightning",
+    "type": "Skill",
+    "name": "PyTorch (Lightning)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:tensorflow",
+    "type": "Skill",
+    "name": "TensorFlow",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:jax",
+    "type": "Skill",
+    "name": "JAX",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:hugging-face-transformers-adapters-diffusers",
+    "type": "Skill",
+    "name": "Hugging Face (Transformers, Adapters, Diffusers)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:numpy",
+    "type": "Skill",
+    "name": "NumPy",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:pandas",
+    "type": "Skill",
+    "name": "Pandas",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:scipy",
+    "type": "Skill",
+    "name": "SciPy",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:scikit-learn",
+    "type": "Skill",
+    "name": "Scikit-learn",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:opencv",
+    "type": "Skill",
+    "name": "OpenCV",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:nltk",
+    "type": "Skill",
+    "name": "NLTK",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:slurm",
+    "type": "Skill",
+    "name": "SLURM",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:hydra",
+    "type": "Skill",
+    "name": "Hydra",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:w-b",
+    "type": "Skill",
+    "name": "W&B",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:weaviate",
+    "type": "Skill",
+    "name": "Weaviate",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skillcategory:llm-genai-tooling",
+    "type": "SkillCategory",
+    "name": "LLM & GenAI Tooling",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:lm-evaluation-harness",
+    "type": "Skill",
+    "name": "lm-evaluation-harness",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:nemo-skills",
+    "type": "Skill",
+    "name": "NeMo-Skills",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:evalscope",
+    "type": "Skill",
+    "name": "EvalScope",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:inspect",
+    "type": "Skill",
+    "name": "Inspect",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:harbor",
+    "type": "Skill",
+    "name": "Harbor",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:llamaindex",
+    "type": "Skill",
+    "name": "LlamaIndex",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:langchain",
+    "type": "Skill",
+    "name": "LangChain",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:milvus",
+    "type": "Skill",
+    "name": "Milvus",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:neo4j",
+    "type": "Skill",
+    "name": "Neo4j",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:tgi",
+    "type": "Skill",
+    "name": "TGI",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:nim",
+    "type": "Skill",
+    "name": "NIM",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:onnx",
+    "type": "Skill",
+    "name": "ONNX",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:megatron-lm",
+    "type": "Skill",
+    "name": "Megatron-LM",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:megatron-bridge",
+    "type": "Skill",
+    "name": "Megatron-Bridge",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skillcategory:mlops-cloud",
+    "type": "SkillCategory",
+    "name": "MLOps & Cloud",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:linux",
+    "type": "Skill",
+    "name": "Linux",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:bash",
+    "type": "Skill",
+    "name": "Bash",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:git",
+    "type": "Skill",
+    "name": "Git",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:kubernetes",
+    "type": "Skill",
+    "name": "Kubernetes",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:mlflow",
+    "type": "Skill",
+    "name": "MLflow",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:aws-ec2-s3-sagemaker-lambda-bedrock",
+    "type": "Skill",
+    "name": "AWS (EC2, S3, SageMaker, Lambda, Bedrock)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:gcp-vertex-ai",
+    "type": "Skill",
+    "name": "GCP (Vertex AI)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:azure",
+    "type": "Skill",
+    "name": "Azure",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skillcategory:soft-skills",
+    "type": "SkillCategory",
+    "name": "Soft Skills",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:project-management",
+    "type": "Skill",
+    "name": "Project Management",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:technical-writing",
+    "type": "Skill",
+    "name": "Technical Writing",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:public-speaking",
+    "type": "Skill",
+    "name": "Public Speaking",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:training-mentoring",
+    "type": "Skill",
+    "name": "Training & Mentoring",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:event-organization",
+    "type": "Skill",
+    "name": "Event Organization",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skillcategory:languages",
+    "type": "SkillCategory",
+    "name": "Languages",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:english-fluent",
+    "type": "Skill",
+    "name": "English (Fluent)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:german-advanced-b2",
+    "type": "Skill",
+    "name": "German (Advanced, B2)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:persian-native",
+    "type": "Skill",
+    "name": "Persian (Native)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:arabic-basic-a1",
+    "type": "Skill",
+    "name": "Arabic (Basic, A1)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "skill:turkish-basic-a1",
+    "type": "Skill",
+    "name": "Turkish (Basic, A1)",
+    "properties": {},
+    "source": "data/skills.yaml"
+  },
+  {
+    "id": "artifact:website-home",
+    "type": "Artifact",
+    "name": "Website home page (bio, selected projects/publications)",
+    "properties": {
+      "path": "content/_index.md + layouts/index.html"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:website-projects",
+    "type": "Artifact",
+    "name": "Website Projects page",
+    "properties": {
+      "path": "layouts/projects/list.html"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:website-publications",
+    "type": "Artifact",
+    "name": "Website Publications page",
+    "properties": {
+      "path": "layouts/publications/list.html"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:website-cv-page",
+    "type": "Artifact",
+    "name": "Website CV page",
+    "properties": {
+      "path": "content/cv/_index.md + layouts/cv/list.html"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:cv-tex",
+    "type": "Artifact",
+    "name": "One-page CV LaTeX source",
+    "properties": {
+      "path": "cv/1pageCV.tex"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:cv-pdf",
+    "type": "Artifact",
+    "name": "Compiled one-page CV PDF",
+    "properties": {
+      "path": "static/files/Ali_Hashemi_CV.pdf"
+    },
+    "source": "repo"
+  },
+  {
+    "id": "artifact:linkedin-draft",
+    "type": "Artifact",
+    "name": "Draft LinkedIn headline/About/experience text (not posted)",
+    "properties": {
+      "path": "drafts/linkedin.md"
+    },
+    "source": "repo"
+  }
+]

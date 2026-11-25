@@ -1,0 +1,1403 @@
+[
+  {
+    "id": "rel-0001",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "properties": {
+      "start": "Nov 2025",
+      "end": "Present"
+    }
+  },
+  {
+    "id": "rel-0002",
+    "type": "at_org",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "org:multiverse-computing-llm-research-staff",
+    "properties": {}
+  },
+  {
+    "id": "rel-0003",
+    "type": "achieved",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0004",
+    "type": "achieved",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0005",
+    "type": "achieved",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "achievement:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation-2",
+    "properties": {}
+  },
+  {
+    "id": "rel-0006",
+    "type": "demonstrates_skill",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "skill:llm-evaluation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0007",
+    "type": "demonstrates_skill",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "skill:ai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0008",
+    "type": "demonstrates_skill",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "skill:post-training",
+    "properties": {}
+  },
+  {
+    "id": "rel-0009",
+    "type": "demonstrates_skill",
+    "source": "role:multiverse-computing-llm-research-staff-senior-llm-researcher-tech-lead-model-evaluation",
+    "target": "skill:distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0010",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "properties": {
+      "start": "Oct 2022",
+      "end": "Nov 2025"
+    }
+  },
+  {
+    "id": "rel-0011",
+    "type": "at_org",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "org:bifold-berlin-institute-for-the-foundations-of-learning-and-data",
+    "properties": {}
+  },
+  {
+    "id": "rel-0012",
+    "type": "achieved",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0013",
+    "type": "achieved",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0014",
+    "type": "achieved",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "achievement:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist-2",
+    "properties": {}
+  },
+  {
+    "id": "rel-0015",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:foundation-models",
+    "properties": {}
+  },
+  {
+    "id": "rel-0016",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:efficient-inference",
+    "properties": {}
+  },
+  {
+    "id": "rel-0017",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:distributed-training",
+    "properties": {}
+  },
+  {
+    "id": "rel-0018",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:sae",
+    "properties": {}
+  },
+  {
+    "id": "rel-0019",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0020",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:peft",
+    "properties": {}
+  },
+  {
+    "id": "rel-0021",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:sparsity",
+    "properties": {}
+  },
+  {
+    "id": "rel-0022",
+    "type": "demonstrates_skill",
+    "source": "role:bifold-berlin-institute-for-the-foundations-of-learning-and-data-machine-learning-research-scientist",
+    "target": "skill:transformers",
+    "properties": {}
+  },
+  {
+    "id": "rel-0023",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "properties": {
+      "start": "Oct 2022",
+      "end": "Nov 2025"
+    }
+  },
+  {
+    "id": "rel-0024",
+    "type": "at_org",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "org:machine-learning-group-technische-universit-t-berlin",
+    "properties": {}
+  },
+  {
+    "id": "rel-0025",
+    "type": "achieved",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0026",
+    "type": "achieved",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0027",
+    "type": "achieved",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "achievement:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow-2",
+    "properties": {}
+  },
+  {
+    "id": "rel-0028",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "skill:diffusion-models",
+    "properties": {}
+  },
+  {
+    "id": "rel-0029",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "skill:consistency-models",
+    "properties": {}
+  },
+  {
+    "id": "rel-0030",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "skill:physics-informed-ml",
+    "properties": {}
+  },
+  {
+    "id": "rel-0031",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-post-doctoral-research-fellow",
+    "target": "skill:teaching",
+    "properties": {}
+  },
+  {
+    "id": "rel-0032",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "properties": {
+      "start": "Jun 2021",
+      "end": "Sep 2022"
+    }
+  },
+  {
+    "id": "rel-0033",
+    "type": "at_org",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "org:quality-in-artificial-intelligence-qai-labs",
+    "properties": {}
+  },
+  {
+    "id": "rel-0034",
+    "type": "achieved",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0035",
+    "type": "achieved",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0036",
+    "type": "achieved",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "achievement:quality-in-artificial-intelligence-qai-labs-applied-scientist-2",
+    "properties": {}
+  },
+  {
+    "id": "rel-0037",
+    "type": "demonstrates_skill",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "skill:optimization",
+    "properties": {}
+  },
+  {
+    "id": "rel-0038",
+    "type": "demonstrates_skill",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "skill:open-source",
+    "properties": {}
+  },
+  {
+    "id": "rel-0039",
+    "type": "demonstrates_skill",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "skill:ci-cd",
+    "properties": {}
+  },
+  {
+    "id": "rel-0040",
+    "type": "demonstrates_skill",
+    "source": "role:quality-in-artificial-intelligence-qai-labs-applied-scientist",
+    "target": "skill:neuroimaging",
+    "properties": {}
+  },
+  {
+    "id": "rel-0041",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "properties": {
+      "start": "Feb 2019",
+      "end": "May 2021"
+    }
+  },
+  {
+    "id": "rel-0042",
+    "type": "at_org",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "org:brain-and-data-science-lab-charit",
+    "properties": {}
+  },
+  {
+    "id": "rel-0043",
+    "type": "achieved",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "achievement:brain-and-data-science-lab-charit-applied-scientist-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0044",
+    "type": "achieved",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "achievement:brain-and-data-science-lab-charit-applied-scientist-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0045",
+    "type": "demonstrates_skill",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "skill:bayesian-modeling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0046",
+    "type": "demonstrates_skill",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "skill:pytorch",
+    "properties": {}
+  },
+  {
+    "id": "rel-0047",
+    "type": "demonstrates_skill",
+    "source": "role:brain-and-data-science-lab-charit-applied-scientist",
+    "target": "skill:distributed-training",
+    "properties": {}
+  },
+  {
+    "id": "rel-0048",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "properties": {
+      "start": "Feb 2016",
+      "end": "Sep 2022"
+    }
+  },
+  {
+    "id": "rel-0049",
+    "type": "at_org",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "org:machine-learning-group-technische-universit-t-berlin",
+    "properties": {}
+  },
+  {
+    "id": "rel-0050",
+    "type": "achieved",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "achievement:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0051",
+    "type": "achieved",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "achievement:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0052",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "skill:bayesian-statistics",
+    "properties": {}
+  },
+  {
+    "id": "rel-0053",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "skill:optimization",
+    "properties": {}
+  },
+  {
+    "id": "rel-0054",
+    "type": "demonstrates_skill",
+    "source": "role:machine-learning-group-technische-universit-t-berlin-doctoral-research-fellow",
+    "target": "skill:research",
+    "properties": {}
+  },
+  {
+    "id": "rel-0055",
+    "type": "held_role",
+    "source": "person:ali-hashemi",
+    "target": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "properties": {
+      "start": "Mar 2015",
+      "end": "Jan 2016"
+    }
+  },
+  {
+    "id": "rel-0056",
+    "type": "at_org",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "org:singapore-university-of-technology-and-design",
+    "properties": {}
+  },
+  {
+    "id": "rel-0057",
+    "type": "achieved",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "achievement:singapore-university-of-technology-and-design-applied-scientist-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0058",
+    "type": "achieved",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "achievement:singapore-university-of-technology-and-design-applied-scientist-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0059",
+    "type": "demonstrates_skill",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "skill:compressed-sensing",
+    "properties": {}
+  },
+  {
+    "id": "rel-0060",
+    "type": "demonstrates_skill",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "skill:signal-processing",
+    "properties": {}
+  },
+  {
+    "id": "rel-0061",
+    "type": "demonstrates_skill",
+    "source": "role:singapore-university-of-technology-and-design-applied-scientist",
+    "target": "skill:dictionary-learning",
+    "properties": {}
+  },
+  {
+    "id": "rel-0062",
+    "type": "earned",
+    "source": "person:ali-hashemi",
+    "target": "education:technische-universit-t-berlin-ph-d-in-computer-science-and-machine-learning",
+    "properties": {}
+  },
+  {
+    "id": "rel-0063",
+    "type": "at_org",
+    "source": "education:technische-universit-t-berlin-ph-d-in-computer-science-and-machine-learning",
+    "target": "org:technische-universit-t-berlin",
+    "properties": {}
+  },
+  {
+    "id": "rel-0064",
+    "type": "earned",
+    "source": "person:ali-hashemi",
+    "target": "education:sharif-university-of-technology-m-sc-in-electrical-computer-engineering",
+    "properties": {}
+  },
+  {
+    "id": "rel-0065",
+    "type": "at_org",
+    "source": "education:sharif-university-of-technology-m-sc-in-electrical-computer-engineering",
+    "target": "org:sharif-university-of-technology",
+    "properties": {}
+  },
+  {
+    "id": "rel-0066",
+    "type": "received",
+    "source": "person:ali-hashemi",
+    "target": "award:2018-0",
+    "properties": {
+      "year": "2018"
+    }
+  },
+  {
+    "id": "rel-0067",
+    "type": "received",
+    "source": "person:ali-hashemi",
+    "target": "award:2016-1",
+    "properties": {
+      "year": "2016"
+    }
+  },
+  {
+    "id": "rel-0068",
+    "type": "received",
+    "source": "person:ali-hashemi",
+    "target": "award:2015-2",
+    "properties": {
+      "year": "2015"
+    }
+  },
+  {
+    "id": "rel-0069",
+    "type": "received",
+    "source": "person:ali-hashemi",
+    "target": "award:2011-3",
+    "properties": {
+      "year": "2011"
+    }
+  },
+  {
+    "id": "rel-0070",
+    "type": "received",
+    "source": "person:ali-hashemi",
+    "target": "award:2010-4",
+    "properties": {
+      "year": "2010"
+    }
+  },
+  {
+    "id": "rel-0071",
+    "type": "gave_talk",
+    "source": "person:ali-hashemi",
+    "target": "talk:aug-2022-0",
+    "properties": {}
+  },
+  {
+    "id": "rel-0072",
+    "type": "gave_talk",
+    "source": "person:ali-hashemi",
+    "target": "talk:jul-2022-1",
+    "properties": {}
+  },
+  {
+    "id": "rel-0073",
+    "type": "gave_talk",
+    "source": "person:ali-hashemi",
+    "target": "talk:dec-2021-2",
+    "properties": {}
+  },
+  {
+    "id": "rel-0074",
+    "type": "gave_talk",
+    "source": "person:ali-hashemi",
+    "target": "talk:dec-2021-3",
+    "properties": {}
+  },
+  {
+    "id": "rel-0075",
+    "type": "gave_talk",
+    "source": "person:ali-hashemi",
+    "target": "talk:dec-2020-4",
+    "properties": {}
+  },
+  {
+    "id": "rel-0076",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:llm-evaluation-platform",
+    "properties": {}
+  },
+  {
+    "id": "rel-0077",
+    "type": "at_org",
+    "source": "project:llm-evaluation-platform",
+    "target": "org:multiverse-computing",
+    "properties": {}
+  },
+  {
+    "id": "rel-0078",
+    "type": "demonstrates_skill",
+    "source": "project:llm-evaluation-platform",
+    "target": "skill:llm-evaluation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0079",
+    "type": "demonstrates_skill",
+    "source": "project:llm-evaluation-platform",
+    "target": "skill:lm-eval",
+    "properties": {}
+  },
+  {
+    "id": "rel-0080",
+    "type": "demonstrates_skill",
+    "source": "project:llm-evaluation-platform",
+    "target": "skill:reproducibility",
+    "properties": {}
+  },
+  {
+    "id": "rel-0081",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:llm-compression-distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0082",
+    "type": "at_org",
+    "source": "project:llm-compression-distillation",
+    "target": "org:multiverse-computing",
+    "properties": {}
+  },
+  {
+    "id": "rel-0083",
+    "type": "demonstrates_skill",
+    "source": "project:llm-compression-distillation",
+    "target": "skill:llm-compression",
+    "properties": {}
+  },
+  {
+    "id": "rel-0084",
+    "type": "demonstrates_skill",
+    "source": "project:llm-compression-distillation",
+    "target": "skill:distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0085",
+    "type": "demonstrates_skill",
+    "source": "project:llm-compression-distillation",
+    "target": "skill:megatron",
+    "properties": {}
+  },
+  {
+    "id": "rel-0086",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:foundation-model-distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0087",
+    "type": "at_org",
+    "source": "project:foundation-model-distillation",
+    "target": "org:bifold",
+    "properties": {}
+  },
+  {
+    "id": "rel-0088",
+    "type": "demonstrates_skill",
+    "source": "project:foundation-model-distillation",
+    "target": "skill:pytorch",
+    "properties": {}
+  },
+  {
+    "id": "rel-0089",
+    "type": "demonstrates_skill",
+    "source": "project:foundation-model-distillation",
+    "target": "skill:distillation",
+    "properties": {}
+  },
+  {
+    "id": "rel-0090",
+    "type": "demonstrates_skill",
+    "source": "project:foundation-model-distillation",
+    "target": "skill:sparse-autoencoders",
+    "properties": {}
+  },
+  {
+    "id": "rel-0091",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:histopathology-foundation-models",
+    "properties": {}
+  },
+  {
+    "id": "rel-0092",
+    "type": "at_org",
+    "source": "project:histopathology-foundation-models",
+    "target": "org:bifold",
+    "properties": {}
+  },
+  {
+    "id": "rel-0093",
+    "type": "demonstrates_skill",
+    "source": "project:histopathology-foundation-models",
+    "target": "skill:computer-vision",
+    "properties": {}
+  },
+  {
+    "id": "rel-0094",
+    "type": "demonstrates_skill",
+    "source": "project:histopathology-foundation-models",
+    "target": "skill:efficient-inference",
+    "properties": {}
+  },
+  {
+    "id": "rel-0095",
+    "type": "demonstrates_skill",
+    "source": "project:histopathology-foundation-models",
+    "target": "skill:distributed-training",
+    "properties": {}
+  },
+  {
+    "id": "rel-0096",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:multimodal-clinical-rag-system",
+    "properties": {}
+  },
+  {
+    "id": "rel-0097",
+    "type": "at_org",
+    "source": "project:multimodal-clinical-rag-system",
+    "target": "org:bifold",
+    "properties": {}
+  },
+  {
+    "id": "rel-0098",
+    "type": "demonstrates_skill",
+    "source": "project:multimodal-clinical-rag-system",
+    "target": "skill:rag",
+    "properties": {}
+  },
+  {
+    "id": "rel-0099",
+    "type": "demonstrates_skill",
+    "source": "project:multimodal-clinical-rag-system",
+    "target": "skill:vllm",
+    "properties": {}
+  },
+  {
+    "id": "rel-0100",
+    "type": "demonstrates_skill",
+    "source": "project:multimodal-clinical-rag-system",
+    "target": "skill:tensorrt",
+    "properties": {}
+  },
+  {
+    "id": "rel-0101",
+    "type": "demonstrates_skill",
+    "source": "project:multimodal-clinical-rag-system",
+    "target": "skill:peft",
+    "properties": {}
+  },
+  {
+    "id": "rel-0102",
+    "type": "created",
+    "source": "person:ali-hashemi",
+    "target": "project:open-source-neuroimaging-toolkit",
+    "properties": {}
+  },
+  {
+    "id": "rel-0103",
+    "type": "at_org",
+    "source": "project:open-source-neuroimaging-toolkit",
+    "target": "org:qai-labs",
+    "properties": {}
+  },
+  {
+    "id": "rel-0104",
+    "type": "demonstrates_skill",
+    "source": "project:open-source-neuroimaging-toolkit",
+    "target": "skill:open-source",
+    "properties": {}
+  },
+  {
+    "id": "rel-0105",
+    "type": "demonstrates_skill",
+    "source": "project:open-source-neuroimaging-toolkit",
+    "target": "skill:ci-cd",
+    "properties": {}
+  },
+  {
+    "id": "rel-0106",
+    "type": "demonstrates_skill",
+    "source": "project:open-source-neuroimaging-toolkit",
+    "target": "skill:docker",
+    "properties": {}
+  },
+  {
+    "id": "rel-0107",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:quantization-aware-healing-a-practical-recipe-for-recovering",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0108",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:efficient-knowledge-distillation-for-llms-offline-top-k-logi",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0109",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:llm-compression-by-block-removal-with-constrained-binary-opt",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0110",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:distilling-lightweight-domain-experts-from-large-ml-models-b",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0111",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:how-forgiving-are-m-eeg-inverse-solutions-to-noise-level-mis",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0112",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:continual-learning-that-resists-overfitting-and-spurious-cor",
+    "properties": {
+      "year": 2026
+    }
+  },
+  {
+    "id": "rel-0113",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:enhancing-brain-source-reconstruction-by-initializing-3d-neu",
+    "properties": {
+      "year": 2025
+    }
+  },
+  {
+    "id": "rel-0114",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:structured-noise-champagne-an-empirical-bayesian-algorithm-f",
+    "properties": {
+      "year": 2025
+    }
+  },
+  {
+    "id": "rel-0115",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:joint-learning-of-full-structure-noise-in-hierarchical-bayes",
+    "properties": {
+      "year": 2024
+    }
+  },
+  {
+    "id": "rel-0116",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:bayesian-adaptive-beamformer-for-robust-electromagnetic-brai",
+    "properties": {
+      "year": 2023
+    }
+  },
+  {
+    "id": "rel-0117",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:bayesian-algorithms-for-joint-estimation-of-brain-activity-a",
+    "properties": {
+      "year": 2023
+    }
+  },
+  {
+    "id": "rel-0118",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:empirical-bayesian-localization-of-event-related-time-freque",
+    "properties": {
+      "year": 2022
+    }
+  },
+  {
+    "id": "rel-0119",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:advances-in-hierarchical-bayesian-learning-with-applications",
+    "properties": {
+      "year": 2022
+    }
+  },
+  {
+    "id": "rel-0120",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:efficient-hierarchical-bayesian-inference-for-spatio-tempora",
+    "properties": {
+      "year": 2021
+    }
+  },
+  {
+    "id": "rel-0121",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:unification-of-sparse-bayesian-learning-algorithms-for-elect",
+    "properties": {
+      "year": 2021
+    }
+  },
+  {
+    "id": "rel-0122",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:robust-estimation-of-noise-for-electromagnetic-brain-imaging",
+    "properties": {
+      "year": 2021
+    }
+  },
+  {
+    "id": "rel-0123",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:joint-hierarchical-bayesian-learning-of-full-structure-noise",
+    "properties": {
+      "year": 2020
+    }
+  },
+  {
+    "id": "rel-0124",
+    "type": "authored",
+    "source": "person:ali-hashemi",
+    "target": "paper:compressed-sensing-from-theory-to-praxis",
+    "properties": {
+      "year": 2017
+    }
+  },
+  {
+    "id": "rel-0125",
+    "type": "relates_to_paper",
+    "source": "project:foundation-model-distillation",
+    "target": "paper:distilling-lightweight-domain-experts-from-large-ml-models-b",
+    "properties": {
+      "via_link_label": "Paper"
+    }
+  },
+  {
+    "id": "rel-0126",
+    "type": "relates_to_paper",
+    "source": "project:open-source-neuroimaging-toolkit",
+    "target": "paper:how-forgiving-are-m-eeg-inverse-solutions-to-noise-level-mis",
+    "properties": {
+      "via_link_label": "Code"
+    }
+  },
+  {
+    "id": "rel-0127",
+    "type": "in_category",
+    "source": "skill:python",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0128",
+    "type": "in_category",
+    "source": "skill:c-c",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0129",
+    "type": "in_category",
+    "source": "skill:rust",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0130",
+    "type": "in_category",
+    "source": "skill:r",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0131",
+    "type": "in_category",
+    "source": "skill:matlab",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0132",
+    "type": "in_category",
+    "source": "skill:sql",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0133",
+    "type": "in_category",
+    "source": "skill:latex",
+    "target": "skillcategory:programming",
+    "properties": {}
+  },
+  {
+    "id": "rel-0134",
+    "type": "in_category",
+    "source": "skill:pytorch-lightning",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0135",
+    "type": "in_category",
+    "source": "skill:tensorflow",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0136",
+    "type": "in_category",
+    "source": "skill:jax",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0137",
+    "type": "in_category",
+    "source": "skill:hugging-face-transformers-adapters-diffusers",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0138",
+    "type": "in_category",
+    "source": "skill:numpy",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0139",
+    "type": "in_category",
+    "source": "skill:pandas",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0140",
+    "type": "in_category",
+    "source": "skill:scipy",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0141",
+    "type": "in_category",
+    "source": "skill:scikit-learn",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0142",
+    "type": "in_category",
+    "source": "skill:opencv",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0143",
+    "type": "in_category",
+    "source": "skill:nltk",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0144",
+    "type": "in_category",
+    "source": "skill:slurm",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0145",
+    "type": "in_category",
+    "source": "skill:hydra",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0146",
+    "type": "in_category",
+    "source": "skill:w-b",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0147",
+    "type": "in_category",
+    "source": "skill:weaviate",
+    "target": "skillcategory:libraries-frameworks",
+    "properties": {}
+  },
+  {
+    "id": "rel-0148",
+    "type": "in_category",
+    "source": "skill:lm-evaluation-harness",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0149",
+    "type": "in_category",
+    "source": "skill:nemo-skills",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0150",
+    "type": "in_category",
+    "source": "skill:evalscope",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0151",
+    "type": "in_category",
+    "source": "skill:inspect",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0152",
+    "type": "in_category",
+    "source": "skill:harbor",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0153",
+    "type": "in_category",
+    "source": "skill:llamaindex",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0154",
+    "type": "in_category",
+    "source": "skill:langchain",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0155",
+    "type": "in_category",
+    "source": "skill:milvus",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0156",
+    "type": "in_category",
+    "source": "skill:neo4j",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0157",
+    "type": "in_category",
+    "source": "skill:tgi",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0158",
+    "type": "in_category",
+    "source": "skill:nim",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0159",
+    "type": "in_category",
+    "source": "skill:onnx",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0160",
+    "type": "in_category",
+    "source": "skill:vllm",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0161",
+    "type": "in_category",
+    "source": "skill:tensorrt",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0162",
+    "type": "in_category",
+    "source": "skill:megatron-lm",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0163",
+    "type": "in_category",
+    "source": "skill:megatron-bridge",
+    "target": "skillcategory:llm-genai-tooling",
+    "properties": {}
+  },
+  {
+    "id": "rel-0164",
+    "type": "in_category",
+    "source": "skill:linux",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0165",
+    "type": "in_category",
+    "source": "skill:bash",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0166",
+    "type": "in_category",
+    "source": "skill:git",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0167",
+    "type": "in_category",
+    "source": "skill:ci-cd",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0168",
+    "type": "in_category",
+    "source": "skill:docker",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0169",
+    "type": "in_category",
+    "source": "skill:kubernetes",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0170",
+    "type": "in_category",
+    "source": "skill:mlflow",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0171",
+    "type": "in_category",
+    "source": "skill:aws-ec2-s3-sagemaker-lambda-bedrock",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0172",
+    "type": "in_category",
+    "source": "skill:gcp-vertex-ai",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0173",
+    "type": "in_category",
+    "source": "skill:azure",
+    "target": "skillcategory:mlops-cloud",
+    "properties": {}
+  },
+  {
+    "id": "rel-0174",
+    "type": "in_category",
+    "source": "skill:project-management",
+    "target": "skillcategory:soft-skills",
+    "properties": {}
+  },
+  {
+    "id": "rel-0175",
+    "type": "in_category",
+    "source": "skill:technical-writing",
+    "target": "skillcategory:soft-skills",
+    "properties": {}
+  },
+  {
+    "id": "rel-0176",
+    "type": "in_category",
+    "source": "skill:public-speaking",
+    "target": "skillcategory:soft-skills",
+    "properties": {}
+  },
+  {
+    "id": "rel-0177",
+    "type": "in_category",
+    "source": "skill:training-mentoring",
+    "target": "skillcategory:soft-skills",
+    "properties": {}
+  },
+  {
+    "id": "rel-0178",
+    "type": "in_category",
+    "source": "skill:event-organization",
+    "target": "skillcategory:soft-skills",
+    "properties": {}
+  },
+  {
+    "id": "rel-0179",
+    "type": "in_category",
+    "source": "skill:english-fluent",
+    "target": "skillcategory:languages",
+    "properties": {}
+  },
+  {
+    "id": "rel-0180",
+    "type": "in_category",
+    "source": "skill:german-advanced-b2",
+    "target": "skillcategory:languages",
+    "properties": {}
+  },
+  {
+    "id": "rel-0181",
+    "type": "in_category",
+    "source": "skill:persian-native",
+    "target": "skillcategory:languages",
+    "properties": {}
+  },
+  {
+    "id": "rel-0182",
+    "type": "in_category",
+    "source": "skill:arabic-basic-a1",
+    "target": "skillcategory:languages",
+    "properties": {}
+  },
+  {
+    "id": "rel-0183",
+    "type": "in_category",
+    "source": "skill:turkish-basic-a1",
+    "target": "skillcategory:languages",
+    "properties": {}
+  },
+  {
+    "id": "rel-0184",
+    "type": "represents",
+    "source": "artifact:website-home",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0185",
+    "type": "represents",
+    "source": "artifact:website-projects",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0186",
+    "type": "represents",
+    "source": "artifact:website-publications",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0187",
+    "type": "represents",
+    "source": "artifact:website-cv-page",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0188",
+    "type": "represents",
+    "source": "artifact:cv-tex",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0189",
+    "type": "represents",
+    "source": "artifact:cv-pdf",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  },
+  {
+    "id": "rel-0190",
+    "type": "represents",
+    "source": "artifact:linkedin-draft",
+    "target": "person:ali-hashemi",
+    "properties": {}
+  }
+]
