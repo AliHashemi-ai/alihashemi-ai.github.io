@@ -8,7 +8,7 @@
   highlight: true
   url: "https://arxiv.org/abs/2608.20953"
   image: "images/papers/2608.20953.webp"
-  takeaway: "A practical recipe for recovering accuracy in 4-bit compressed LLMs."
+  takeaway: "A practical healing recipe for compressed, 4-bit LLMs."
   links:
     - label: "Paper"
       url: "https://arxiv.org/abs/2608.20953"
@@ -16,8 +16,6 @@
       url: "https://arxiv.org/pdf/2608.20953"
     - label: "HF paper"
       url: "https://huggingface.co/papers/2608.20953"
-    - label: "HyperNova"
-      url: "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605"
 
 - title: "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss"
   authors: "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús"
@@ -37,8 +35,6 @@
       url: "https://arxiv.org/pdf/2608.03796"
     - label: "HF paper"
       url: "https://huggingface.co/papers/2608.03796"
-    - label: "HyperNova"
-      url: "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605"
 
 - title: "LLM Compression by Block Removal with Constrained Binary Optimization"
   authors: "D. Jansen, R. Rausch, <strong>A. Hashemi</strong>, D. Montero, R. Orús"

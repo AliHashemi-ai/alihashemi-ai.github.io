@@ -6,18 +6,11 @@
   tags: ["LLM Evaluation", "lm-eval", "Reproducibility"]
   image: "images/projects/llm-eval-platform.webp"
 
-- title: "Verso"
-  org: "Multiverse Computing"
-  metric: "LLM evaluation for European languages"
-  description: "LLM evaluation for European languages, with LLM-as-judge scoring, automated graders, and eval dataset curation and data quality."
-  tags: ["LLM-as-judge", "Automated Graders", "Eval Data Curation"]
-  image: "images/projects/llm-eval-platform.webp"
-
 - title: "LLM Compression & Distillation"
   org: "Multiverse Computing"
   period: "2025 – Present"
-  metric: "Quality recovery after model compression"
-  description: "Develop knowledge distillation and quantization-aware healing for compressed Transformer, Mamba and mixture-of-experts models. These post-training methods recover quality so smaller LLMs can ship."
+  metric: "Quality healing after model compression"
+  description: "Develop knowledge distillation and quantization-aware healing for compressed Transformer, Mamba and mixture-of-experts models. These post-training healing methods restore quality so smaller LLMs can ship."
   tags: ["LLM Compression", "Distillation", "Megatron"]
   image: "images/projects/llm-compression.webp"
   links:
@@ -34,6 +27,16 @@
   links:
     - label: "Model"
       url: "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605"
+
+- title: "Pulsar 16B"
+  org: "Multiverse Computing"
+  metric: "Open-weight 16B · Apache 2.0"
+  description: "Pulsar 16B is an open-weight 16.15B hybrid Mamba2-Transformer mixture-of-experts model with tool calling and hybrid reasoning, developed by Multiverse Computing and based on nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16. Its public model card states that supervised fine-tuning was applied after compression."
+  tags: ["Pulsar", "SFT", "Post-training"]
+  image: "images/projects/llm-compression.webp"
+  links:
+    - label: "Model"
+      url: "https://huggingface.co/MultiverseComputingCAI/Pulsar-16B-BF16"
 
 - title: "Foundation Model Distillation"
   org: "BIFOLD"

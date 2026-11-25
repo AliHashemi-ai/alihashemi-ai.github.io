@@ -1,15 +1,15 @@
 - role: "Senior LLM Researcher and Tech Lead"
   org: "Multiverse Computing"
   location: "Berlin, Germany"
-  start: "Nov 2025"
+  start: "Dec 2025"
   end: "Present"
   current: true
   bullets:
     - "Lead LLM evaluation, including frontier model evaluation, from benchmark and experimental design to release gates and failure analysis, with statistical rigor. Build evaluation infrastructure for coding agents and on-device models. Automate checkpoint scoring to guide training decisions."
-    - "Verso, LLM evaluation for European languages: LLM-as-judge scoring, automated graders, and eval dataset curation and data quality."
+    - "European-language evaluation: LLM-as-judge scoring, automated graders, and eval dataset curation and data quality."
     - "Design and lead agentic AI coding workflows with separate planning, implementation, review and audit. Design reusable agent skills and plugins for code review, commit hygiene and sensitive-data protection. Check AI-written code with sandboxed tests and explicit scope sign-off. Build eval harnesses and contribute to an agent harness."
-    - "Contributed SFT and instruction tuning on [HyperNova 60B](https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605). Develop distillation and quantization-aware recovery for compressed Transformer, Mamba and mixture-of-experts models. This post-training work lets smaller LLMs ship at production quality. Deliver customer-facing work."
-  tags: ["LLM Evaluation", "Frontier Model Evaluation", "Benchmark Design", "LLM-as-judge", "Verso", "Agent Evaluation", "Agentic AI Coding", "Harness Development", "SFT", "Post-training"]
+    - "Contributed SFT and instruction tuning on [HyperNova 60B](https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605). Multiverse Computing's public [Pulsar 16B](https://huggingface.co/MultiverseComputingCAI/Pulsar-16B-BF16) model card also reports SFT after compression. Develop distillation and quantization-aware healing for compressed Transformer, Mamba and mixture-of-experts models. This post-training work lets smaller LLMs ship at production quality. Deliver customer-facing work."
+  tags: ["LLM Evaluation", "Frontier Model Evaluation", "Benchmark Design", "LLM-as-judge", "European-Language Evaluation", "Agent Evaluation", "Agentic AI Coding", "Harness Development", "SFT", "Post-training"]
 
 - role: "Machine Learning Research Scientist"
   org: "BIFOLD (Berlin Institute for the Foundations of Learning and Data)"
