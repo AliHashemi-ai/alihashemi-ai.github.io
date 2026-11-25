@@ -17,8 +17,7 @@
 \nopagenumbers{}
 
 \usepackage[T1]{fontenc}
-\usepackage[scale=0.93]{geometry}
-\usepackage{tabularx}
+\usepackage[left=10.5mm,right=10.5mm,top=10.5mm,bottom=8.5mm]{geometry}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb,fontenc,textcomp}
 \renewcommand{\familydefault}{\sfdefault}
@@ -41,35 +40,63 @@
 \exhyphenpenalty=10000
 \emergencystretch=1.5em
 
+% type scale: \Huge name, \large headline and section titles, \normalsize employers,
+% \cvbodysize for the main column, \footnotesize for contact line, tags and sidebar
+\newcommand{\cvbodysize}{\fontsize{10}{12.6}\selectfont}
+
 % macros
 \newcommand{\bluelink}[2]{\href{#1}{\color{blue}#2}}
 
-% Organisation links in section headings keep the theme heading colour
+% Organisation links in job headings keep the theme heading colour
 \newcommand{\orglink}[2]{\href{#1}{\color{color1}#2}}
 
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}
-
-% role flush left, dates flush right, on one baseline
-\newcommand*{\experienceentry}[5][1.2mm]{%
-    \subsection{#2}\vspace{-1.5mm}
-    \noindent{\small\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-        {\itshape #3} & {\itshape #4, #5}
-    \end{tabular*}}
-    \par\addvspace{#1}%
+% section title with rule, identical in both columns so their tops line up
+\newcommand{\cvsection}[1]{%
+  {\large\bfseries\noindent\textcolor{color1}{\strut #1}\par}%
+  \nointerlineskip
+  \vspace{0.4mm}%
+  {\color{color1}\hrule height 0.5pt}%
+  \nobreak\vspace{1.8mm}%
 }
+
+% employer with dotted rule, then role flush left and dates flush right on one baseline
+\newcommand{\jobentry}[3]{%
+  {\normalsize\noindent\strut{\bfseries\textcolor{color1}{#1}}\enspace
+   \textcolor{color1!60}{\leaders\hbox to 0.45em{\hss\scriptsize.\hss}\hfill}\kern0pt\par}%
+  \nobreak
+  \noindent{\itshape #2}\enspace\hfill\mbox{\itshape #3}\par
+  \nobreak\vspace{1mm}%
+}
+
+% one bullet list style for both columns; the argument is the space between items
+\newenvironment{bulletlist}[1]{%
+  \begin{list}{\labelitemi}{%
+    \setlength{\leftmargin}{3.8mm}%
+    \setlength{\labelwidth}{2.4mm}%
+    \setlength{\labelsep}{1.4mm}%
+    \setlength{\topsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\itemsep}{#1}%
+  }%
+  \raggedright
+}{\end{list}}
+
+% equal, intentional space between blocks; the fill shares leftover height evenly
+\newcommand{\cvgap}{\par\unskip\vspace{3mm minus 2mm}\vfill}
 
 \definecolor{darkGrey}{HTML}{989898}
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep=0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep=0.55ex,text height=1.3ex,text depth=.3ex]{#1};\hspace{1.2mm}%
 }
 % tags sit in their own paragraph so the bullet above keeps normal line spacing
 \newcommand\skill[1]{%
-  \par\vspace{1mm}%
+  \par\nobreak\vspace{1.4mm}%
   {\footnotesize\raggedright\foreach \n in {#1}{\cvtag{\n}}\par}%
 }
 
 \newcommand{\skillgroup}[2]{%
-  {\footnotesize\raggedright\textbf{#1:} #2\par}\addvspace{0.8mm}%
+  {\raggedright\noindent\strut\textbf{\textcolor{color1}{#1:}} #2\par}\vspace{1.2mm minus 0.5mm}%
 }
 
 % preamble
@@ -79,113 +106,109 @@
 % document
 \begin{document}
 
-% header: centered on the full line width
-\vspace*{-6mm}
-\begin{center}
-    {\Huge Ali Hashemi $|$ Ph.D.}\par
-    \vspace{2mm}
-    {\large Senior LLM Researcher and Tech Lead at \href{https://multiversecomputing.com/}{Multiverse Computing}}\par
-    \vspace{1.5mm}
+% header: centred on the full line width
+{\centering
+    {\Huge Ali Hashemi $|$ Ph.D.\par}
+    \vspace{1.8mm}
+    {\large Senior LLM Researcher and Tech Lead at \href{https://multiversecomputing.com/}{Multiverse Computing}\par}
+    \vspace{1.6mm}
     {\footnotesize
-    \mbox{LinkedIn: \href{https://linkedin.com/in/alihashemi-ai}{alihashemi-ai}}\enspace$|$\enspace
-    \mbox{GitHub: \href{https://github.com/alihashemi-ai}{alihashemi-ai}}\enspace$|$\enspace
-    \mbox{\href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar}}\enspace$|$\enspace
-    \mbox{Email: \href{mailto:alihashemi.ee@gmail.com}{alihashemi.ee@gmail.com}}\enspace$|$\enspace
-    \mbox{Web: \href{https://alihashemi-ai.github.io/}{alihashemi-ai.github.io}}\par}
-    \vspace{1mm}
-    {\small German citizen, Open to relocate to the US}\par
-\end{center}
-\vspace{-1mm}
+    \href{https://www.linkedin.com/in/alihashemi-ai}{\mbox{LinkedIn: alihashemi-ai}}\enspace$|$\enspace
+    \href{https://github.com/AliHashemi-ai}{\mbox{GitHub: alihashemi-ai}}\enspace$|$\enspace
+    \href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ&hl=en}{\mbox{Scholar}}\enspace$|$\enspace
+    \href{mailto:alihashemi.ee@gmail.com}{\mbox{alihashemi.ee@gmail.com}}\enspace$|$\enspace
+    \href{https://alihashemi-ai.github.io}{\mbox{alihashemi-ai.github.io}}\enspace$|$\enspace
+    \href{https://x.com/alihashemi_ai}{\mbox{X: alihashemi\_ai}}\par}
+    \vspace{0.8mm}
+    {\footnotesize German citizen, Open to relocate to the US\par}
+    \vspace{3.2mm}
+    {\cvbodysize
+    \mbox{I lead LLM evals: benchmarks, LLM-as-judge, rigorous release gates, legal and multilingual evals; \textbf{10+} papers incl.\ NeurIPS.}\\
+    I build agentic coding harnesses and develop post-training methods incl.\ SFT.\par}
+}
+\vspace{4mm}
+\nobreak % makes TeX count the space above in \pagetotal
 
-\noindent I lead LLM evaluation, build agentic coding harnesses and develop post-training methods incl.\ SFT. TU Berlin Ph.D.~\mbox{(Distinction / summa cum laude)}, \mbox{\textbf{10+} publications} including NeurIPS and \mbox{IEEE TMI}.
-\par
-\vspace{1mm}
-
-% both columns get the remaining page height, so they end on the same line
+% both columns get the remaining page height, so their last lines share one baseline
 \newlength{\colheight}
 \setlength{\colheight}{\dimexpr\pagegoal-\pagetotal-8pt\relax}
 \nointerlineskip
 \noindent
 \begin{minipage}[t][\colheight][s]{0.62\textwidth}
-\section{EXPERIENCE}
-\experienceentry{\orglink{https://multiversecomputing.com/}{Multiverse Computing}}{Senior LLM Researcher and Tech Lead}{Dec 2025 - Present}{Spain (Hybrid)}
-\begin{itemize}
+\cvbodysize
+\cvsection{EXPERIENCE}
+\jobentry{\orglink{https://multiversecomputing.com/}{Multiverse Computing}}{Senior LLM Researcher and Tech Lead}{Dec 2025 - Present, Spain (Hybrid)}
+\begin{bulletlist}{0.8mm minus 0.4mm}
     \item \textbf{Frontier model evaluation:} Lead benchmark and experimental design, release gates and failure analysis with statistical rigor, catching scoring errors before they \mbox{pass as regressions}.
-    \item \textbf{Eval tooling:} Build LLM-as-judge and automated graders, curate European-language eval data, and build eval infra for coding agents and \mbox{on-device models}.
+    \item \textbf{Eval tooling:} Build LLM-as-judge and automated graders, curate legal and multilingual eval and benchmark data, and build eval infra for coding agents and \mbox{on-device models}.
     \item \textbf{Agentic coding:} Design and lead multi-agent workflows that separate planning, implementation, review and audit, with quality gates for AI-written code. Contribute to an \mbox{agent harness}.
-    \item \textbf{Training:} Work on continued pretraining (CPT) and distributed training of large \mbox{mixture-of-experts} LLMs. Post-training covers SFT, RLHF, DPO, GRPO and \mbox{multi-teacher} distillation. Contributed SFT on \bluelink{https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605}{\mbox{HyperNova 60B}}. Multiverse's public \bluelink{https://huggingface.co/MultiverseComputingCAI/Pulsar-16B-BF16}{\mbox{Pulsar 16B}} model card also reports SFT after compression. Co-develop quantization-aware healing and PEFT to ship smaller LLMs. Deliver \mbox{customer-facing work}.
+    \item \textbf{Training:} Work on continued pretraining (CPT) and distributed training of large \mbox{mixture-of-experts} LLMs. Post-training covers SFT, RLHF, DPO, GRPO, \mbox{multi-teacher} distillation and \mbox{model merging}. Collaborated on model optimization (compression) and distillation for \bluelink{https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605}{\mbox{HyperNova 60B}} and \bluelink{https://huggingface.co/MultiverseComputingCAI/Pulsar-16B-BF16}{\mbox{Pulsar 16B}}. Co-develop \mbox{quantization-aware} healing and PEFT to ship smaller LLMs. Deliver \mbox{customer-facing work}.
     \skill{LLM Evaluation, LLM-as-Judge, Agentic Coding, SFT, CPT}
-\end{itemize}
-\vspace{-2mm}
-\vfill
+\end{bulletlist}
+\cvgap
 
-\experienceentry{\orglink{https://bifold.berlin/}{BIFOLD}}{Machine Learning Research Scientist}{Oct 2022 - Nov 2025}{Berlin}
-\begin{itemize}
+\jobentry{\orglink{https://bifold.berlin/}{BIFOLD}}{Machine Learning Research Scientist}{Oct 2022 - Nov 2025, Berlin}
+\begin{bulletlist}{0.8mm minus 0.4mm}
     \item Cut foundation-model size by \textbf{80\%} with only \textbf{1\%} accuracy loss, using subspace-based distillation on 600M+ \mbox{parameter teachers}.
     \item Applied that method to histopathology models on 100M image patches, gaining \textbf{60\%} speed and cutting \mbox{memory by \textbf{40\%}}.
     \item Shipped a multimodal RAG system for clinical reporting, improving \mbox{reporting efficiency by \textbf{15\%}}.
     \skill{Foundation Models, Distillation, PEFT, Distributed Training, RAG}
-\end{itemize}
-\vspace{-2mm}
-\vfill
+\end{bulletlist}
+\cvgap
 
-\experienceentry{Quality in Artificial Intelligence (QAI) Labs + Charit{\'e}}{Applied Scientist}{Feb 2019 - Sep 2022}{Berlin}
-\begin{itemize}
+\jobentry{Quality in Artificial Intelligence (QAI) Labs + Charit{\'e}}{Applied Scientist}{Feb 2019 - Sep 2022, Berlin}
+\begin{bulletlist}{0.8mm minus 0.4mm}
     \item Directed an open-source benchmark toolkit (\bluelink{https://github.com/braindatalab/BSI-Zoo}{BSI-Zoo}) with a full CI/CD pipeline, now a community standard \mbox{in neuroimaging}.
     \item Cut training time by \textbf{30\%} via reproducible \mbox{distributed training}.
     \item Led cross-functional projects with PIs at \bluelink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \bluelink{https://alexandre.gramfort.net/}{Inria}, delivering on time across \mbox{international teams}.
     \skill{Benchmarking, Distributed Training, PyTorch}
-\end{itemize}
-\vspace{-2mm}
-\vfill
+\end{bulletlist}
+\cvgap
 
-\experienceentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{Doctoral \& Postdoctoral Research Fellow}{2016 - 2025}{Berlin}
-\begin{itemize}
+\jobentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{Doctoral \& Postdoctoral Research Fellow}{2016 - 2025, Berlin}
+\begin{bulletlist}{0.8mm minus 0.4mm}
     \item Designed conditional diffusion models for inverse problems, with distilled consistency models for near \mbox{single-step sampling}.
     \item Published \bluelink{https://drive.google.com/file/d/1bK2rpEE4AHJcILjfK-MueJDCr-tBhC7a/view?usp=sharing}{\mbox{\textbf{10+} papers}} incl.\ \bluelink{https://nips.cc/virtual/2021/poster/26345}{NeurIPS}, Med-NeurIPS, \bluelink{https://doi.org/10.1016/j.neuroimage.2020.117411}{\mbox{NeuroImage}} and \bluelink{https://doi.org/10.1109/TMI.2022.3224085}{\mbox{IEEE TMI}}; presented at \bluelink{https://drive.google.com/file/d/1gUcIy36U6fNp1NoSLvXET-CaQrEqr_I-/view?usp=sharing}{\mbox{international conferences}}.
     \item Mentored \textbf{5+} graduate students; ran ML courses for \mbox{\textbf{400+} people}.
     \skill{Diffusion Models, Optimization, Bayesian ML, Mentoring}
-\end{itemize}
-\par\unskip
+\end{bulletlist}
+\par\unskip\unpenalty\unskip
 \end{minipage}%
 \hfill
 % right column
-\begin{minipage}[t][\colheight][s]{0.35\textwidth}
-\section{SKILLS}
-\skillgroup{Evaluation}{\mbox{LM Evaluation Harness}, EvalScope, \mbox{NeMo Evaluator}, \mbox{NeMo Gym}, frontier models, benchmark design, LLM-as-judge, automated graders, eval data curation, \mbox{European-language} evals}
+\begin{minipage}[t][\colheight][s]{0.345\textwidth}
+\footnotesize
+\cvsection{SKILLS}
+\skillgroup{Evaluation}{\mbox{LM Evaluation Harness}, EvalScope, \mbox{NeMo Evaluator}, \mbox{NeMo Gym}, frontier models, benchmark design, LLM-as-judge, automated graders, eval data curation, legal and multilingual \mbox{evals and benchmarking}}
 \skillgroup{Agentic coding}{Multi-agent workflows, agent and eval harnesses, agent skills, \mbox{quality gates}, \mbox{Claude Code}, \mbox{Codex CLI}, OpenCode, pstack}
-\skillgroup{Training and post-training}{SFT, RLHF, DPO, GRPO, \mbox{multi-teacher} distillation, \mbox{quantization-aware} healing, PEFT; CPT, distributed training (\mbox{multi-node} tensor, pipeline, expert and context parallelism), \mbox{multi-token} prediction, \mbox{long-context} training, memory and throughput tuning, profiling; \mbox{Megatron-LM}, \mbox{Megatron-Bridge}, \mbox{NVIDIA NeMo Framework}, \mbox{NVIDIA Transformer Engine}, Ray}
+\skillgroup{Training}{SFT, RLHF, DPO, GRPO, \mbox{multi-teacher} distillation, \mbox{model merging}, \mbox{quantization-aware} healing, PEFT; CPT, distributed training (\mbox{multi-node} tensor, pipeline, expert and context parallelism), \mbox{multi-token} prediction, \mbox{long-context} training, memory and throughput tuning, profiling; \mbox{Megatron-LM}, \mbox{Megatron-Bridge}, \mbox{NVIDIA NeMo Framework}, \mbox{NVIDIA Transformer Engine}, Ray}
+\skillgroup{Inference}{vLLM, SGLang, \mbox{TensorRT-LLM}, \mbox{llama.cpp}, \mbox{NVIDIA Triton Inference Server}}
 \skillgroup{Infrastructure and orchestration}{SkyPilot, ClearML, \mbox{NVIDIA Run:ai}, AWS, Docker, Kubernetes, \mbox{H200 and B300} clusters}
-\skillgroup{Stack}{Python, PyTorch, Hugging Face, vLLM}
-\skillgroup{Languages}{English, German, Persian}
-\vfill
+\skillgroup{Stack}{Python, PyTorch, Hugging Face}
+\skillgroup{Languages}{English, German}
+\cvgap
 
-\section{EDUCATION}
-\textbf{Technische Universit{\"a}t Berlin}\par
-Ph.D. in Computer Science and ML\par
-\mbox{Distinction / summa cum laude}\par
-Supervisors: K.-R. M{\"u}ller, S. Haufe\par
-\vfill
+\cvsection{EDUCATION}
+\noindent\strut\textbf{Technische Universit{\"a}t Berlin}\par
+\noindent Ph.D. in Computer Science and ML\par
+\noindent\mbox{Distinction / summa cum laude}\par
+\noindent Supervisors: K.-R. M{\"u}ller, S. Haufe\par
+\cvgap
 
-\section{SELECTED PAPERS}
-\begin{itemize}
-    \footnotesize
-    \raggedright
-    \setlength{\itemsep}{0.8mm}
+\cvsection{SELECTED PAPERS}
+\begin{bulletlist}{0.9mm minus 0.4mm}
     \item ``Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2608.20953}{arXiv}, \bluelink{https://huggingface.co/papers/2608.20953}{HF paper}]}
     \item ``Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2608.03796}{arXiv}, \bluelink{https://huggingface.co/papers/2608.03796}{HF paper}]}
     \item ``LLM Compression by Block Removal with Constrained Binary Optimization'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2602.00161}{arXiv}, \bluelink{https://huggingface.co/papers/2602.00161}{HF paper}]}
     \item ``Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2601.05913}{arXiv}]}
     \item ``Enhancing Brain Source Reconstruction by Initializing 3D Neural Networks with Physical Inverse Solutions'', \mbox{IEEE TMI}, \mbox{2025 [\bluelink{https://arxiv.org/abs/2411.00143}{arXiv}]}
-\end{itemize}
-\vfill
+\end{bulletlist}
+\cvgap
 
-\section{HONORS \& AWARDS}
-\begin{tabularx}{\textwidth}{@{}>{\bfseries}l@{\hskip 6.5mm}L@{}}
-2019 & 4-year scholarship by TUB \\
-2016 & 3-year fellowship from BIMoS \\
-\end{tabularx}
-\par\unskip
+\cvsection{HONORS \& AWARDS}
+\noindent\strut\makebox[12mm][l]{\bfseries 2019}4-year scholarship by TUB\par
+\noindent\makebox[12mm][l]{\bfseries 2016}3-year fellowship from BIMoS\par
+\unskip
 \end{minipage}
 
 \end{document}
