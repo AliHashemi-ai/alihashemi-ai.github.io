@@ -485,28 +485,24 @@
       worlds.push(W);
     });
 
-    // ---- flow reveals (fire once) ----------------------------------------
-    var io = null;
-    if ('IntersectionObserver' in window) {
-      io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (!e.isIntersecting) return;
-          var el = e.target;
-          el.classList.add('sc-in');
-          var stagger = parseFloat(el.getAttribute('data-sc-stagger'));
-          if (!isNaN(stagger)) {
-            Array.prototype.forEach.call(el.children, function (kid, i) {
-              kid.style.transitionDelay = (i * stagger) + 'ms';
-              kid.classList.add('sc-in');
-            });
-          }
-          io.unobserve(el);
+    // ---- flow reveals (fire once, immediately — not gated on scroll) -----
+    // Content is visible by default in CSS with no JS at all (see main.css).
+    // By explicit instruction, this reveal is NOT gated on scrolling to a
+    // section: every [data-sc-in] element gets '.sc-in' right away, on load.
+    // This keeps the one-time rise/fade-in as a cosmetic touch for whatever
+    // is in the initial viewport, without ever requiring a scroll (or a
+    // specific scroll speed, or a specific screen height) to see content
+    // that's already on the page.
+    Array.prototype.forEach.call(root.querySelectorAll('[data-sc-in]'), function (el) {
+      el.classList.add('sc-in');
+      var stagger = parseFloat(el.getAttribute('data-sc-stagger'));
+      if (!isNaN(stagger)) {
+        Array.prototype.forEach.call(el.children, function (kid, i) {
+          kid.style.transitionDelay = (i * stagger) + 'ms';
+          kid.classList.add('sc-in');
         });
-      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.01 });
-      Array.prototype.forEach.call(root.querySelectorAll('[data-sc-in]'), function (el) { io.observe(el); });
-    } else {
-      Array.prototype.forEach.call(root.querySelectorAll('[data-sc-in]'), function (el) { el.classList.add('sc-in'); });
-    }
+      }
+    });
 
     // ---- entry counters (fire once) --------------------------------------
     // A [data-sc-count] outside any pinned act is not scrubbed by scroll; it

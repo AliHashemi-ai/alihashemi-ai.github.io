@@ -41,11 +41,12 @@
           });
 
           years.forEach(function (year) {
-            var group = year.nextElementSibling;
+            var grid = year.nextElementSibling;
             var hasVisible = false;
-            while (group && group.classList && group.classList.contains("pub-item")) {
-              if (group.style.display !== "none") hasVisible = true;
-              group = group.nextElementSibling;
+            if (grid && grid.classList && grid.classList.contains("pub-grid")) {
+              grid.querySelectorAll(".pub-item").forEach(function (item) {
+                if (item.style.display !== "none") hasVisible = true;
+              });
             }
             year.style.display = hasVisible ? "" : "none";
           });

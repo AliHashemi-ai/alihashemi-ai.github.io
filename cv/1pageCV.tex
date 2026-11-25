@@ -1,0 +1,440 @@
+%%%%%%%%%%%%%%%%%
+% This is a two-column CV template based on moderncv.cls
+% (v1.0, May 16 2024) written by Genki Ogaki (rockstarogk@gmail.com). Compiles with XeLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+% environment
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{banking}
+\nopagenumbers{}
+
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=1pt, itemsep=1pt, parsep=0pt, leftmargin=1.1em}
+% \usepackage{fontawesome5}
+ 
+% \usepackage{inputenc}
+\usepackage[scale=0.95, top=0.55in, bottom=0.45in]{geometry}
+\usepackage{tabularx}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb,fontenc,textcomp}
+\usepackage[absolute,overlay]{textpos} % for placing the photo
+%for social icons
+% \usepackage{fontawesome5}
+% \usepackage{fancyhdr}
+% \usepackage{cmbright}
+\renewcommand{\familydefault}{\sfdefault} 
+% \usepackage{fontawesome}
+\usepackage{academicons}
+% \usepackage[utf8]{inputenc}
+% \usepackage{libertine} % Libertinus font
+\usepackage[super]{nth}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{mdframed}
+\usepackage{xcolor} % Optional, for customizing link colors
+\usepackage[normalem]{ulem} % for \uline command
+\usepackage{soul} % for underlining with color
+% \usepackage[dvipsnames]{xcolor}
+\definecolor{linkcolour}{rgb}{0.1, 0.7, 0.9}
+\definecolor{highlightcolour}{rgb}{0.2, 0.5, 1}
+% % \hypersetup{urlcolor=highlightcolour,linkcolor=highlightcolour}
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     filecolor=cyan,
+%     urlcolor=blue,
+%     pdfborder={0 0 1} % This sets the border to be underlined
+% }
+
+\hypersetup{
+    colorlinks=true, % Enable colored links (but we'll set the color to black)
+    linkcolor=black, % Color for internal links
+    urlcolor=black, % Color for URLs
+    citecolor=black % Color for citations
+}
+
+% \hypersetup{
+%     colorlinks=true,
+%     linkbordercolor=red,
+%     filebordercolor=red,
+%     urlbordercolor=red
+% }
+
+% \hypersetup{
+%     colorlinks=false,  % Disable colored text links
+%     linkbordercolor={0.2 0.7 1},  % Light blue
+%     pdfborder={0 0 1},  % Define the style of the border
+%     citebordercolor={0.2 0.7 1},  % Optional: same for citations
+%     filebordercolor={0.2 0.7 1},  % Optional: same for file links
+%     urlbordercolor={0.2 0.7 1}  % Optional: same for URL links
+% }
+    
+
+% macro
+% \renewcommand*{\labelitemi}{-}
+
+\newcommand{\boxedlink}[2]{%
+    \begin{mdframed}[roundcorner=5pt, backgroundcolor=gray!10, linecolor=black]
+        \href{#1}{\textcolor{blue}{#2}}
+    \end{mdframed}
+}
+
+\newcommand{\borderedlink}[2]{%
+    \href{#1}{\fcolorbox{cyan}{white}{#2}}
+}
+
+% (duplicate definition commented out; it caused a 'Command already defined' error)
+% \newcommand{\borderedlink}[2]{%
+%     \href{#1}{\fcolorbox{black}{white}{#2}}
+% }
+
+% \newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\ulink}[2]{\href{#1}{\setulcolor{blue}\ul{#2}}}
+
+% Define the custom command for links
+\newcommand{\bluelink}[2]{\href{#1}{\color{blue}#2}}
+
+% Define the custom command for underlined text
+% \newcommand{\reduline}[1]{\setulcolor{blue}\ul{#1}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand*{\experienceentry}[5][0.4mm]{
+    \subsection{#2} \vspace{-1.5mm}
+    \begin{tabularx}{\textwidth}{LR}
+        {\itshape #3} & {\itshape #4, #5}
+    \end{tabularx}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\educationentry}[4][0.5mm]
+{
+    \begin{tabularx}{\textwidth}{LR}
+        {\bfseries #3} & {\bfseries #4} \\
+    \end{tabularx}
+    {\itshape #2}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\scoreentry}[3][2.5mm]{
+    {\bfseries #2} \\
+    {\itshape #3}
+    \par\addvspace{#1}
+}
+
+\definecolor{darkGrey}{HTML}{989898} 
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+}  
+\newcommand\skill[1]{
+\footnotesize{\foreach \n in {#1}{\cvtag{\n}}} 	\\
+  }
+
+% Custom commands for social media icons
+\newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub \ #1}}
+\newcommand{\linkedin}[1]{\href{https://linkedin.com/in/#1}{\faLinkedin \ #1}}
+\newcommand{\twitter}[1]{\href{https://twitter.com/#1}{\faTwitter \ #1}
+}
+\newcommand{\googlescholar}[1]{\href{https://scholar.google.com/citations?user=#1}{\includegraphics[height=10pt]{scholar.png} \ #1}} 
+\newcommand{\scholar}[1]{\href{https://scholar.google.com/citations?user=#1}{\aiGoogleScholar \ #1}}
+\newcommand{\website}[1]{\href{https://#1}{\faGlobe \ #1}}
+% \newcommand{\email}[1]{\href{mailto:#1}{\faEnvelope \ #1}}
+% \newcommand{\phone}[1]{\href{tel:#1}{\faMobile \ #1}}
+\newcommand{\home}[1]{\faMapMarker \ #1}
+
+
+% preamble
+% \vspace{-9.0mm}
+\firstname{Ali}
+\familyname{Hashemi}
+\address{Berlin, Germany}{}
+% \vspace{-9.0mm}
+
+
+\vspace{-7mm}
+% document
+\begin{document}
+
+
+
+% \maketitle
+% \begin{tabularx}{\textwidth}{C C C}
+%     \emailsymbol\enspace \emaillink{alihashemi.ee@gmail.com} & \faLinkedin\enspace \href{https://www.linkedin.com/in/alihashemi-ai/}{linkedin.com/in/alihashemi-ai}
+% \end{tabularx}
+% % left column
+
+% %% Germany
+% %% %%% ====================================================== %%% 
+% \begin{center}
+% \vspace{-7mm}
+% %% With photo and in minipage -- Suitable for Germany
+% \begin{minipage}{0.1\linewidth}
+
+%     \fbox{\includegraphics[width=1.5cm,height=1.4cm]{photo_official.jpg}} % Adjust the width and height of the photo as needed
+% \end{minipage}%
+% \hfill
+% % \hspace{-1cm}
+% \begin{minipage}{0.9\linewidth}
+%     \begin{tabularx}{\linewidth}{@{} X @{}}
+%         \Huge{Ali Hashemi $|$ Ph.D. $|$ ML Applied Scientist} \\[5pt]
+%         \href{https://linkedin.com/in/alihashemi-ai}{\raisebox{-0.05\height}\faLinkedin\ 
+%         alihashemi-ai} $|$ 
+%         \href{https://github.com/alihashemi-ai}{\raisebox{-0.05\height}\faGithub\ alihashemi-ai} $|$
+%         \href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar} $|$ 
+%         \href{mailto:alihashemi.ee@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alihashemi.ee@gmail.com} \\
+%     \end{tabularx}
+% \end{minipage}
+% \end{center}
+% \vspace{1mm}
+
+
+% % %%% ====================================================== %%% 
+% % US 
+% \vspace{-7mm}
+
+% %% With photo and in minipage -- Suitable for Germany
+% % \begin{minipage}{0.1\linewidth}
+% %     \fbox{\includegraphics[width=1.5cm,height=1.5cm]{photo_official.jpg}} % Adjust the width and height of the photo as needed
+% % \end{minipage}%
+% \hfill
+% % \hspace{-1cm}
+% \begin{minipage}{0.9\linewidth}
+%     \begin{tabularx}{\linewidth}{
+% @{} X @{}}
+%         \Huge{
+% Ali Hashemi $|$ Ph.D. $|$ ML Applied Scientist} \\
+% [5pt]
+%         \href{https://linkedin.com/in/alihashemi-ai}{\raisebox{-0.05\height}\faLinkedin\ 
+%         alihashemi-ai} $|$ 
+%         \href{https://github.com/alihashemi-ai}{\raisebox{-0.05\height}\faGithub\ alihashemi-ai} $|$
+%         \href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar} $|$ 
+%         \href{mailto:alihashemi.ee@gmail.com}{\raisebox{-0.05\height}\faEnvelope
+%  \ alihashemi.ee@gmail.com} \\
+%     \end{tabularx}
+% \end{minipage}
+% \vspace{4mm}
+
+
+\vspace{-7mm}
+%% With photo and in minipage -- Suitable for Germany
+% \begin{minipage}{0.1\linewidth}
+%     \fbox{\includegraphics[width=1.5cm,height=1.5cm]{photo_official.jpg}} % Adjust the width and height of the photo as needed
+% \end{minipage}%
+\hfill
+% \hspace{-1cm}
+\begin{minipage}{0.9\linewidth}
+    \begin{tabularx}{\linewidth}{
+@{} X @{}}
+        \Huge{Ali Hashemi $|$ Ph.D.} \\[2pt]
+        \large{Senior LLM Researcher $\cdot$ Tech Lead, Model Evaluation} \\[1pt]
+        {\normalsize LLM Research Staff, Multiverse Computing} \\
+[2pt]
+        \href{https://linkedin.com/in/alihashemi-ai}{\raisebox{-0.05\height}\faLinkedin\ 
+        } $|$ 
+        \href{https://github.com/alihashemi-ai}{\raisebox{-0.05\height}\faGithub\ } $|$
+        \href{https://x.com/alihashemi_ai}{X} $|$
+        \href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar} $|$ 
+        \href{mailto:alihashemi.ee@gmail.com}{\raisebox{-0.05\height}
+\faEnvelope \ alihashemi.ee@gmail.com} $|$ German citizen, Open to relocate \\
+    \end{tabularx}
+\end{minipage}
+\vspace{2mm}
+
+Senior LLM Researcher on the LLM Research Staff at Multiverse Computing, and Tech Lead for Model Evaluation. I lead evaluation so teams ship on evidence, build AI tooling that makes that work reproducible, and develop post-training methods --- distillation and recovery of compressed models --- that help ship smaller production LLMs. Ph.D.\ (Distinction, TU Berlin) with 10+ publications including NeurIPS and IEEE TMI.
+
+\begin{minipage}[t]{0.62\textwidth
+}
+\small
+% \section{Why I am the Best Fit for This Role}
+% % $\bullet$ Expert in generative AI and LLMs $\bullet$ Developed scalable deep learning algorithms
+% Developed distributed multimodal learning methods for large-scale model training, XAI for foundation models, Proven track record of strong collaboration and interpersonal skills in interdisciplinary projects.
+\section{EXPERIENCE}
+\experienceentry{Multiverse Computing}{Senior LLM Researcher $\cdot$ Tech Lead, Model Evaluation}{Nov 2025 - Present}{Berlin, Germany}
+\begin{itemize}
+    \item Lead \textbf{LLM evaluation} across Research, Product, Services and MLOps, putting the company on one shared platform so release decisions rest on the same evidence; independently reproduced a published 30B benchmark and caught scoring errors that had been treated as real model regressions.
+    \item Built \textbf{AI tooling} the training team uses: automatic checkpoint scoring, a reproducible evaluation platform, and an audited multi-agent coding workflow in which one model plans, others implement and review, and an independent model audits before changes are applied.
+    \item Developed \textbf{LLM post-training} methods that recover quality after compression, including knowledge distillation (SubDistill and top-K logit distillation) and quantization-aware healing of compressed Transformer, Mamba and mixture-of-experts models (three 2026 preprints). \vspace{0.3mm}\\
+    \skill{LLM Evaluation, AI Tooling, Post-training, Distillation}
+\end{itemize}
+\vspace{-4.2mm}
+
+\experienceentry{BIFOLD}{Machine Learning Research Scientist}{Oct 2022 - Nov 2025}{Berlin, Germany}
+\begin{itemize}
+    \item Cut foundation-model size by \textbf{80\%} with only 1\% accuracy loss, using subspace-based distillation on 600M+ parameter teachers.
+    \item Applied that method to histopathology models on 100M image patches, gaining \textbf{60\%} speed and cutting memory by 40\%.
+    \item Shipped a multimodal \textbf{RAG} system for clinical reporting, improving reporting efficiency by 15\%. \vspace{0.3mm}\\
+    \skill{Foundation Models, Distillation, PEFT, Distributed Training, RAG}
+\end{itemize}
+\vspace{-4.2mm}
+
+\experienceentry{Quality in Artificial Intelligence (QAI) Labs + Charit{\'e}}{Applied Scientist}{Feb 2019 - Sep 2022}{Berlin, Germany}
+\begin{itemize}
+    \item Directed an open-source \textbf{benchmark} toolkit (\bluelink{https://github.com/braindatalab/BSI-Zoo}{BSI-Zoo}), now used as a community standard.
+    \item Cut training time by \textbf{30\%} by building reproducible distributed training workflows.
+    \item Led cross-functional projects with PIs at \ulink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \ulink{https://alexandre.gramfort.net/}{Inria}, delivering on time across international teams. \vspace{0.3mm}\\
+    \skill{Benchmarking, Distributed Training, PyTorch}
+\end{itemize}
+\vspace{-4.2mm}
+
+\experienceentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{\makebox[0pt][l]{Doctoral \& Postdoctoral Research Fellow}}{2016 - 2025}{Berlin, Germany}
+\begin{itemize}
+    \item Designed conditional \textbf{diffusion models} for inverse problems, with distilled consistency models for near single-step sampling.
+    \item Published \bluelink{https://drive.google.com/file/d/1bK2rpEE4AHJcILjfK-MueJDCr-tBhC7a/view?usp=sharing}{10+ papers} in top venues, incl. \bluelink{https://nips.cc/virtual/2021/poster/26345}{\textbf{NeurIPS}}, Med-NeurIPS, \ulink{https://doi.org/10.1016/j.neuroimage.2020.117411}{NeuroImage}, and \ulink{https://doi.org/10.1109/TMI.2022.3224085}{TMI}; presented at \ulink{https://drive.google.com/file/d/1gUcIy36U6fNp1NoSLvXET-CaQrEqr_I-/view?usp=sharing}{international conferences}.
+    \item Mentored 5+ M.Sc./Ph.D. students; organized ML courses with 400+ participants. \vspace{0.3mm}\\
+    \skill{Diffusion Models, Optimization, Bayesian ML, Mentoring}
+\end{itemize}
+
+% \experienceentry{Singapore University of Technology and Design}{Applied Scientist}{Mar 2015 - Jan 2016}{Singapore}
+% \begin{itemize}
+%     \item Designed \ulink{https://www.youtube.com/watch?v=guz7qameZFg}{SOTA thermal field monitoring} techniques by integrating partial differential equations into \textbf{compressed sensing} algorithms.
+%     \item Achieved 10 dB better accuracy with 90\% less computational complexity.
+%     \skill{MATLAB, Signal \& Image Processing, Supervised Learning, Clustering}
+% \end{itemize}
+
+% \experienceentry{Wireless Lab, Sharif University of Technology}{Data Scientist}{Feb 12 - Dec 14}{Tehran}
+% % \textbf{Acceleration of Multivariate Testing}
+% \begin{itemize}
+%         % \item Conducted a survey of \textbf{classical ML approaches}, implemented in MATLAB, resulting in widely-used university software.
+%         \item Developed a MIMO wide-band spectrum sensing method, enhancing signal detection accuracy in wireless telecommunications by 15\%.
+%         % \item Taught and examined over 300 undergraduate students over two years. 
+%         % \item\skill{LLM, LoRA}
+% \end{itemize}
+% \vspace{-4.2mm}
+
+
+
+
+% % \textbf{Recommendation System for Real Estate Webpages}
+% \begin{itemize}
+%     \item Developed machine learning API to provide personalized property recommendations on real estate webpages, enhancing user experience by aligning suggestions with customer preferences.
+%     \item Chose LightGBM for the recommendation engine due to its compatibility with BigQuery data, achieving 5\% increase in recall@5 compared to existing models.
+% \end{itemize}
+% \vspace{1.0mm}
+
+% \textbf{Data Validation System}
+
+% \begin{itemize}
+
+%     \item Participated in developing system to detect data anomalies that could impair machine learning models, including recommendation systems, preventing significant profit loss.
+%     \item Implemented wrapper interface for AWS Deequ, the core module of system, and developed extensions for various use cases in Scala.
+% \end{itemize}
+% \vspace{2.0mm}
+
+% \experienceentry{BBB company}{Web Engineer and Math Teacher}{Apr 2019 - Mar 2020}{Kyoto, Japan}
+% \textbf{Web Page Development and Maintenance}
+% \begin{itemize}
+%     \item Deployed websites to promote the founder's initiatives, attracting prospective students and enhancing online visibility.
+%     \item Built the websites using 3-tier architecture, implemented in Python with Flask framework; containerized with Docker for streamlined maintenance and deployed on GCP to optimize costs.
+% \end{itemize}
+% \vspace{2.0mm}
+
+% \experienceentry{CCC company}{Quantitative Analyst and Engineer}{Apr 2018 - Mar 2019}{Tokyo, Japan}
+
+% \textbf{Price Calculation Module for Binary Options}
+% \begin{itemize}
+%     \item Led development of price calculation library, collaborating with IT system department to launch new binary options products (type of financial derivative).
+%     \item Developed Python library from scratch based on the Black-Scholes model to accurately price binary options.
+%     \item Replaced outsourced system, enhancing work efficiency and reducing operational time by 3 hours weekly.
+% \end{itemize}
+% \vspace{1.0mm}
+
+% % \textbf{Monitoring of CFDs (Contract for Differences)}
+% \begin{itemize}
+
+%     \item Developed batch processing system to visualize bid prices, trade records, and revenues of CFDs by extracting transaction data from Oracle and creating plots using Python.
+% \end{itemize}
+
+\end{minipage}
+\hfill
+% right column
+\begin{minipage}[t]{0.35\textwidth}
+% \section{SUMMARY}
+
+% As a seasoned applied scientist and expert in generative AI and LLMs, I have developed scalable deep learning algorithms and optimization techniques. My NeurIPS-published work has driven AI and healthcare innovation. I excel in deploying AI on cloud services, leading cross-functional teams, and collaborating with stakeholders to enhance business processes.
+
+\section{SKILLS}
+\begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 3.mm}L}
+Evaluation & LLM evaluation, benchmarks, measurement\\
+Post-training & Distillation, compression, PEFT, quantization\\
+AI tooling & Multi-agent workflows, eval automation, CI\\
+ML stack & Python, PyTorch, Hugging Face, vLLM\\
+Systems & Distributed training, Docker, Kubernetes, AWS\\
+Languages & English, German, Persian
+\end{tabularx}
+\section{EDUCATION}
+\textbf{Technische Universit{\"a}t Berlin} \\
+Ph.D. in Computer Science and ML \\ 
+{Grade: \textbf{(Distinction)}} \\
+Supervisors: K.-R. M{\"u}ller, S. Haufe \\
+
+% \textbf{Sharif University of Technology} \\
+% M.Sc. in Electrical \& Computer Engineering \\ 
+% GPA: 4.0/4.0 (\textbf{best possible grade)}
+
+% \section{EDUCATION}
+
+% \educationentry{PhD - Computer Science and ML}{Technische Universit{\"a}t Berlin }{Berlin, Germany}
+% (Distinction)
+% \par
+% \vspace{3.0mm}
+% \educationentry{Bachelor of Science - Mathematics}{BBB University}{Tokyo, Japan}
+
+\vspace{-3mm}
+\section{{\large SELECTED PUBLICATIONS}}
+\begin{itemize}
+    \item {\footnotesize ``Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs'', arXiv:2608.20953, 2026 [\bluelink{https://arxiv.org/abs/2608.20953}{Link}]}.
+    \item {\footnotesize ``Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss'', arXiv:2608.03796, 2026 [\bluelink{https://arxiv.org/abs/2608.03796}{Link}]}.
+    \item {\footnotesize ``LLM Compression by Block Removal with Constrained Binary Optimization'', arXiv:2602.00161, 2026 [\bluelink{https://arxiv.org/abs/2602.00161}{Link}]}.
+    \item {\footnotesize ``Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces'', arXiv:2601.05913, 2026 [\bluelink{https://arxiv.org/abs/2601.05913}{Link}]}.
+    \item {\footnotesize ``Enhancing Brain Source Reconstruction by Initializing 3D Neural Networks with Physical Inverse Solutions'', IEEE TMI, 2025 [\bluelink{https://arxiv.org/abs/2411.00143}{Link}]}.
+\end{itemize}
+
+\vspace{-3mm}
+\section{\large HONORS and AWARDS}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 6.5mm}L}
+2019 & 4-year \textbf{scholarship} by TUB \\
+2016 & 3-year \textbf{fellowship} from BIMoS \\
+% 2015 & 1-year research scholarship\\
+% 2010 & \textbf{Ranked \nth{1}} among 200+ undergradute students. 
+\end{tabularx}
+
+% \href{https://slideslive.com/38943007/joint-hierarchical-bayesian-learning-of-fullstructure-noise-for-brain-source-imaging?locale=de}{``Joint Hierarchical {Bayesian} Learning of Full-structure Noise for Brain Source Imaging''}, Medical-NeurIPS Workshop, 2020. 
+ 
+ 
+% \section{AWARDS}
+% \scoreentry{IELTS (General Training)}{Overall: 7.5}
+% \scoreentry{AtCoder}{Rate: 1800+, \, Solved problems: 1800+}
+% \scoreentry{LeetCode}{Rate: 2400+, \, Solved problems: 800+}
+
+% \section{
+% LANGUAGES}
+% \begin{itemize}
+%     \item English (Fluent)
+%     \item German (Advanced)
+%     \item Persian (Native)
+% \end{itemize}
+
+% \section{INTERESTS}
+% \begin{itemize}
+%     \item Learning Languages
+%     \item Fitness
+%     \item Classical Piano
+% \end{itemize}
+
+
+\end{minipage}
+
+\end{document}
+  
