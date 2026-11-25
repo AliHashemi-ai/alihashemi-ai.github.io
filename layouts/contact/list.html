@@ -24,6 +24,12 @@
     <div><span class="label">LinkedIn</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
   </li>
   {{ end }}
+  {{ with .Site.Params.x }}
+  <li data-sc-in>
+    <span class="icon">{{ partial "icon.html" "x" }}</span>
+    <div><span class="label">X</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
+  </li>
+  {{ end }}
   {{ with .Site.Params.github }}
   <li data-sc-in>
     <span class="icon">{{ partial "icon.html" "github" }}</span>

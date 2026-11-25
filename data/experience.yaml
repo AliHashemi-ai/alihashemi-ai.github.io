@@ -1,14 +1,15 @@
-- role: "Principal LLM Researcher"
+- role: "LLM Research Staff · Tech Lead, Model Evaluation"
   org: "Multiverse Computing"
   location: "Berlin, Germany"
   start: "Nov 2025"
   end: "Present"
   current: true
   bullets:
-    - "Leading research on efficient compression and optimization of large language models, applying tensor-network and distillation-based techniques to reduce model size and inference cost while preserving accuracy."
-    - "Driving applied R&D at the intersection of quantum-inspired algorithms and generative AI, translating research advances into production-ready, efficient LLM solutions for enterprise clients."
-    - "Collaborating with cross-functional research and engineering teams to scale foundation-model compression methods from prototype to deployment."
-  tags: ["LLM Compression", "Tensor Networks", "Foundation Models", "Efficient Inference"]
+    - "Lead LLM evaluation across Research, Product, Services and MLOps, putting the company on one shared platform so model-release decisions rest on the same evidence."
+    - "Made scores trustworthy by independently reproducing a published 30B benchmark and catching scoring errors that had been treated as real model regressions — before they could mislead a release decision."
+    - "Put automatic checkpoint scoring in the hands of the training team, and required that a model be compared with its base only under the same evaluation protocol."
+    - "Co-developed compression and distillation methods that help ship smaller production LLMs (three 2026 preprints, plus SubDistill, arXiv:2601.05913)."
+  tags: ["LLM Evaluation", "Benchmarks", "Distillation", "Model Compression"]
 
 - role: "Machine Learning Research Scientist"
   org: "BIFOLD (Berlin Institute for the Foundations of Learning and Data)"

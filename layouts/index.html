@@ -3,19 +3,21 @@
 <div data-sc-in>
   <p class="eyebrow">About</p>
   <p class="bio">
-    Ali builds and ships efficient large language models — from research prototypes to production systems.
-    As Principal LLM Researcher at <strong>Multiverse Computing</strong>, he works on compressing and optimizing
-    LLMs to cut inference cost without sacrificing accuracy. Previously at <strong>BIFOLD</strong> and TU Berlin,
-    he built foundation models, diffusion models, and low-latency inference pipelines for biomedical and
-    vision-language applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and Machine
-    Learning. His work spans distillation, PEFT, sparsity, and generative modeling, backed by 10+ publications
-    at venues including NeurIPS and IEEE&nbsp;TMI.
+    When a surprising benchmark result appears, Ali finds out whether it is a real model
+    change or a measurement error — before anyone acts on it. As LLM Research Staff and
+    Tech Lead, Model Evaluation at <strong>Multiverse Computing</strong>, he leads evaluation
+    across teams so release decisions rest on the same evidence, and develops compression
+    and distillation methods that make language models practical to deploy. Previously at
+    <strong>BIFOLD</strong> and TU Berlin, he built foundation models and low-latency
+    inference systems for biomedical and vision-language applications, holding a Ph.D.
+    <em>summa cum laude</em> in Computer Science and Machine Learning. His work is backed
+    by 10+ publications at venues including NeurIPS and IEEE&nbsp;TMI.
   </p>
 </div>
 
 <p class="eyebrow">Core Stack</p>
 <div class="interest-list stack-list" data-sc-in data-sc-stagger="35">
-  {{ range (slice "Python" "PyTorch" "vLLM / TensorRT" "Hugging Face" "LangChain" "Docker & Kubernetes" "AWS / GCP" "CI/CD") }}
+  {{ range (slice "LLM Evaluation" "Benchmarks" "PyTorch" "Distillation" "vLLM" "Hugging Face" "Distributed Training" "AWS / Kubernetes") }}
   <span class="chip">{{ . }}</span>
   {{ end }}
 </div>
@@ -48,13 +50,12 @@
   <h2>Selected Publications</h2>
   <a class="see-all" href="{{ "/publications/" | relURL }}">All publications →</a>
 </div>
-{{ $published := where .Site.Data.publications "type" "ne" "preprint" }}
-{{ $highlighted := where $published "highlight" true }}
-{{ $rest := sort (where $published "highlight" "ne" true) "year" "desc" }}
+{{ $highlighted := where .Site.Data.publications "highlight" true }}
+{{ $rest := sort (where .Site.Data.publications "highlight" "ne" true) "year" "desc" }}
 {{ range $highlighted }}
 {{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
 {{ end }}
-{{ range first (sub 4 (len $highlighted)) $rest }}
+{{ range first (sub 6 (len $highlighted)) $rest }}
 {{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
 {{ end }}
 
