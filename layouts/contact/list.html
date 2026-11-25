@@ -36,6 +36,12 @@
     <div><span class="label">GitHub</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
   </li>
   {{ end }}
+  {{ with .Site.Params.huggingface }}
+  <li data-sc-in>
+    <span class="icon">{{ partial "icon.html" "huggingface" }}</span>
+    <div><span class="label">Hugging Face</span><br><a class="value" href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></div>
+  </li>
+  {{ end }}
   {{ with .Site.Params.scholar }}
   <li data-sc-in>
     <span class="icon">{{ partial "icon.html" "scholar" }}</span>
