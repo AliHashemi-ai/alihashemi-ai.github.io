@@ -11,7 +11,9 @@
     he builds LLM-as-judge scoring and automated graders, and curates eval datasets.
     He also designs and leads agentic AI coding workflows, builds eval harnesses
     and contributes to an agent harness. His quality gates check AI-written code
-    before it ships. In post-training, he contributed SFT on
+    before it ships. He also works on continued pretraining of large
+    mixture-of-experts LLMs, including multi-token prediction, long-context
+    training and multi-node parallelism on H200 and B300 clusters. In post-training, he contributed SFT on
     <a href="https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605" target="_blank" rel="noopener">HyperNova&nbsp;60B</a>
     and develops distillation and quantization-aware healing so compressed models
     reach production quality. Multiverse Computing's public
@@ -27,7 +29,7 @@
 
 <p class="eyebrow">Core Stack</p>
 <div class="interest-list stack-list" data-sc-in data-sc-stagger="35">
-  {{ range (slice "LLM Evaluation" "Frontier Model Evaluation" "LLM-as-judge" "Eval Data Curation" "Agentic AI Coding" "Harness Development" "SFT" "Post-training" "PyTorch" "Distributed Training") }}
+  {{ range (slice "LLM Evaluation" "Frontier Model Evaluation" "LLM-as-judge" "CPT" "Agentic AI Coding" "Harness Development" "SFT" "Post-training" "PyTorch" "Distributed Training") }}
   <span class="chip">{{ . }}</span>
   {{ end }}
 </div>

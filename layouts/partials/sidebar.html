@@ -9,6 +9,7 @@
     <div class="sidebar-role">{{ .Site.Params.role }}</div>
     <div class="sidebar-org">{{ partial "org-link.html" .Site.Params.affiliation }}</div>
     <div class="sidebar-location">{{ partial "icon.html" "location" }} {{ .Site.Params.location }}</div>
+    {{ with .Site.Params.relocation }}<div class="sidebar-location">{{ . }}</div>{{ end }}
   </div>
 
   <div class="sidebar-social">

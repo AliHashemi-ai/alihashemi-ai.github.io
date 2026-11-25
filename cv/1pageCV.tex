@@ -4,7 +4,6 @@
 %
 %% It may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
-
 %% of this license or (at your option) any later version.
 %% The latest version of this license is in
 %%    http://www.latex-project.org/lppl.txt
@@ -22,199 +21,171 @@
 \usepackage{tabularx}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb,fontenc,textcomp}
-\usepackage[absolute,overlay]{textpos} % for placing the photo
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{academicons}
 \usepackage[super]{nth}
 \usepackage[unicode, draft=false]{hyperref}
 \usepackage{mdframed}
-\usepackage{xcolor} % Optional, for customizing link colors
-\usepackage[normalem]{ulem} % for \uline command
-\usepackage{soul} % for underlining with color
-\definecolor{linkcolour}{rgb}{0.1, 0.7, 0.9}
-\definecolor{highlightcolour}{rgb}{0.2, 0.5, 1}
+\usepackage{xcolor}
+\usepackage{tikz}
 
 \hypersetup{
-    colorlinks=true, % Enable colored links (but we'll set the color to black)
-    linkcolor=black, % Color for internal links
-    urlcolor=black, % Color for URLs
-    citecolor=black % Color for citations
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black
 }
 
-% macro
-\newcommand{\boxedlink}[2]{%
-    \begin{mdframed}[roundcorner=5pt, backgroundcolor=gray!10, linecolor=black]
-        \href{#1}{\textcolor{blue}{#2}}
-    \end{mdframed}
-}
+% no hyphenation; allow a little extra stretch instead
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=1.5em
 
-\newcommand{\borderedlink}[2]{%
-    \href{#1}{\fcolorbox{cyan}{white}{#2}}
-}
-
-\newcommand{\ulink}[2]{\href{#1}{\setulcolor{blue}\ul{#2}}}
-
-% Define the custom command for links
+% macros
 \newcommand{\bluelink}[2]{\href{#1}{\color{blue}#2}}
 
 % Organisation links in section headings keep the theme heading colour
 \newcommand{\orglink}[2]{\href{#1}{\color{color1}#2}}
 
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
-\newcommand*{\experienceentry}[5][1.5mm]{
-    \subsection{#2} \vspace{-1.5mm}
-    \begin{tabularx}{\textwidth}{LR}
+% role flush left, dates flush right, on one baseline
+\newcommand*{\experienceentry}[5][1.2mm]{%
+    \subsection{#2}\vspace{-1.5mm}
+    \noindent{\small\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
         {\itshape #3} & {\itshape #4, #5}
-    \end{tabularx}
-    \par\addvspace{#1}
-}
-
-\newcommand*{\educationentry}[4][0.5mm]
-{
-    \begin{tabularx}{\textwidth}{LR}
-        {\bfseries #3} & {\bfseries #4} \\
-    \end{tabularx}
-    {\itshape #2}
-    \par\addvspace{#1}
-}
-
-\newcommand*{\scoreentry}[3][2.5mm]{
-    {\bfseries #2} \\
-    {\itshape #3}
-    \par\addvspace{#1}
+    \end{tabular*}}
+    \par\addvspace{#1}%
 }
 
 \definecolor{darkGrey}{HTML}{989898}
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep=0.55ex,text height=1.3ex,text depth=.25ex]{#1};
 }
-\newcommand\skill[1]{
-\footnotesize{\foreach \n in {#1}{\cvtag{\n}}} 	\\
-  }
-
-% Custom commands for social media icons
-\newcommand{\github}[1]{\href{https://github.com/#1}{\faGithub \ #1}}
-\newcommand{\linkedin}[1]{\href{https://linkedin.com/in/#1}{\faLinkedin \ #1}}
-\newcommand{\twitter}[1]{\href{https://twitter.com/#1}{\faTwitter \ #1}
+% tags sit in their own paragraph so the bullet above keeps normal line spacing
+\newcommand\skill[1]{%
+  \par\vspace{1mm}%
+  {\footnotesize\raggedright\foreach \n in {#1}{\cvtag{\n}}\par}%
 }
-\newcommand{\googlescholar}[1]{\href{https://scholar.google.com/citations?user=#1}{\includegraphics[height=10pt]{scholar.png} \ #1}}
-\newcommand{\scholar}[1]{\href{https://scholar.google.com/citations?user=#1}{\aiGoogleScholar \ #1}}
-\newcommand{\website}[1]{\href{https://#1}{\faGlobe \ #1}}
-\newcommand{\home}[1]{\faMapMarker \ #1}
 
+\newcommand{\skillgroup}[2]{%
+  {\footnotesize\raggedright\textbf{#1:} #2\par}\addvspace{0.8mm}%
+}
 
 % preamble
 \firstname{Ali}
 \familyname{Hashemi}
-\address{Berlin, Germany}{}
 
-
-\vspace{-7mm}
 % document
 \begin{document}
 
+% header: centered on the full line width
+\vspace*{-6mm}
+\begin{center}
+    {\Huge Ali Hashemi $|$ Ph.D.}\par
+    \vspace{2mm}
+    {\large Senior LLM Researcher and Tech Lead at \href{https://multiversecomputing.com/}{Multiverse Computing}}\par
+    \vspace{1.5mm}
+    {\footnotesize
+    \mbox{LinkedIn: \href{https://linkedin.com/in/alihashemi-ai}{alihashemi-ai}}\enspace$|$\enspace
+    \mbox{GitHub: \href{https://github.com/alihashemi-ai}{alihashemi-ai}}\enspace$|$\enspace
+    \mbox{\href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar}}\enspace$|$\enspace
+    \mbox{Email: \href{mailto:alihashemi.ee@gmail.com}{alihashemi.ee@gmail.com}}\enspace$|$\enspace
+    \mbox{Web: \href{https://alihashemi-ai.github.io/}{alihashemi-ai.github.io}}\par}
+    \vspace{1mm}
+    {\small German citizen, Open to relocate to the US}\par
+\end{center}
+\vspace{-1mm}
 
-\vspace{-7mm}
-\hfill
-\begin{minipage}{0.9\linewidth}
-    \begin{tabularx}{\linewidth}{
-@{} X @{}}
-        \Huge{Ali Hashemi, Ph.D.} \\[2pt]
-        \large{Senior LLM Researcher and Tech Lead $\cdot$ \href{https://multiversecomputing.com/}{Multiverse Computing}} \\
-[3pt]
-        \href{https://linkedin.com/in/alihashemi-ai}{\raisebox{-0.05\height}\faLinkedin\
-        } $|$
-        \href{https://github.com/alihashemi-ai}{\raisebox{-0.05\height}\faGithub\ } $|$
-        \href{https://x.com/alihashemi_ai}{X} $|$
-        \href{https://scholar.google.com/citations?user=rCcFTFgAAAAJ}{Scholar} $|$
-        \href{mailto:alihashemi.ee@gmail.com}{\raisebox{-0.05\height}
-\faEnvelope \ alihashemi.ee@gmail.com} $|$ German citizen, Open to relocate \\
-    \end{tabularx}
-\end{minipage}
-\vspace{2mm}
+\noindent I lead LLM evaluation, build agentic coding harnesses and develop post-training methods incl.\ SFT. TU Berlin Ph.D.~\mbox{(Distinction / summa cum laude)}, \mbox{\textbf{10+} publications} including NeurIPS and \mbox{IEEE TMI}.
+\par
+\vspace{1mm}
 
-I lead LLM evaluation at Multiverse Computing, turning benchmarks and regression testing into trusted release signals. I build evaluation infrastructure and AI tooling, and co-develop post-training methods for smaller LLMs. TU Berlin Ph.D.~\mbox{(Distinction / summa cum laude)}, 10+ publications including NeurIPS and IEEE TMI.
-
-\begin{minipage}[t]{0.62\textwidth
-}
+% both columns get the remaining page height, so they end on the same line
+\newlength{\colheight}
+\setlength{\colheight}{\dimexpr\pagegoal-\pagetotal-8pt\relax}
+\nointerlineskip
+\noindent
+\begin{minipage}[t][\colheight][s]{0.62\textwidth}
 \section{EXPERIENCE}
-\experienceentry{\orglink{https://multiversecomputing.com/}{Multiverse Computing}}{\makebox[0pt][l]{Senior LLM Researcher and Tech Lead}}{Nov 2025 - Present}{Berlin}
+\experienceentry{\orglink{https://multiversecomputing.com/}{Multiverse Computing}}{Senior LLM Researcher and Tech Lead}{Dec 2025 - Present}{Spain (Hybrid)}
 \begin{itemize}
-    \item Lead \textbf{LLM evaluation}, using \textbf{benchmarks} and \textbf{regression testing} to give release decisions clear and consistent evidence.
-    \item Build \textbf{evaluation infrastructure} and \textbf{AI tooling} that make model assessment reliable, repeatable and automated.
-    \item Co-develop \textbf{post-training} methods that restore quality in compressed models, including distillation and quantization-aware recovery, to help ship smaller production LLMs. \vspace{1mm}\\
-    \skill{LLM Evaluation, Benchmarks, AI Tooling, Post-training}
+    \item \textbf{Frontier model evaluation:} Lead benchmark and experimental design, release gates and failure analysis with statistical rigor, catching scoring errors before they \mbox{pass as regressions}.
+    \item \textbf{Eval tooling:} Build LLM-as-judge and automated graders, curate European-language eval data, and build eval infra for coding agents and \mbox{on-device models}.
+    \item \textbf{Agentic coding:} Design and lead multi-agent workflows that separate planning, implementation, review and audit, with quality gates for AI-written code. Contribute to an \mbox{agent harness}.
+    \item \textbf{Training:} Work on continued pretraining (CPT) of large \mbox{mixture-of-experts} LLMs. Contributed SFT on \bluelink{https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605}{\mbox{HyperNova 60B}}. Multiverse's public \bluelink{https://huggingface.co/MultiverseComputingCAI/Pulsar-16B-BF16}{\mbox{Pulsar 16B}} model card also reports SFT after compression. Co-develop distillation and quantization-aware healing to ship smaller LLMs. Deliver \mbox{customer-facing work}.
+    \skill{LLM Evaluation, LLM-as-Judge, Agentic Coding, SFT, CPT}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-2mm}
+\vfill
 
 \experienceentry{\orglink{https://bifold.berlin/}{BIFOLD}}{Machine Learning Research Scientist}{Oct 2022 - Nov 2025}{Berlin}
 \begin{itemize}
-    \item Cut foundation-model size by \textbf{80\%} with only 1\% accuracy loss, using subspace-based distillation on 600M+ parameter teachers.
-    \item Applied that method to histopathology models on 100M image patches, gaining \textbf{60\%} speed and cutting memory by 40\%.
-    \item Shipped a multimodal \textbf{RAG} system for clinical reporting, improving reporting efficiency by 15\%. \vspace{1mm}\\
+    \item Cut foundation-model size by \textbf{80\%} with only \textbf{1\%} accuracy loss, using subspace-based distillation on 600M+ \mbox{parameter teachers}.
+    \item Applied that method to histopathology models on 100M image patches, gaining \textbf{60\%} speed and cutting \mbox{memory by \textbf{40\%}}.
+    \item Shipped a multimodal RAG system for clinical reporting, improving \mbox{reporting efficiency by \textbf{15\%}}.
     \skill{Foundation Models, Distillation, PEFT, Distributed Training, RAG}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-2mm}
+\vfill
 
 \experienceentry{Quality in Artificial Intelligence (QAI) Labs + Charit{\'e}}{Applied Scientist}{Feb 2019 - Sep 2022}{Berlin}
 \begin{itemize}
-    \item Directed an open-source \textbf{benchmark} toolkit (\bluelink{https://github.com/braindatalab/BSI-Zoo}{BSI-Zoo}), now used as a community standard.
-    \item Cut training time by \textbf{30\%} by building reproducible distributed training workflows.
-    \item Led cross-functional projects with PIs at \ulink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \ulink{https://alexandre.gramfort.net/}{Inria}, delivering on time across international teams. \vspace{1mm}\\
+    \item Directed an open-source benchmark toolkit (\bluelink{https://github.com/braindatalab/BSI-Zoo}{BSI-Zoo}) with a full CI/CD pipeline, now a community standard \mbox{in neuroimaging}.
+    \item Cut training time by \textbf{30\%} via reproducible \mbox{distributed training}.
+    \item Led cross-functional projects with PIs at \bluelink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \bluelink{https://alexandre.gramfort.net/}{Inria}, delivering on time across \mbox{international teams}.
     \skill{Benchmarking, Distributed Training, PyTorch}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-2mm}
+\vfill
 
-\experienceentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{\makebox[0pt][l]{Doctoral \& Postdoctoral Research Fellow}}{2016 - 2025}{Berlin}
+\experienceentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{Doctoral \& Postdoctoral Research Fellow}{2016 - 2025}{Berlin}
 \begin{itemize}
-    \item Designed conditional \textbf{diffusion models} for inverse problems, with distilled consistency models for near single-step sampling.
-    \item Published \bluelink{https://drive.google.com/file/d/1bK2rpEE4AHJcILjfK-MueJDCr-tBhC7a/view?usp=sharing}{10+ papers} in top venues, incl. \bluelink{https://nips.cc/virtual/2021/poster/26345}{\textbf{NeurIPS}}, Med-NeurIPS, \ulink{https://doi.org/10.1016/j.neuroimage.2020.117411}{NeuroImage}, and \ulink{https://doi.org/10.1109/TMI.2022.3224085}{TMI}; presented at \ulink{https://drive.google.com/file/d/1gUcIy36U6fNp1NoSLvXET-CaQrEqr_I-/view?usp=sharing}{international conferences}.
-    \item Mentored 5+ M.Sc./Ph.D. students; organized ML courses with 400+ participants. \vspace{1mm}\\
+    \item Designed conditional diffusion models for inverse problems, with distilled consistency models for near \mbox{single-step sampling}.
+    \item Published \bluelink{https://drive.google.com/file/d/1bK2rpEE4AHJcILjfK-MueJDCr-tBhC7a/view?usp=sharing}{\mbox{\textbf{10+} papers}} incl.\ \bluelink{https://nips.cc/virtual/2021/poster/26345}{NeurIPS}, Med-NeurIPS, \bluelink{https://doi.org/10.1016/j.neuroimage.2020.117411}{\mbox{NeuroImage}} and \bluelink{https://doi.org/10.1109/TMI.2022.3224085}{\mbox{IEEE TMI}}; presented at \bluelink{https://drive.google.com/file/d/1gUcIy36U6fNp1NoSLvXET-CaQrEqr_I-/view?usp=sharing}{\mbox{international conferences}}.
+    \item Mentored \textbf{5+} graduate students; ran ML courses for \mbox{\textbf{400+} people}.
     \skill{Diffusion Models, Optimization, Bayesian ML, Mentoring}
 \end{itemize}
-
-\end{minipage}
+\par\unskip
+\end{minipage}%
 \hfill
 % right column
-\begin{minipage}[t]{0.35\textwidth}
-
+\begin{minipage}[t][\colheight][s]{0.35\textwidth}
 \section{SKILLS}
-\begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 3.mm}L}
-Evaluation & Benchmarks, regression testing\\
-AI tooling & Evaluation infrastructure, automation\\
-Post-training & Distillation, compression, PEFT, quantization\\
-ML stack & Python, PyTorch, Hugging Face, vLLM\\
-Systems & Distributed training, Docker, Kubernetes, AWS\\
-Languages & English, German, Persian
-\end{tabularx}
+\skillgroup{Evaluation}{\mbox{LM Evaluation Harness}, EvalScope, \mbox{NeMo Evaluator}, \mbox{NeMo Gym}, frontier models, benchmark design, LLM-as-judge, automated graders, eval data curation, \mbox{European-language} evals}
+\skillgroup{Agentic coding}{Multi-agent workflows, agent and eval harnesses, agent skills, \mbox{quality gates}}
+\skillgroup{Training and post-training}{\mbox{Megatron-LM}, \mbox{Megatron-Bridge}, \mbox{NVIDIA NeMo Framework}, Ray, CPT, \mbox{multi-token} prediction, \mbox{long-context} training, SFT, distillation, \mbox{quantization-aware} healing, PEFT, \mbox{multi-node} tensor, pipeline, expert and context parallelism, memory and throughput optimization, profiling}
+\skillgroup{Infrastructure and orchestration}{SkyPilot, ClearML, \mbox{NVIDIA Run:ai}, AWS, Docker, Kubernetes, \mbox{H200 and B300} clusters}
+\skillgroup{Stack}{Python, PyTorch, Hugging Face, vLLM}
+\skillgroup{Languages}{English, German, Persian}
+\vfill
+
 \section{EDUCATION}
-\textbf{Technische Universit{\"a}t Berlin} \\
-Ph.D. in Computer Science and ML \\
-\mbox{\textbf{(Distinction / summa cum laude)}} \\
-Supervisors: K.-R. M{\"u}ller, S. Haufe \\
+\textbf{Technische Universit{\"a}t Berlin}\par
+Ph.D. in Computer Science and ML\par
+\mbox{Distinction / summa cum laude}\par
+Supervisors: K.-R. M{\"u}ller, S. Haufe\par
+\vfill
 
-\vspace{-3mm}
-\section{{\large SELECTED PUBLICATIONS}}
+\section{SELECTED PAPERS}
 \begin{itemize}
+    \footnotesize
     \raggedright
-    \item {\footnotesize ``Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs'', arXiv:2608.20953, 2026 [\bluelink{https://arxiv.org/abs/2608.20953}{Link}]}.
-    \item {\footnotesize ``Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss'', arXiv:2608.03796, 2026 [\bluelink{https://arxiv.org/abs/2608.03796}{Link}]}.
-    \item {\footnotesize ``LLM Compression by Block Removal with Constrained Binary Optimization'', arXiv:2602.00161, 2026 [\bluelink{https://arxiv.org/abs/2602.00161}{Link}]}.
-    \item {\footnotesize ``Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces'', arXiv:2601.05913, 2026 [\bluelink{https://arxiv.org/abs/2601.05913}{Link}]}.
-    \item {\footnotesize ``Enhancing Brain Source Reconstruction by Initializing 3D Neural Networks with Physical Inverse Solutions'', IEEE TMI, 2025 [\bluelink{https://arxiv.org/abs/2411.00143}{Link}]}.
+    \setlength{\itemsep}{0.8mm}
+    \item ``Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2608.20953}{arXiv}, \bluelink{https://huggingface.co/papers/2608.20953}{HF paper}]}
+    \item ``Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2608.03796}{arXiv}, \bluelink{https://huggingface.co/papers/2608.03796}{HF paper}]}
+    \item ``LLM Compression by Block Removal with Constrained Binary Optimization'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2602.00161}{arXiv}, \bluelink{https://huggingface.co/papers/2602.00161}{HF paper}]}
+    \item ``Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces'', \mbox{2026 [\bluelink{https://arxiv.org/abs/2601.05913}{arXiv}]}
+    \item ``Enhancing Brain Source Reconstruction by Initializing 3D Neural Networks with Physical Inverse Solutions'', \mbox{IEEE TMI}, \mbox{2025 [\bluelink{https://arxiv.org/abs/2411.00143}{arXiv}]}
 \end{itemize}
+\vfill
 
-\vspace{-3mm}
-\section{\large HONORS and AWARDS}
-
-\begin{tabularx}{\textwidth}{>{\bfseries}l@{\hskip 6.5mm}L}
-2019 & 4-year \textbf{scholarship} by TUB \\
-2016 & 3-year \textbf{fellowship} from BIMoS \\
+\section{HONORS \& AWARDS}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l@{\hskip 6.5mm}L@{}}
+2019 & 4-year scholarship by TUB \\
+2016 & 3-year fellowship from BIMoS \\
 \end{tabularx}
-
+\par\unskip
 \end{minipage}
 
 \end{document}

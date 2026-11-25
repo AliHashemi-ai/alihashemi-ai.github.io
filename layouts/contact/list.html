@@ -3,6 +3,7 @@
 <div data-sc-in>
   <h2 class="page-title">Contact</h2>
   <p class="page-lede">Feel free to reach out about research collaborations, speaking engagements, or opportunities.</p>
+  {{ with .Site.Params.relocation }}<p class="page-lede">{{ . }}</p>{{ end }}
 </div>
 
 <ul class="contact-list">

@@ -2,10 +2,12 @@
   items: ["Python", "C/C++", "Rust", "R", "MATLAB", "SQL", "LaTeX"]
 - category: "Libraries & Frameworks"
   items: ["PyTorch (Lightning)", "TensorFlow", "JAX", "Hugging Face (Transformers, Adapters, Diffusers)", "NumPy", "Pandas", "SciPy", "Scikit-learn", "OpenCV", "NLTK", "SLURM", "Hydra", "W&B", "Weaviate"]
+- category: "Training and Post-training"
+  items: ["Megatron-LM", "Megatron-Bridge", "NVIDIA NeMo Framework", "Ray", "Continued Pretraining (CPT)", "Mixture-of-Experts LLMs", "Multi-Token Prediction", "Long-Context Training", "Multi-Node GPU Parallelism Tuning", "Tensor, Pipeline, Expert and Context Parallelism", "Memory and Throughput Optimization", "Precision Tuning","Activation Recomputation", "Communication Overlap", "Profiling and Trace Analysis", "Checkpoint and Restart Verification", "Data Lineage", "Automated Experiment Pipelines", "SFT (HyperNova)", "Quantization-Aware Healing"]
 - category: "LLM Evaluation and Agentic Coding"
-  items: ["lm-evaluation-harness", "NeMo-Skills", "EvalScope", "Inspect", "Harbor", "Agent Evaluation", "Frontier Model Evaluation", "LLM-as-judge", "Automated Graders", "Eval Data Curation", "European-Language Evaluation", "Experimental Design", "Statistical Rigor", "SFT (HyperNova)", "Quantization-Aware Healing", "Agentic AI Coding", "Multi-Agent Coding Workflows", "Harness Development", "Agent Skills and Plugins", "Code Quality Gates", "LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT", "Megatron-LM"]
-- category: "MLOps & Cloud"
-  items: ["Linux", "Bash", "Git", "CI/CD", "Docker", "Kubernetes", "MLflow", "AWS (EC2, S3, SageMaker, Lambda, Bedrock)", "GCP (Vertex AI)", "Azure"]
+  items: ["LM Evaluation Harness", "EvalScope", "NeMo Evaluator", "NeMo Gym", "NeMo-Skills", "Inspect", "Harbor", "Agent Evaluation", "Frontier Model Evaluation", "LLM-as-judge", "Automated Graders", "Eval Data Curation", "European-Language Evaluation", "Experimental Design", "Statistical Rigor", "Agentic AI Coding", "Multi-Agent Coding Workflows", "Harness Development", "Agent Skills and Plugins", "Code Quality Gates", "LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT"]
+- category: "Infrastructure and Orchestration"
+  items: ["SkyPilot", "ClearML", "NVIDIA Run:ai", "AWS (EC2, S3, SageMaker, Lambda, Bedrock)", "H200 and B300 GPU Clusters","Linux", "Bash", "Git", "CI/CD", "Docker", "Kubernetes", "MLflow", "GCP (Vertex AI)", "Azure"]
 - category: "Soft Skills"
   items: ["Customer-Facing Delivery", "Project Management", "Technical Writing", "Public Speaking", "Training & Mentoring", "Event Organization"]
 - category: "Languages"
