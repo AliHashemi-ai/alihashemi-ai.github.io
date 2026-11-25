@@ -1,4 +1,4 @@
 ---
 title: "Ali Hashemi"
-description: "Ali Hashemi, Ph.D. — Tech Lead, Model Evaluation and LLM Research Staff at Multiverse Computing. I make sure LLM scores can be trusted before a model ships."
+description: "Ali Hashemi, Ph.D. — Senior LLM Researcher (LLM Research Staff) and Tech Lead, Model Evaluation at Multiverse Computing. LLM evaluation, AI tooling, and post-training."
 ---

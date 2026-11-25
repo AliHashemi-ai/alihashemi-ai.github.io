@@ -10,12 +10,12 @@ disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
   name = "Ali Hashemi"
-  role = "LLM Research Staff · Tech Lead, Model Evaluation"
-  affiliation = "Multiverse Computing"
+  role = "Senior LLM Researcher · Tech Lead, Model Evaluation"
+  affiliation = "LLM Research Staff, Multiverse Computing"
   location = "Berlin, Germany"
   email = "alihashemi.ee@gmail.com"
-  description = "Ali Hashemi, Ph.D. — Tech Lead, Model Evaluation and LLM Research Staff at Multiverse Computing. I make sure LLM scores can be trusted before a model ships."
-  keywords = "Ali Hashemi, Machine Learning, LLM, Model Evaluation, LLM Compression, Distillation, Foundation Models, NeurIPS, TU Berlin, BIFOLD, Multiverse Computing"
+  description = "Ali Hashemi, Ph.D. — Senior LLM Researcher (LLM Research Staff) and Tech Lead, Model Evaluation at Multiverse Computing. LLM evaluation, AI tooling, and post-training."
+  keywords = "Ali Hashemi, Senior LLM Researcher, LLM Research Staff, Model Evaluation, LLM post-training, AI tooling, Distillation, Benchmarks, NeurIPS, TU Berlin, Multiverse Computing"
   cvFile = "/files/Ali_Hashemi_CV.pdf"
   github = "https://github.com/alihashemi-ai"
   linkedin = "https://www.linkedin.com/in/alihashemi-ai/"
