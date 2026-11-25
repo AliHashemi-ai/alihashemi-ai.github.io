@@ -78,16 +78,6 @@
     - label: "Code"
       url: "https://github.com/braindatalab/BSI-Zoo"
 
-- title: "Continual learning that resists overfitting and spurious correlations through low-rank and sparse adaptation"
-  authors: "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon"
-  venue: "Preparing to submit to ICML"
-  venueShort: "Preprint · ICML"
-  details: ""
-  year: 2026
-  type: "preprint"
-  image: "images/papers/icml_inprep.webp"
-  takeaway: "Combines low-rank and sparse adaptation so continual learning resists overfitting and shortcut learning."
-
 - title: "Enhancing brain source reconstruction by initializing 3D neural networks with physical inverse solutions"
   authors: "M. Morik, <strong>A. Hashemi</strong>, K.-R. Müller, S. Haufe, S. Nakajima"
   venue: "IEEE Transactions on Medical Imaging"
