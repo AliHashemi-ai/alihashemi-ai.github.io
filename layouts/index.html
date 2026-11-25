@@ -10,7 +10,7 @@
     and recovery of compressed models — that help ship smaller production LLMs.
     Previously at <strong>BIFOLD</strong> and TU Berlin, he built foundation
     models and low-latency inference systems for biomedical and vision-language
-    applications, holding a Ph.D. <em>summa cum laude</em> in Computer Science and
+    applications, holding a Ph.D. <em>(Distinction)</em> in Computer Science and
     Machine Learning. His work is backed by 10+ publications at venues including
     NeurIPS and IEEE&nbsp;TMI.
   </p>
@@ -53,11 +53,13 @@
 </div>
 {{ $highlighted := where .Site.Data.publications "highlight" true }}
 {{ $rest := sort (where .Site.Data.publications "highlight" "ne" true) "year" "desc" }}
+<div class="pub-grid">
 {{ range $highlighted }}
-{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
+{{ partial "pub-item.html" (dict "pub" .) }}
 {{ end }}
 {{ range first (sub 6 (len $highlighted)) $rest }}
-{{ partial "pub-item.html" (dict "pub" . "withYear" true) }}
+{{ partial "pub-item.html" (dict "pub" .) }}
 {{ end }}
+</div>
 
 {{ end }}

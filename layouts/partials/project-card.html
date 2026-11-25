@@ -1,11 +1,23 @@
-<div class="project-card" data-sc-in data-sc-tilt>
-  <div class="project-head">
-    <div class="project-title">{{ .title }}</div>
-    <div class="project-metric">{{ .metric }}</div>
+<div class="project-card media-card" data-sc-in data-sc-tilt>
+  {{ with .image }}
+  <div class="card-media">
+    <img src="{{ . | relURL }}" alt="Cover image for the {{ $.title }} project" width="640" height="427" loading="lazy" decoding="async">
   </div>
-  <div class="project-meta">{{ .org }} · {{ .period }}</div>
-  <p class="project-desc">{{ .description }}</p>
-  <div class="entry-tags">
-    {{ range .tags }}<span class="chip">{{ . }}</span>{{ end }}
+  {{ end }}
+  <div class="card-body">
+    <div class="project-head">
+      <div class="project-title">{{ .title }}</div>
+      <div class="project-metric">{{ .metric }}</div>
+    </div>
+    <div class="project-meta">{{ .org }} · {{ .period }}</div>
+    <p class="project-desc">{{ .description }}</p>
+    <div class="entry-tags">
+      {{ range .tags }}<span class="chip">{{ . }}</span>{{ end }}
+    </div>
+    {{ with .links }}
+    <div class="card-links">
+      {{ range . }}<a class="card-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }} <span aria-hidden="true">↗</span></a>{{ end }}
+    </div>
+    {{ end }}
   </div>
 </div>

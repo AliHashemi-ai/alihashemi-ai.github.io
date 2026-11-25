@@ -1,10 +1,21 @@
-{{- $withYear := .withYear | default false -}}
-<div class="pub-item type-{{ .pub.type }}" data-type="{{ .pub.type }}" data-sc-in>
-  {{ with .num }}<div class="pub-num">{{ . }}</div>{{ end }}
-  <div class="pub-badge">{{ .pub.venueShort }}{{ if $withYear }}<br>{{ .pub.year }}{{ end }}</div>
-  <div>
-    <div class="pub-title">{{ if .pub.highlight }}<span class="pub-star" title="Selected publication">★</span> {{ end }}{{ if .pub.url }}<a href="{{ .pub.url }}" target="_blank" rel="noopener">{{ .pub.title }}</a>{{ else }}{{ .pub.title }}{{ end }}</div>
-    <div class="pub-authors">{{ .pub.authors | safeHTML }}</div>
-    <div class="pub-venue">{{ .pub.venue }}{{ with .pub.details }}, {{ . }}{{ end }}</div>
+{{- $pub := .pub -}}
+<div class="pub-item media-card type-{{ $pub.type }}" data-type="{{ $pub.type }}" data-sc-in>
+  {{ with $pub.image }}
+  <div class="card-media">
+    <img src="{{ . | relURL }}" alt="Cover image for &ldquo;{{ $pub.title }}&rdquo;" width="640" height="427" loading="lazy" decoding="async">
+    <span class="card-badge">{{ $pub.venueShort }} · {{ $pub.year }}</span>
+    {{ if $pub.highlight }}<span class="card-star" title="Selected publication">★</span>{{ end }}
+  </div>
+  {{ end }}
+  <div class="card-body">
+    <div class="pub-title">{{ if $pub.url }}<a href="{{ $pub.url }}" target="_blank" rel="noopener">{{ $pub.title }}</a>{{ else }}{{ $pub.title }}{{ end }}</div>
+    <div class="pub-authors">{{ $pub.authors | safeHTML }}</div>
+    <div class="pub-venue">{{ $pub.venue }}{{ with $pub.details }}, {{ . }}{{ end }}</div>
+    {{ with $pub.takeaway }}<p class="pub-takeaway">{{ . }}</p>{{ end }}
+    {{ with $pub.links }}
+    <div class="card-links">
+      {{ range . }}<a class="card-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }} <span aria-hidden="true">↗</span></a>{{ end }}
+    </div>
+    {{ end }}
   </div>
 </div>

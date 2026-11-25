@@ -18,10 +18,12 @@
 \nopagenumbers{}
 
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=1pt, itemsep=1pt, parsep=0pt, leftmargin=1.1em}
 % \usepackage{fontawesome5}
  
 % \usepackage{inputenc}
-\usepackage[scale=0.93]{geometry}
+\usepackage[scale=0.95, top=0.55in, bottom=0.45in]{geometry}
 \usepackage{tabularx}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb,fontenc,textcomp}
@@ -108,7 +110,7 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
-\newcommand*{\experienceentry}[5][1.5mm]{
+\newcommand*{\experienceentry}[5][0.4mm]{
     \subsection{#2} \vspace{-1.5mm}
     \begin{tabularx}{\textwidth}{LR}
         {\itshape #3} & {\itshape #4, #5}
@@ -259,7 +261,7 @@
 \end{minipage}
 \vspace{2mm}
 
-Senior LLM Researcher on the LLM Research Staff at Multiverse Computing, and Tech Lead for Model Evaluation. I lead evaluation so teams ship on evidence, build AI tooling that makes that work reproducible, and develop post-training methods --- distillation and recovery of compressed models --- that help ship smaller production LLMs. Ph.D.\ (summa cum laude, TU Berlin) with 10+ publications including NeurIPS and IEEE TMI.
+Senior LLM Researcher on the LLM Research Staff at Multiverse Computing, and Tech Lead for Model Evaluation. I lead evaluation so teams ship on evidence, build AI tooling that makes that work reproducible, and develop post-training methods --- distillation and recovery of compressed models --- that help ship smaller production LLMs. Ph.D.\ (Distinction, TU Berlin) with 10+ publications including NeurIPS and IEEE TMI.
 % ML Scientist (Ph.D.) with 10+ top-tier publications (NeurIPS, TMI), specializing in building and optimizing foundation models and LLMs from scratch using large-scale distributed training, distillation, PEFT, and sparsity. Deployed scalable GenAI systems in healthcare and vision-language domains with PyTorch, AWS, and multi-GPU setups.
 % ML Scientist (Ph.D.) with 10+ top-tier publications (NeurIPS, TMI), specializing in building and optimizing foundation models and LLMs from scratch using large-scale distributed training. Experienced in distillation, PEFT, and sparsity techniques to scale models efficiently. Proven track record deploying GenAI systems in healthcare and vision-language applications with PyTorch, AWS, and multi-GPU setups.
 % ML scientist (Ph.D.) with 10+ top-tier publications (NeurIPS, TMI) and deep expertise in optimizing LLMs and AI foundation models using distillation, parameter-efficient fine-tuning (PEFT) and sparsity. Experienced in deploying scalable GenAI systems across healthcare and vision-language domains with PyTorch, AWS, and distributed training.
@@ -272,42 +274,43 @@ Senior LLM Researcher on the LLM Research Staff at Multiverse Computing, and Tec
 
 \begin{minipage}[t]{0.62\textwidth
 }
+\small
 % \section{Why I am the Best Fit for This Role}
-% % $\bullet$ Expert in generative AI and LLMs $\bullet$ Developed scalable deep learning algorithms  
+% % $\bullet$ Expert in generative AI and LLMs $\bullet$ Developed scalable deep learning algorithms
 % Developed distributed multimodal learning methods for large-scale model training, XAI for foundation models, Proven track record of strong collaboration and interpersonal skills in interdisciplinary projects.
 \section{EXPERIENCE}
 \experienceentry{Multiverse Computing}{Senior LLM Researcher $\cdot$ Tech Lead, Model Evaluation}{Nov 2025 - Present}{Berlin, Germany}
 \begin{itemize}
     \item Lead \textbf{LLM evaluation} across Research, Product, Services and MLOps, putting the company on one shared platform so release decisions rest on the same evidence; independently reproduced a published 30B benchmark and caught scoring errors that had been treated as real model regressions.
     \item Built \textbf{AI tooling} the training team uses: automatic checkpoint scoring, a reproducible evaluation platform, and an audited multi-agent coding workflow in which one model plans, others implement and review, and an independent model audits before changes are applied.
-    \item Developed \textbf{LLM post-training} methods that recover quality after compression, including knowledge distillation (SubDistill and top-K logit distillation) and quantization-aware healing of compressed Transformer, Mamba and mixture-of-experts models (three 2026 preprints). \vspace{1mm}\\
+    \item Developed \textbf{LLM post-training} methods that recover quality after compression, including knowledge distillation (SubDistill and top-K logit distillation) and quantization-aware healing of compressed Transformer, Mamba and mixture-of-experts models (three 2026 preprints). \vspace{0.3mm}\\
     \skill{LLM Evaluation, AI Tooling, Post-training, Distillation}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-4.2mm}
 
 \experienceentry{BIFOLD}{Machine Learning Research Scientist}{Oct 2022 - Nov 2025}{Berlin, Germany}
 \begin{itemize}
     \item Cut foundation-model size by \textbf{80\%} with only 1\% accuracy loss, using subspace-based distillation on 600M+ parameter teachers.
     \item Applied that method to histopathology models on 100M image patches, gaining \textbf{60\%} speed and cutting memory by 40\%.
-    \item Shipped a multimodal \textbf{RAG} system for clinical reporting, improving reporting efficiency by 15\%. \vspace{1mm}\\
+    \item Shipped a multimodal \textbf{RAG} system for clinical reporting, improving reporting efficiency by 15\%. \vspace{0.3mm}\\
     \skill{Foundation Models, Distillation, PEFT, Distributed Training, RAG}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-4.2mm}
 
 \experienceentry{Quality in Artificial Intelligence (QAI) Labs + Charit{\'e}}{Applied Scientist}{Feb 2019 - Sep 2022}{Berlin, Germany}
 \begin{itemize}
     \item Directed an open-source \textbf{benchmark} toolkit (\bluelink{https://github.com/braindatalab/BSI-Zoo}{BSI-Zoo}), now used as a community standard.
     \item Cut training time by \textbf{30\%} by building reproducible distributed training workflows.
-    \item Led cross-functional projects with PIs at \ulink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \ulink{https://alexandre.gramfort.net/}{Inria}, delivering on time across international teams. \vspace{1mm}\\
+    \item Led cross-functional projects with PIs at \ulink{https://profiles.ucsf.edu/srikantan.nagarajan}{UCSF} and \ulink{https://alexandre.gramfort.net/}{Inria}, delivering on time across international teams. \vspace{0.3mm}\\
     \skill{Benchmarking, Distributed Training, PyTorch}
 \end{itemize}
-\vspace{-2.0mm}
+\vspace{-4.2mm}
 
 \experienceentry{Machine Learning Group, Technische Universit{\"a}t Berlin}{\makebox[0pt][l]{Doctoral \& Postdoctoral Research Fellow}}{2016 - 2025}{Berlin, Germany}
 \begin{itemize}
     \item Designed conditional \textbf{diffusion models} for inverse problems, with distilled consistency models for near single-step sampling.
     \item Published \bluelink{https://drive.google.com/file/d/1bK2rpEE4AHJcILjfK-MueJDCr-tBhC7a/view?usp=sharing}{10+ papers} in top venues, incl. \bluelink{https://nips.cc/virtual/2021/poster/26345}{\textbf{NeurIPS}}, Med-NeurIPS, \ulink{https://doi.org/10.1016/j.neuroimage.2020.117411}{NeuroImage}, and \ulink{https://doi.org/10.1109/TMI.2022.3224085}{TMI}; presented at \ulink{https://drive.google.com/file/d/1gUcIy36U6fNp1NoSLvXET-CaQrEqr_I-/view?usp=sharing}{international conferences}.
-    \item Mentored 5+ M.Sc./Ph.D. students; organized ML courses with 400+ participants. \vspace{1mm}\\
+    \item Mentored 5+ M.Sc./Ph.D. students; organized ML courses with 400+ participants. \vspace{0.3mm}\\
     \skill{Diffusion Models, Optimization, Bayesian ML, Mentoring}
 \end{itemize}
 
@@ -326,7 +329,7 @@ Senior LLM Researcher on the LLM Research Staff at Multiverse Computing, and Tec
 %         % \item Taught and examined over 300 undergraduate students over two years. 
 %         % \item\skill{LLM, LoRA}
 % \end{itemize}
-% \vspace{-2.0mm}
+% \vspace{-4.2mm}
 
 
 
@@ -391,7 +394,7 @@ Languages & English, German, Persian
 \section{EDUCATION}
 \textbf{Technische Universit{\"a}t Berlin} \\
 Ph.D. in Computer Science and ML \\ 
-{Grade: Summa cum laude \textbf{(Distinction)}} \\
+{Grade: \textbf{(Distinction)}} \\
 Supervisors: K.-R. M{\"u}ller, S. Haufe \\
 
 % \textbf{Sharif University of Technology} \\
@@ -401,7 +404,7 @@ Supervisors: K.-R. M{\"u}ller, S. Haufe \\
 % \section{EDUCATION}
 
 % \educationentry{PhD - Computer Science and ML}{Technische Universit{\"a}t Berlin }{Berlin, Germany}
-% Summa cum laude \textbf{(with Distinction)}
+% (Distinction)
 % \par
 % \vspace{3.0mm}
 % \educationentry{Bachelor of Science - Mathematics}{BBB University}{Tokyo, Japan}

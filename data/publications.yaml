@@ -7,6 +7,13 @@
   type: "preprint"
   highlight: true
   url: "https://arxiv.org/abs/2608.20953"
+  image: "images/papers/2608.20953.webp"
+  takeaway: "A practical recipe for recovering accuracy in 4-bit compressed LLMs."
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2608.20953"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2608.20953"
 
 - title: "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss"
   authors: "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús"
@@ -17,6 +24,13 @@
   type: "preprint"
   highlight: true
   url: "https://arxiv.org/abs/2608.03796"
+  image: "images/papers/2608.03796.webp"
+  takeaway: "Speeds up LLM distillation with offline top-K logits and a fused, chunked KL-divergence loss."
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2608.03796"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2608.03796"
 
 - title: "LLM Compression by Block Removal with Constrained Binary Optimization"
   authors: "D. Jansen, R. Rausch, <strong>A. Hashemi</strong>, D. Montero, R. Orús"
@@ -26,6 +40,13 @@
   year: 2026
   type: "preprint"
   url: "https://arxiv.org/abs/2602.00161"
+  image: "images/papers/2602.00161.webp"
+  takeaway: "Compresses LLMs by removing redundant blocks, framed as constrained binary optimization."
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2602.00161"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2602.00161"
 
 - title: "Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces"
   authors: "P. Chormai, <strong>A. Hashemi</strong>, K.-R. Müller, G. Montavon"
@@ -36,6 +57,13 @@
   type: "preprint"
   highlight: true
   url: "https://arxiv.org/abs/2601.05913"
+  image: "images/papers/2601.05913.webp"
+  takeaway: "Distills lightweight domain experts from large models by identifying the subspace that matters."
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2601.05913"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2601.05913"
 
 - title: "How forgiving are M/EEG inverse solutions to noise level misspecification? An excursion into the BSI-Zoo"
   authors: "A. Negi, S. Haufe, A. Gramfort, <strong>A. Hashemi</strong>"
@@ -44,6 +72,11 @@
   details: ""
   year: 2026
   type: "journal"
+  image: "images/papers/tbme2026.webp"
+  takeaway: "Stress-tests M/EEG source-imaging algorithms when the noise level is misestimated."
+  links:
+    - label: "Code"
+      url: "https://github.com/braindatalab/BSI-Zoo"
 
 - title: "Continual learning that resists overfitting and spurious correlations through low-rank and sparse adaptation"
   authors: "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon"
@@ -52,6 +85,8 @@
   details: ""
   year: 2026
   type: "preprint"
+  image: "images/papers/icml_inprep.webp"
+  takeaway: "Combines low-rank and sparse adaptation so continual learning resists overfitting and shortcut learning."
 
 - title: "Enhancing brain source reconstruction by initializing 3D neural networks with physical inverse solutions"
   authors: "M. Morik, <strong>A. Hashemi</strong>, K.-R. Müller, S. Haufe, S. Nakajima"
@@ -61,6 +96,13 @@
   year: 2025
   type: "journal"
   url: "https://arxiv.org/abs/2411.00143"
+  image: "images/papers/2411.00143.webp"
+  takeaway: "Initializes 3D neural networks with physics-based solutions to localize brain activity more accurately."
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2411.00143"
+    - label: "PDF"
+      url: "https://arxiv.org/pdf/2411.00143"
 
 - title: "Structured noise champagne: an empirical Bayesian algorithm for electromagnetic brain imaging with structured noise"
   authors: "S. Ghosh, C. Cai, <strong>A. Hashemi</strong>, Y. Gao, S. Haufe, K. Sekihara, A. Raj, S. S. Nagarajan"
@@ -70,6 +112,11 @@
   year: 2025
   type: "journal"
   url: "https://doi.org/10.3389/fnhum.2025.1386275"
+  image: "images/papers/frontiers2025.webp"
+  takeaway: "An empirical Bayesian algorithm for brain imaging that models structured, not just white, sensor noise."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.3389/fnhum.2025.1386275"
 
 - title: "Joint learning of full-structure noise in hierarchical Bayesian regression models"
   authors: "<strong>A. Hashemi</strong>, C. Cai, Y. Gao, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe"
@@ -79,6 +126,11 @@
   year: 2024
   type: "journal"
   url: "https://doi.org/10.1109/TMI.2022.3224085"
+  image: "images/papers/tmi2024.webp"
+  takeaway: "Jointly learns the full sensor-noise structure inside a hierarchical Bayesian brain-imaging model."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1109/TMI.2022.3224085"
 
 - title: "Bayesian adaptive beamformer for robust electromagnetic brain imaging of correlated sources in high spatial resolution"
   authors: "C. Cai, Y. Long, S. Ghosh, <strong>A. Hashemi</strong>, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan"
@@ -87,6 +139,8 @@
   details: "Vol. 42, pp. 2502–2512"
   year: 2023
   type: "journal"
+  image: "images/papers/tmi2023a.webp"
+  takeaway: "A Bayesian adaptive beamformer for correlated brain sources at high spatial resolution."
 
 - title: "Bayesian algorithms for joint estimation of brain activity and noise in electromagnetic imaging"
   authors: "C. Cai, H. Kang, <strong>A. Hashemi</strong>, D. Chen, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan"
@@ -95,6 +149,8 @@
   details: "Vol. 42(3), pp. 762–773"
   year: 2023
   type: "journal"
+  image: "images/papers/tmi2023b.webp"
+  takeaway: "Jointly estimates brain activity and sensor noise for electromagnetic brain imaging."
 
 - title: "Empirical Bayesian localization of event-related time-frequency neural activity dynamics"
   authors: "C. Cai, L. Hinkley, Y. Gao, <strong>A. Hashemi</strong>, S. Haufe, K. Sekihara, S. S. Nagarajan"
@@ -103,6 +159,8 @@
   details: "Vol. 258, 119369"
   year: 2022
   type: "journal"
+  image: "images/papers/ni2022.webp"
+  takeaway: "Empirical Bayes localization of event-related time-frequency brain activity."
 
 - title: "Advances in hierarchical Bayesian learning with applications to neuroimaging"
   authors: "<strong>A. Hashemi</strong>"
@@ -111,6 +169,8 @@
   details: ""
   year: 2022
   type: "thesis"
+  image: "images/papers/thesis2022.webp"
+  takeaway: "Hierarchical Bayesian learning methods for neuroimaging source localization — the dissertation behind the thesis, completed with Distinction."
 
 - title: "Efficient hierarchical Bayesian inference for spatio-temporal regression models in neuroimaging"
   authors: "<strong>A. Hashemi</strong>, Y. Gao, C. Cai, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe"
@@ -121,6 +181,11 @@
   type: "conference"
   highlight: true
   url: "https://nips.cc/virtual/2021/poster/26345"
+  image: "images/papers/neurips2021.webp"
+  takeaway: "A fast hierarchical Bayesian inference algorithm for spatio-temporal regression in neuroimaging."
+  links:
+    - label: "Paper"
+      url: "https://nips.cc/virtual/2021/poster/26345"
 
 - title: "Unification of sparse Bayesian learning algorithms for electromagnetic brain imaging with the majorization minimization framework"
   authors: "<strong>A. Hashemi</strong>, C. Cai, G. Kutyniok, K.-R. Müller, S. S. Nagarajan, S. Haufe"
@@ -129,6 +194,8 @@
   details: "Vol. 239, 118309"
   year: 2021
   type: "journal"
+  image: "images/papers/ni2021a.webp"
+  takeaway: "Unifies sparse Bayesian learning algorithms for brain imaging under one majorization-minimization framework."
 
 - title: "Robust estimation of noise for electromagnetic brain imaging with the Champagne algorithm"
   authors: "C. Cai, <strong>A. Hashemi</strong>, M. Diwakar, S. Haufe, K. Sekihara, S. S. Nagarajan"
@@ -138,6 +205,11 @@
   year: 2021
   type: "journal"
   url: "https://doi.org/10.1016/j.neuroimage.2020.117411"
+  image: "images/papers/ni2021b.webp"
+  takeaway: "Improves noise-covariance estimation in the Champagne brain-imaging algorithm."
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1016/j.neuroimage.2020.117411"
 
 - title: "Joint hierarchical Bayesian learning of full-structure noise for brain source imaging"
   authors: "<strong>A. Hashemi</strong>, C. Cai, K.-R. Müller, S. S. Nagarajan, S. Haufe"
@@ -146,6 +218,8 @@
   details: ""
   year: 2020
   type: "workshop"
+  image: "images/papers/medneurips2020.webp"
+  takeaway: "Joint learning of full-structure sensor noise for brain source imaging."
 
 - title: "Compressed sensing: From theory to praxis"
   authors: "<strong>A. Hashemi</strong>, A. Flinth, G. Kutyniok"
@@ -154,3 +228,5 @@
   details: "pp. 1–32"
   year: 2017
   type: "book"
+  image: "images/papers/book2017.webp"
+  takeaway: "A tutorial chapter on compressed sensing, from theory to practice, for Earth observation."
