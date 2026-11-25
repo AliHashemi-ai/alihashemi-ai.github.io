@@ -509,15 +509,16 @@ main { padding: 3rem 0 5rem; }
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.35rem;
   margin-bottom: 1.2rem;
 }
 .sidebar-social a {
   display: inline-flex;
+  flex: none;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--bg-alt);
@@ -525,7 +526,7 @@ main { padding: 3rem 0 5rem; }
   border-bottom: 1px solid var(--border);
 }
 .sidebar-social a:hover { border-color: var(--accent); color: var(--accent); }
-.sidebar-social svg { width: 16px; height: 16px; }
+.sidebar-social svg { width: 15px; height: 15px; }
 
 .sidebar-cv {
   width: 100%;
@@ -748,13 +749,18 @@ main { padding: 3rem 0 5rem; }
    data-sc-stagger, data-sc-tilt, data-sc-spotlight and data-sc-count
    attributes we use on this page (all of which run standalone, outside
    the engine's pinned-act/cue system). See static/js/scrollcraft.js. */
-[data-sc-in], [data-sc-stagger] > * {
+/* Visible by default — no JS, no scrolling, nothing hidden. The engine opts
+   an element into the hide-then-reveal treatment by adding 'sc-pending' to
+   it (see scrollcraft.js); until/unless that happens, this rule never
+   applies, so a slow, blocked, or broken script never hides content. */
+[data-sc-in], [data-sc-stagger] > * { opacity: 1; transform: none; }
+.sc-pending[data-sc-in], [data-sc-stagger] > .sc-pending {
   opacity: 0;
   transform: translate3d(0, 14px, 0);
   transition: opacity 620ms var(--sc-ease-out), transform 620ms var(--sc-ease-out);
 }
-[data-sc-in].sc-in, [data-sc-stagger] > .sc-in { opacity: 1; transform: none; }
+.sc-pending[data-sc-in].sc-in, [data-sc-stagger] > .sc-pending.sc-in { opacity: 1; transform: none; }
 [data-sc-tilt] { transform-style: preserve-3d; will-change: transform; transition: transform 0.2s var(--sc-ease-out); }
 @media (prefers-reduced-motion: reduce) {
-  [data-sc-in], [data-sc-stagger] > * { transform: none; }
+  .sc-pending[data-sc-in], [data-sc-stagger] > .sc-pending { opacity: 1; transform: none; transition: none; }
 }
