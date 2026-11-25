@@ -1,9 +1,16 @@
-- title: "LLM Compression & Optimization"
+- title: "LLM Evaluation Platform"
   org: "Multiverse Computing"
   period: "2025 – Present"
-  metric: "Production-ready efficiency"
-  description: "Leading R&D on tensor-network and distillation-based compression of large language models, cutting inference cost and memory footprint while preserving accuracy for enterprise deployment."
-  tags: ["LLM Compression", "Tensor Networks", "Production AI"]
+  metric: "Shared library and protocol"
+  description: "Technical lead for a cross-department programme consolidating LLM evaluation into one shared library and platform — protocol replication, scorer correctness, same-suite comparison, automatic checkpoint scoring, and a reproducible production evaluation image. Tooling includes lm-evaluation-harness, NeMo-Skills, EvalScope, Inspect, and Harbor."
+  tags: ["LLM Evaluation", "lm-eval", "Reproducibility"]
+
+- title: "LLM Compression & Distillation"
+  org: "Multiverse Computing"
+  period: "2025 – Present"
+  metric: "Block removal, distillation, 4-bit healing"
+  description: "Research on efficient compression and distillation of large language models: block removal, top-K logit distillation, and 4-bit quantization-aware healing (three arXiv preprints, 2026), plus SubDistill and healing distillation of compressed Transformer, Mamba and mixture-of-experts models with Megatron-Bridge."
+  tags: ["LLM Compression", "Distillation", "Megatron"]
 
 - title: "Foundation Model Distillation"
   org: "BIFOLD"

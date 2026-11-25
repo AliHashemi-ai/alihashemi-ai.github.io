@@ -1,14 +1,19 @@
-- role: "Principal LLM Researcher"
+- role: "LLM Research Staff · Tech Lead, Model Evaluation"
   org: "Multiverse Computing"
   location: "Berlin, Germany"
   start: "Nov 2025"
   end: "Present"
   current: true
   bullets:
-    - "Leading research on efficient compression and optimization of large language models, applying tensor-network and distillation-based techniques to reduce model size and inference cost while preserving accuracy."
-    - "Driving applied R&D at the intersection of quantum-inspired algorithms and generative AI, translating research advances into production-ready, efficient LLM solutions for enterprise clients."
-    - "Collaborating with cross-functional research and engineering teams to scale foundation-model compression methods from prototype to deployment."
-  tags: ["LLM Compression", "Tensor Networks", "Foundation Models", "Efficient Inference"]
+    - "Tech lead for a cross-department LLM evaluation programme (Research, Product, Services, MLOps), consolidating evaluation into one shared library and platform: roadmap, architecture decisions, and executive reporting, without line authority."
+    - "Directed protocol replication of a published 30B base-model benchmark table across independent submission lanes, recording sample size, reference value and job ID for every row."
+    - "Found and corrected scoring errors that had been read as model behaviour, including 1% default samples, answer-parser bugs, prompt templates that end generation early, and length effects in extractive QA."
+    - "Set the rule that a model is compared with its base only under the same suite and protocol, and had the full reference matrix rerun to meet it."
+    - "Directed automatic scoring of training checkpoints and a training-run dashboard with confidence intervals that the training team uses; rebuilt the production evaluation image for reproducibility after its author had left."
+    - "Evaluation tooling includes lm-evaluation-harness, NeMo-Skills, EvalScope, Inspect, and Harbor."
+    - "Co-developed LLM compression and distillation recipes: block removal, top-K logit distillation, and 4-bit quantization-aware healing (three arXiv preprints, 2026)."
+    - "Co-author of SubDistill (arXiv:2601.05913), a method that distils only the task-relevant subspace of each teacher layer; directed distillation (“healing”) of compressed Transformer, Mamba and mixture-of-experts models with Megatron-Bridge, including checkpoint conversion and parity checks."
+  tags: ["LLM Evaluation", "LLM Compression", "Distillation", "Megatron", "lm-eval"]
 
 - role: "Machine Learning Research Scientist"
   org: "BIFOLD (Berlin Institute for the Foundations of Learning and Data)"

@@ -1,38 +1,87 @@
-- title: "Efficient hierarchical Bayesian inference for spatio-temporal regression models in neuroimaging"
-  authors: "<strong>A. Hashemi</strong>, Y. Gao, C. Cai, S. Ghosh, K.-R. Müller, S. Nagarajan, S. Haufe"
-  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
-  venueShort: "NeurIPS"
-  details: "Vol. 34, pp. 24855–24870"
-  year: 2021
-  type: "conference"
+- title: "Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs"
+  authors: "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús"
+  venue: "arXiv preprint"
+  venueShort: "arXiv"
+  details: "arXiv:2608.20953"
+  year: 2026
+  type: "preprint"
   highlight: true
+  url: "https://arxiv.org/abs/2608.20953"
 
-- title: "Joint hierarchical Bayesian learning of full-structure noise for brain source imaging"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, K.-R. Müller, S. Nagarajan, S. Haufe"
-  venue: "Medical Imaging meets NeurIPS (Med-NeurIPS) Workshop, NeurIPS"
-  venueShort: "Med-NeurIPS"
+- title: "Efficient Knowledge Distillation for LLMs: Offline Top-K Logits and a Fused Chunked KL Loss"
+  authors: "B. Ryskulov, I. García-Ferrero, D. Montero, D. Jansen, <strong>A. Hashemi</strong>, J. R. Garcia, A. Tiene, R. Orús"
+  venue: "arXiv preprint"
+  venueShort: "arXiv"
+  details: "arXiv:2608.03796"
+  year: 2026
+  type: "preprint"
+  highlight: true
+  url: "https://arxiv.org/abs/2608.03796"
+
+- title: "LLM Compression by Block Removal with Constrained Binary Optimization"
+  authors: "D. Jansen, R. Rausch, <strong>A. Hashemi</strong>, D. Montero, R. Orús"
+  venue: "arXiv preprint"
+  venueShort: "arXiv"
+  details: "arXiv:2602.00161"
+  year: 2026
+  type: "preprint"
+  url: "https://arxiv.org/abs/2602.00161"
+
+- title: "Distilling Lightweight Domain Experts from Large ML Models by Identifying Relevant Subspaces"
+  authors: "P. Chormai, <strong>A. Hashemi</strong>, K.-R. Müller, G. Montavon"
+  venue: "arXiv preprint"
+  venueShort: "arXiv"
+  details: "arXiv:2601.05913"
+  year: 2026
+  type: "preprint"
+  highlight: true
+  url: "https://arxiv.org/abs/2601.05913"
+
+- title: "How forgiving are M/EEG inverse solutions to noise level misspecification? An excursion into the BSI-Zoo"
+  authors: "A. Negi, S. Haufe, A. Gramfort, <strong>A. Hashemi</strong>"
+  venue: "IEEE Transactions on Biomedical Engineering"
+  venueShort: "IEEE TBME"
   details: ""
-  year: 2020
-  type: "workshop"
-
-- title: "Unification of sparse Bayesian learning algorithms for electromagnetic brain imaging with the majorization minimization framework"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, C. Kutyniok, K.-R. Müller, S. Nagarajan, S. Haufe"
-  venue: "NeuroImage"
-  venueShort: "NeuroImage"
-  details: "Vol. 239, 118309"
-  year: 2021
+  year: 2026
   type: "journal"
+
+- title: "Continual learning that resists overfitting and spurious correlations through low-rank and sparse adaptation"
+  authors: "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon"
+  venue: "Preparing to submit to ICML"
+  venueShort: "Preprint · ICML"
+  details: ""
+  year: 2026
+  type: "preprint"
+
+- title: "Enhancing brain source reconstruction by initializing 3D neural networks with physical inverse solutions"
+  authors: "M. Morik, <strong>A. Hashemi</strong>, K.-R. Müller, S. Haufe, S. Nakajima"
+  venue: "IEEE Transactions on Medical Imaging"
+  venueShort: "IEEE TMI"
+  details: ""
+  year: 2025
+  type: "journal"
+  url: "https://arxiv.org/abs/2411.00143"
+
+- title: "Structured noise champagne: an empirical Bayesian algorithm for electromagnetic brain imaging with structured noise"
+  authors: "S. Ghosh, C. Cai, <strong>A. Hashemi</strong>, Y. Gao, S. Haufe, K. Sekihara, A. Raj, S. S. Nagarajan"
+  venue: "Frontiers in Human Neuroscience"
+  venueShort: "Front. Hum. Neurosci."
+  details: "Vol. 19, 1386275"
+  year: 2025
+  type: "journal"
+  url: "https://doi.org/10.3389/fnhum.2025.1386275"
 
 - title: "Joint learning of full-structure noise in hierarchical Bayesian regression models"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, Y. Gao, S. Ghosh, K.-R. Müller, S. Nagarajan, S. Haufe"
-  venue: "NeuroImage"
-  venueShort: "NeuroImage"
-  details: "Vol. 239, 118309"
-  year: 2023
+  authors: "<strong>A. Hashemi</strong>, C. Cai, Y. Gao, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe"
+  venue: "IEEE Transactions on Medical Imaging"
+  venueShort: "IEEE TMI"
+  details: "Vol. 43(2), pp. 610–624"
+  year: 2024
   type: "journal"
+  url: "https://doi.org/10.1109/TMI.2022.3224085"
 
 - title: "Bayesian adaptive beamformer for robust electromagnetic brain imaging of correlated sources in high spatial resolution"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, Y. Long, S. Ghosh, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. Nagarajan"
+  authors: "C. Cai, Y. Long, S. Ghosh, <strong>A. Hashemi</strong>, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan"
   venue: "IEEE Transactions on Medical Imaging"
   venueShort: "IEEE TMI"
   details: "Vol. 42, pp. 2502–2512"
@@ -40,7 +89,7 @@
   type: "journal"
 
 - title: "Bayesian algorithms for joint estimation of brain activity and noise in electromagnetic imaging"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, H. Kang, D. Chen, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. Nagarajan"
+  authors: "C. Cai, H. Kang, <strong>A. Hashemi</strong>, D. Chen, Y. Gao, M. Diwakar, S. Haufe, K. Sekihara, W. Wu, S. S. Nagarajan"
   venue: "IEEE Transactions on Medical Imaging"
   venueShort: "IEEE TMI"
   details: "Vol. 42(3), pp. 762–773"
@@ -48,19 +97,11 @@
   type: "journal"
 
 - title: "Empirical Bayesian localization of event-related time-frequency neural activity dynamics"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, L. Hinkley, Y. Gao, S. Haufe, K. Sekihara, S. Nagarajan"
+  authors: "C. Cai, L. Hinkley, Y. Gao, <strong>A. Hashemi</strong>, S. Haufe, K. Sekihara, S. S. Nagarajan"
   venue: "NeuroImage"
   venueShort: "NeuroImage"
   details: "Vol. 258, 119369"
   year: 2022
-  type: "journal"
-
-- title: "Robust estimation of noise for electromagnetic brain imaging with the Champagne algorithm"
-  authors: "<strong>A. Hashemi</strong>, C. Cai, M. Diwakar, S. Haufe, K. Sekihara, S. Nagarajan"
-  venue: "NeuroImage"
-  venueShort: "NeuroImage"
-  details: "Vol. 225, 117411"
-  year: 2021
   type: "journal"
 
 - title: "Advances in hierarchical Bayesian learning with applications to neuroimaging"
@@ -71,6 +112,41 @@
   year: 2022
   type: "thesis"
 
+- title: "Efficient hierarchical Bayesian inference for spatio-temporal regression models in neuroimaging"
+  authors: "<strong>A. Hashemi</strong>, Y. Gao, C. Cai, S. Ghosh, K.-R. Müller, S. S. Nagarajan, S. Haufe"
+  venue: "Advances in Neural Information Processing Systems (NeurIPS)"
+  venueShort: "NeurIPS"
+  details: "Vol. 34, pp. 24855–24870"
+  year: 2021
+  type: "conference"
+  highlight: true
+  url: "https://nips.cc/virtual/2021/poster/26345"
+
+- title: "Unification of sparse Bayesian learning algorithms for electromagnetic brain imaging with the majorization minimization framework"
+  authors: "<strong>A. Hashemi</strong>, C. Cai, G. Kutyniok, K.-R. Müller, S. S. Nagarajan, S. Haufe"
+  venue: "NeuroImage"
+  venueShort: "NeuroImage"
+  details: "Vol. 239, 118309"
+  year: 2021
+  type: "journal"
+
+- title: "Robust estimation of noise for electromagnetic brain imaging with the Champagne algorithm"
+  authors: "C. Cai, <strong>A. Hashemi</strong>, M. Diwakar, S. Haufe, K. Sekihara, S. S. Nagarajan"
+  venue: "NeuroImage"
+  venueShort: "NeuroImage"
+  details: "Vol. 225, 117411"
+  year: 2021
+  type: "journal"
+  url: "https://doi.org/10.1016/j.neuroimage.2020.117411"
+
+- title: "Joint hierarchical Bayesian learning of full-structure noise for brain source imaging"
+  authors: "<strong>A. Hashemi</strong>, C. Cai, K.-R. Müller, S. S. Nagarajan, S. Haufe"
+  venue: "Medical Imaging meets NeurIPS (Med-NeurIPS) Workshop, NeurIPS"
+  venueShort: "Med-NeurIPS"
+  details: ""
+  year: 2020
+  type: "workshop"
+
 - title: "Compressed sensing: From theory to praxis"
   authors: "<strong>A. Hashemi</strong>, A. Flinth, G. Kutyniok"
   venue: "In C. Chen (Ed.), Compressive Sensing of Earth Observations, CRC Press"
@@ -78,35 +154,3 @@
   details: "pp. 1–32"
   year: 2017
   type: "book"
-
-- title: "Turning students into domain experts via task-relevant knowledge distillation"
-  authors: "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon"
-  venue: "Preparing to submit to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)"
-  venueShort: "Preprint · IEEE TPAMI"
-  details: ""
-  year: 2025
-  type: "preprint"
-
-- title: "Continual learning that resists overfitting and spurious correlations through low-rank and sparse adaptation"
-  authors: "<strong>A. Hashemi</strong>, P. Chormai, K.-R. Müller, G. Montavon"
-  venue: "Preparing to submit to ICML"
-  venueShort: "Preprint · ICML"
-  details: ""
-  year: 2026
-  type: "preprint"
-
-- title: "Enhancing brain source reconstruction through physics-informed 3D neural networks"
-  authors: "<strong>A. Hashemi</strong>, M. Morik, K.-R. Müller, S. Haufe, S. Nakajima"
-  venue: "Submitted to IEEE Transactions on Medical Imaging (TMI)"
-  venueShort: "Preprint · IEEE TMI"
-  details: ""
-  year: 2025
-  type: "preprint"
-
-- title: "How forgiving are M/EEG inverse solutions to noise level misspecification? An excursion into the BSI zoo"
-  authors: "<strong>A. Hashemi</strong>, A. Negi, S. Haufe, A. Gramfort"
-  venue: "Submitted to IEEE Transactions on Biomedical Engineering (TBME)"
-  venueShort: "Preprint · IEEE TBME"
-  details: ""
-  year: 2025
-  type: "preprint"

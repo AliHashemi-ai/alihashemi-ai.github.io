@@ -3,7 +3,7 @@
 - category: "Libraries & Frameworks"
   items: ["PyTorch (Lightning)", "TensorFlow", "JAX", "Hugging Face (Transformers, Adapters, Diffusers)", "NumPy", "Pandas", "SciPy", "Scikit-learn", "OpenCV", "NLTK", "SLURM", "Hydra", "W&B", "Weaviate"]
 - category: "LLM & GenAI Tooling"
-  items: ["LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT"]
+  items: ["lm-evaluation-harness", "NeMo-Skills", "EvalScope", "Inspect", "Harbor", "LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT", "Megatron-LM", "Megatron-Bridge"]
 - category: "MLOps & Cloud"
   items: ["Linux", "Bash", "Git", "CI/CD", "Docker", "Kubernetes", "MLflow", "AWS (EC2, S3, SageMaker, Lambda, Bedrock)", "GCP (Vertex AI)", "Azure"]
 - category: "Soft Skills"

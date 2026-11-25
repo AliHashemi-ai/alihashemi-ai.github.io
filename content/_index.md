@@ -1,4 +1,4 @@
 ---
 title: "Ali Hashemi"
-description: "Ali Hashemi, Ph.D. — Principal LLM Researcher at Multiverse Computing. Research on foundation models, LLM efficiency, distillation, and generative AI."
+description: "Ali Hashemi, Ph.D. — LLM Research Staff and Tech Lead, Model Evaluation at Multiverse Computing. Research on trustworthy LLM evaluation, compression, distillation, and generative AI."
 ---
