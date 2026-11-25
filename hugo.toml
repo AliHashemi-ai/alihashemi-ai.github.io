@@ -18,6 +18,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   keywords = "Ali Hashemi, Machine Learning, LLM, Foundation Models, Distillation, PEFT, Diffusion Models, NeurIPS, TU Berlin, BIFOLD, Multiverse Computing"
   cvFile = "/files/Ali_Hashemi_CV.pdf"
   github = "https://github.com/alihashemi-ai"
+  huggingface = "https://huggingface.co/ali-hashemi"
   linkedin = "https://www.linkedin.com/in/alihashemi-ai/"
   scholar = "https://scholar.google.com/citations?user=rCcFTFgAAAAJ&hl=en&oi=ao"
   orcid = "https://orcid.org/0000-0003-4957-4630"

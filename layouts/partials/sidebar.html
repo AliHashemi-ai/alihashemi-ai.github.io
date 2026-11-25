@@ -15,6 +15,7 @@
     {{ with .Site.Params.email }}<a href="mailto:{{ . }}" aria-label="Email" title="Email">{{ partial "icon.html" "email" }}</a>{{ end }}
     {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end }}
     {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">{{ partial "icon.html" "github" }}</a>{{ end }}
+    {{ with .Site.Params.huggingface }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Hugging Face" title="Hugging Face">{{ partial "icon.html" "huggingface" }}</a>{{ end }}
     {{ with .Site.Params.scholar }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">{{ partial "icon.html" "scholar" }}</a>{{ end }}
     {{ with .Site.Params.orcid }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">{{ partial "icon.html" "orcid" }}</a>{{ end }}
   </div>
