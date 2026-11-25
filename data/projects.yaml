@@ -6,6 +6,13 @@
   tags: ["LLM Evaluation", "lm-eval", "Reproducibility"]
   image: "images/projects/llm-eval-platform.webp"
 
+- title: "Verso"
+  org: "Multiverse Computing"
+  metric: "LLM evaluation for European languages"
+  description: "LLM evaluation for European languages, with LLM-as-judge scoring, automated graders, and eval dataset curation and data quality."
+  tags: ["LLM-as-judge", "Automated Graders", "Eval Data Curation"]
+  image: "images/projects/llm-eval-platform.webp"
+
 - title: "LLM Compression & Distillation"
   org: "Multiverse Computing"
   period: "2025 – Present"
@@ -16,6 +23,17 @@
   links:
     - label: "Related publications"
       url: "/publications/"
+
+- title: "HyperNova 60B"
+  org: "Multiverse Computing"
+  period: "2026"
+  metric: "Open-weight 60B · Apache 2.0"
+  description: "Contributed SFT and instruction tuning to HyperNova 60B 2605, an open-weight, instruction-tuned model with native tool calling, developed by Multiverse Computing."
+  tags: ["SFT", "Post-training", "HyperNova"]
+  image: "images/projects/llm-compression.webp"
+  links:
+    - label: "Model"
+      url: "https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605"
 
 - title: "Foundation Model Distillation"
   org: "BIFOLD"

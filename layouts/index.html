@@ -5,13 +5,16 @@
   <p class="bio">
     Ali is a Senior LLM Researcher and Tech Lead at
     <a href="https://multiversecomputing.com/" target="_blank" rel="noopener"><strong>Multiverse Computing</strong></a>.
-    He leads LLM evaluation, from benchmark design to release gates, including
-    agentic and coding agent evaluation, and catches scoring errors before they
-    are treated as model regressions. He also designs and leads agentic AI
-    coding workflows, builds eval harnesses and contributes to an agent
-    harness. His quality gates check AI-written code before it ships. In
-    post-training, he develops distillation and quantization-aware recovery so
-    compressed models reach production quality. Previously at
+    He leads LLM evaluation, including frontier model evaluation, from benchmark
+    and experimental design to release gates, and catches scoring errors before they
+    are treated as model regressions. On Verso, LLM evaluation for European languages,
+    he builds LLM-as-judge scoring, automated graders, and eval dataset curation.
+    He also designs and leads agentic AI coding workflows, builds eval harnesses
+    and contributes to an agent harness. His quality gates check AI-written code
+    before it ships. In post-training, he contributed SFT on
+    <a href="https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605" target="_blank" rel="noopener">HyperNova&nbsp;60B</a>
+    and develops distillation and quantization-aware recovery so compressed models
+    reach production quality. Previously at
     <a href="https://bifold.berlin/" target="_blank" rel="noopener"><strong>BIFOLD</strong></a>,
     he built an interpretable distillation method that cut foundation model
     size by 80% with 1% accuracy loss. He holds a Ph.D.
@@ -22,7 +25,7 @@
 
 <p class="eyebrow">Core Stack</p>
 <div class="interest-list stack-list" data-sc-in data-sc-stagger="35">
-  {{ range (slice "LLM Evaluation" "Benchmark Design" "Eval Infrastructure" "Agent Evaluation" "Agentic AI Coding" "Harness Development" "Post-training" "Distillation" "PyTorch" "Distributed Training") }}
+  {{ range (slice "LLM Evaluation" "Frontier Model Evaluation" "LLM-as-judge" "Eval Data Curation" "Agentic AI Coding" "Harness Development" "SFT" "Post-training" "PyTorch" "Distributed Training") }}
   <span class="chip">{{ . }}</span>
   {{ end }}
 </div>

@@ -3,10 +3,10 @@
 - category: "Libraries & Frameworks"
   items: ["PyTorch (Lightning)", "TensorFlow", "JAX", "Hugging Face (Transformers, Adapters, Diffusers)", "NumPy", "Pandas", "SciPy", "Scikit-learn", "OpenCV", "NLTK", "SLURM", "Hydra", "W&B", "Weaviate"]
 - category: "LLM Evaluation and Agentic Coding"
-  items: ["lm-evaluation-harness", "NeMo-Skills", "EvalScope", "Inspect", "Harbor", "Agent Evaluation", "Agentic AI Coding", "Multi-Agent Coding Workflows", "Harness Development", "Agent Skills and Plugins", "Code Quality Gates", "LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT", "Megatron-LM", "Megatron-Bridge"]
+  items: ["lm-evaluation-harness", "NeMo-Skills", "EvalScope", "Inspect", "Harbor", "Agent Evaluation", "Frontier Model Evaluation", "LLM-as-judge (Verso)", "Automated Graders", "Eval Data Curation", "Experimental Design", "Statistical Rigor", "SFT (HyperNova)", "Agentic AI Coding", "Multi-Agent Coding Workflows", "Harness Development", "Agent Skills and Plugins", "Code Quality Gates", "LlamaIndex", "LangChain", "Milvus", "Neo4j", "TGI", "NIM", "ONNX", "vLLM", "TensorRT", "Megatron-LM"]
 - category: "MLOps & Cloud"
   items: ["Linux", "Bash", "Git", "CI/CD", "Docker", "Kubernetes", "MLflow", "AWS (EC2, S3, SageMaker, Lambda, Bedrock)", "GCP (Vertex AI)", "Azure"]
 - category: "Soft Skills"
-  items: ["Project Management", "Technical Writing", "Public Speaking", "Training & Mentoring", "Event Organization"]
+  items: ["Customer-Facing Delivery", "Project Management", "Technical Writing", "Public Speaking", "Training & Mentoring", "Event Organization"]
 - category: "Languages"
   items: ["English (Fluent)", "German (Advanced, B2)", "Persian (Native)", "Arabic (Basic, A1)", "Turkish (Basic, A1)"]

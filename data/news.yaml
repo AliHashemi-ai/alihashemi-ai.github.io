@@ -1,5 +1,5 @@
 - date: "2026-08"
-  text: "Two new preprints on LLM compression: [Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs](https://arxiv.org/abs/2608.20953) and [Efficient Knowledge Distillation for LLMs](https://arxiv.org/abs/2608.03796)."
+  text: "Two new preprints on LLM compression: [Quantization-Aware Healing: A Practical Recipe for Recovering Compressed, 4-Bit LLMs](https://arxiv.org/abs/2608.20953) ([HF paper](https://huggingface.co/papers/2608.20953)) and [Efficient Knowledge Distillation for LLMs](https://arxiv.org/abs/2608.03796) ([HF paper](https://huggingface.co/papers/2608.03796)). Related open-weight release from Multiverse Computing: [HyperNova 60B 2605](https://huggingface.co/MultiverseComputingCAI/Hypernova-60B-2605)."
 - date: "2026"
   text: "*How forgiving are M/EEG inverse solutions to noise level misspecification?* is now published in IEEE Transactions on Biomedical Engineering."
 - date: "2026-02"

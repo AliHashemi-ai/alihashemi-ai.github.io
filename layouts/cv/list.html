@@ -20,7 +20,7 @@
     <div class="entry-meta">{{ .start }} – {{ .end }} · {{ .location }}</div>
   </div>
   <ul>
-    {{ range .bullets }}<li>{{ . }}</li>{{ end }}
+    {{ range .bullets }}<li>{{ . | markdownify }}</li>{{ end }}
   </ul>
   <div class="entry-tags">
     {{ range .tags }}<span class="chip">{{ . }}</span>{{ end }}
