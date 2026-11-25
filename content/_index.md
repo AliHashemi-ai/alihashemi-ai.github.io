@@ -1,4 +1,4 @@
 ---
-title: "Ali Hashemi"
-description: "Ali Hashemi, Ph.D. — Senior LLM Researcher (LLM Research Staff) and Tech Lead, Model Evaluation at Multiverse Computing. LLM evaluation, AI tooling, and post-training."
+title: "Ali Hashemi, Ph.D."
+description: "Ali Hashemi, Ph.D., is a Senior LLM Researcher and Tech Lead at Multiverse Computing, leading LLM evaluation, AI tooling and post training."
 ---
