@@ -1,0 +1,8 @@
+{{- $org := . -}}
+{{- if in $org "BIFOLD" -}}
+<a href="https://bifold.berlin/" target="_blank" rel="noopener">{{ $org }}</a>
+{{- else if in $org "Multiverse Computing" -}}
+<a href="https://multiversecomputing.com/" target="_blank" rel="noopener">{{ $org }}</a>
+{{- else -}}
+{{ $org }}
+{{- end -}}

@@ -9,7 +9,7 @@
       <div class="project-title">{{ .title }}</div>
       <div class="project-metric">{{ .metric }}</div>
     </div>
-    <div class="project-meta">{{ .org }} · {{ .period }}</div>
+    <div class="project-meta">{{ partial "org-link.html" .org }} · {{ .period }}</div>
     <p class="project-desc">{{ .description }}</p>
     <div class="entry-tags">
       {{ range .tags }}<span class="chip">{{ . }}</span>{{ end }}

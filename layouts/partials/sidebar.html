@@ -7,7 +7,7 @@
   <div class="sidebar-id" data-sc-in data-sc-stagger="90">
     <h1 class="sidebar-name">{{ .Site.Params.name }}</h1>
     <div class="sidebar-role">{{ .Site.Params.role }}</div>
-    <div class="sidebar-org">{{ .Site.Params.affiliation }}</div>
+    <div class="sidebar-org">{{ partial "org-link.html" .Site.Params.affiliation }}</div>
     <div class="sidebar-location">{{ partial "icon.html" "location" }} {{ .Site.Params.location }}</div>
   </div>
 

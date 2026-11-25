@@ -15,7 +15,7 @@
   <div class="entry-head">
     <div>
       <div class="entry-title">{{ .role }}{{ if .current }}<span class="entry-current">Current</span>{{ end }}</div>
-      <div class="entry-org">{{ .org }}</div>
+      <div class="entry-org">{{ partial "org-link.html" .org }}</div>
     </div>
     <div class="entry-meta">{{ .start }} – {{ .end }} · {{ .location }}</div>
   </div>
