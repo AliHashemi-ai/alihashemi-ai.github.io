@@ -9,7 +9,7 @@
   org: "Multiverse Computing"
   period: "2025 – Present"
   metric: "Block removal, distillation, 4-bit healing"
-  description: "Methods that help ship smaller production language models — compression, distillation, and 4-bit recovery — described in three 2026 preprints, plus SubDistill (arXiv:2601.05913)."
+  description: "Post-training methods that recover quality after compression — knowledge distillation, including SubDistill and top-K logit distillation, and quantization-aware healing — described in three 2026 preprints."
   tags: ["LLM Compression", "Distillation", "Megatron"]
 
 - title: "Foundation Model Distillation"
