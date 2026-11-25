@@ -1,16 +1,16 @@
 - title: "LLM Evaluation Platform"
   org: "Multiverse Computing"
   period: "2025 – Present"
-  metric: "Trustworthy scores for release decisions"
-  description: "Lead a cross-department programme that puts LLM evaluation on one shared platform, so release decisions rest on the same evidence: benchmark design, regression testing, release gating and automatic checkpoint scoring for the training team."
+  metric: "Benchmarks, regression tests and checkpoint scoring"
+  description: "Lead cross-functional LLM evaluation on a shared platform, from benchmark design to release gates. Benchmarks are reproduced independently, scoring errors are caught before they pass as model regressions, and training checkpoints are scored automatically."
   tags: ["LLM Evaluation", "lm-eval", "Reproducibility"]
   image: "images/projects/llm-eval-platform.webp"
 
 - title: "LLM Compression & Distillation"
   org: "Multiverse Computing"
   period: "2025 – Present"
-  metric: "Smaller models, recovered accuracy"
-  description: "Post training methods that recover quality after compression, combining knowledge distillation and quantization-aware healing to ship smaller production LLMs."
+  metric: "Quality recovery after model compression"
+  description: "Develop knowledge distillation and quantization-aware healing for compressed Transformer, Mamba and mixture-of-experts models. These post-training methods recover quality so smaller LLMs can ship."
   tags: ["LLM Compression", "Distillation", "Megatron"]
   image: "images/projects/llm-compression.webp"
   links:

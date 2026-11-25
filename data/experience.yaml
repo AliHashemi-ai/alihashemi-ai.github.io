@@ -5,10 +5,10 @@
   end: "Present"
   current: true
   bullets:
-    - "Lead LLM evaluation across research, product, services and MLOps on one shared platform, building the benchmarks, regression testing and release gating that let every team ship on the same evidence."
-    - "Build the evaluation infrastructure and AI tooling the research and training teams rely on, including automatic checkpoint scoring, scalable evaluation pipelines, and an audited multi-agent coding workflow that plans, implements, reviews and checks changes before they ship."
-    - "Develop post training methods, including knowledge distillation and quantization-aware model recovery, that restore quality after compression and ship smaller production LLMs."
-  tags: ["LLM Evaluation", "Benchmarks", "AI Tooling", "Post-training", "Distillation"]
+    - "Lead LLM evaluation from benchmark design to release gates. Build evaluation infrastructure for coding agents and on-device models. Automate checkpoint scoring to guide training decisions."
+    - "Design and lead agentic AI coding workflows with separate planning, implementation, review and audit. Design reusable agent skills and plugins for code review, commit hygiene and sensitive-data protection. Check AI-written code with sandboxed tests and explicit scope sign-off. Build eval harnesses and contribute to an agent harness."
+    - "Develop distillation and quantization-aware recovery for compressed Transformer, Mamba and mixture-of-experts models. This post-training work lets smaller LLMs ship at production quality."
+  tags: ["LLM Evaluation", "Benchmark Design", "Agent Evaluation", "Agentic AI Coding", "Harness Development", "Post-training"]
 
 - role: "Machine Learning Research Scientist"
   org: "BIFOLD (Berlin Institute for the Foundations of Learning and Data)"
