@@ -5,10 +5,8 @@
 
   function toggleTheme() {
     var current = root.getAttribute("data-theme");
-    var isDark = current
-      ? current === "dark"
-      : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    var next = isDark ? "light" : "dark";
+    var isLight = current === "light";
+    var next = isLight ? "dark" : "light";
     root.setAttribute("data-theme", next);
     localStorage.setItem("theme", next);
   }
